@@ -1,0 +1,11 @@
+##bridge-file-version: #3
+pack.name=Endless [Res.]
+pack.description=A Project aiming to expand the end in an unique yet wacky alienated way! Available for both Java and Bedrock, created by ReMod Studios!
+
+##items
+item.endless_bedrock:finallium_shard.name=Finallium Shard
+item.endless_bedrock:topaz_gem.name=Topaz Gem
+
+##blocks
+tile.endless_bedrock:ashen_endstone.name=Ashen End Stone
+tile.endless_bedrock:crystillium_endstone.name=Crystillium End Stone

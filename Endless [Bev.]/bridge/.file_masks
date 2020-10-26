@@ -1,0 +1,50 @@
+{
+	"RP/textures/item_texture.json": {
+		"data": {}
+	},
+	"BP/entities/player.json": {
+		"data": {}
+	},
+	"BP/animation_controllers/bridge/custom_item_behavior.json": {
+		"data": {
+			"e7e4a598_3d6f_48f3_8419_de5dce12b28d": {
+				"format_version": "1.10.0",
+				"animation_controllers": {
+					"controller.animation.bridge_custom_item_behavior": {
+						"states": {
+							"default": {}
+						}
+					}
+				}
+			},
+			"488ed36c_118d_430a_bf2d_a069f1d21352": {
+				"format_version": "1.10.0",
+				"animation_controllers": {
+					"controller.animation.bridge_custom_item_behavior": {
+						"states": {
+							"default": {}
+						}
+					}
+				}
+			}
+		}
+	},
+	"BP/items/finallium_shard.json": {
+		"data": {}
+	},
+	"BP/items/topaz_gem.json": {
+		"data": {}
+	},
+	"BP/blocks/ashen_endstone.json": {
+		"data": {}
+	},
+	"BP/loot_tables/blocks/ashen_endstone.json": {
+		"data": {}
+	},
+	"RP/textures/terrain_texture.json": {
+		"data": {}
+	},
+	"BP/blocks/crystillium_endstone.json": {
+		"data": {}
+	}
+}

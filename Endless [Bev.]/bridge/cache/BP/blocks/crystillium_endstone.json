@@ -1,0 +1,193 @@
+{
+	"file_path": "C:\\Users\\Pikachu\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Endless [Bev.]\\blocks\\crystillium_endstone.json",
+	"file_type": "block",
+	"format_version": 1,
+	"file_uuid": "64520f8b_6bf0_425b_9a22_1c75fc7c2b4a",
+	"file_version": 1,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.16.100",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.16.100",
+					"minecraft:block": {
+						"description": {
+							"identifier": "endless_bedrock:crystillium_endstone",
+							"is_experimental": false
+						},
+						"components": {
+							"minecraft:destroy_time": 15,
+							"minecraft:block_light_emission": 0,
+							"minecraft:block_light_absorption": 1,
+							"minecraft:flammable": {
+								"burn_odds": 0,
+								"flame_odds": 0
+							},
+							"minecraft:friction": 0.5,
+							"minecraft:explosion_resistance": 2.5,
+							"minecraft:map_color": "#E9E08E",
+							"minecraft:loot": "loot_tables/empty.json",
+							"minecraft:unit_cube": {},
+							"minecraft:breathability": "solid",
+							"minecraft:breakonpush": false,
+							"minecraft:on_player_destroyed": {
+								"target": "self",
+								"event": "on_break",
+								"condition": "query.equipped_item_any_tag=='minecraft:is_pickaxe'"
+							},
+							"minecraft:material_instances": {
+								"top": {
+									"texture": "crystillium_top",
+									"render_method": "opaque"
+								},
+								"side": {
+									"texture": "crystillium_side",
+									"render_method": "opaque"
+								},
+								"bottom": {
+									"texture": "end_stone",
+									"render_method": "opaque"
+								}
+							}
+						}
+					}
+				},
+				"key": "minecraft:block",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "endless_bedrock:crystillium_endstone",
+								"is_experimental": false
+							},
+							"components": {
+								"minecraft:destroy_time": 15,
+								"minecraft:block_light_emission": 0,
+								"minecraft:block_light_absorption": 1,
+								"minecraft:flammable": {
+									"burn_odds": 0,
+									"flame_odds": 0
+								},
+								"minecraft:friction": 0.5,
+								"minecraft:explosion_resistance": 2.5,
+								"minecraft:map_color": "#E9E08E",
+								"minecraft:loot": "loot_tables/empty.json",
+								"minecraft:unit_cube": {},
+								"minecraft:breathability": "solid",
+								"minecraft:breakonpush": false,
+								"minecraft:on_player_destroyed": {
+									"target": "self",
+									"event": "on_break",
+									"condition": "query.equipped_item_any_tag=='minecraft:is_pickaxe'"
+								},
+								"minecraft:material_instances": {
+									"top": {
+										"texture": "crystillium_top",
+										"render_method": "opaque"
+									},
+									"side": {
+										"texture": "crystillium_side",
+										"render_method": "opaque"
+									},
+									"bottom": {
+										"texture": "end_stone",
+										"render_method": "opaque"
+									}
+								}
+							}
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "endless_bedrock:crystillium_endstone",
+							"is_experimental": false
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "endless_bedrock:crystillium_endstone",
+								"is_experimental": false
+							},
+							"components": {
+								"minecraft:destroy_time": 15,
+								"minecraft:block_light_emission": 0,
+								"minecraft:block_light_absorption": 1,
+								"minecraft:flammable": {
+									"burn_odds": 0,
+									"flame_odds": 0
+								},
+								"minecraft:friction": 0.5,
+								"minecraft:explosion_resistance": 2.5,
+								"minecraft:map_color": "#E9E08E",
+								"minecraft:loot": "loot_tables/empty.json",
+								"minecraft:unit_cube": {},
+								"minecraft:breathability": "solid",
+								"minecraft:breakonpush": false,
+								"minecraft:on_player_destroyed": {
+									"target": "self",
+									"event": "on_break",
+									"condition": "query.equipped_item_any_tag=='minecraft:is_pickaxe'"
+								},
+								"minecraft:material_instances": {
+									"top": {
+										"texture": "crystillium_top",
+										"render_method": "opaque"
+									},
+									"side": {
+										"texture": "crystillium_side",
+										"render_method": "opaque"
+									},
+									"bottom": {
+										"texture": "end_stone",
+										"render_method": "opaque"
+									}
+								}
+							}
+						},
+						"key": "components",
+						"is_minified": true,
+						"children": {
+							"minecraft:destroy_time": 15,
+							"minecraft:block_light_emission": 0,
+							"minecraft:block_light_absorption": 1,
+							"minecraft:flammable": {
+								"burn_odds": 0,
+								"flame_odds": 0
+							},
+							"minecraft:friction": 0.5,
+							"minecraft:explosion_resistance": 2.5,
+							"minecraft:map_color": "#E9E08E",
+							"minecraft:loot": "loot_tables/empty.json",
+							"minecraft:unit_cube": {},
+							"minecraft:breathability": "solid",
+							"minecraft:breakonpush": false,
+							"minecraft:on_player_destroyed": {
+								"target": "self",
+								"event": "on_break",
+								"condition": "query.equipped_item_any_tag=='minecraft:is_pickaxe'"
+							},
+							"minecraft:material_instances": {
+								"top": {
+									"texture": "crystillium_top",
+									"render_method": "opaque"
+								},
+								"side": {
+									"texture": "crystillium_side",
+									"render_method": "opaque"
+								},
+								"bottom": {
+									"texture": "end_stone",
+									"render_method": "opaque"
+								}
+							}
+						}
+					}
+				]
+			}
+		]
+	}
+}

@@ -1,0 +1,54 @@
+{
+	"entity": {
+		"BP/entities/player.json": {
+			"events": [
+				"minecraft:gain_bad_omen",
+				"minecraft:clear_add_bad_omen",
+				"minecraft:trigger_raid",
+				"minecraft:remove_raid_trigger"
+			],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"minecraft:player"
+			],
+			"animation_references": [],
+			"families": [
+				"player"
+			],
+			"custom_commands": [],
+			"custom_components": []
+		}
+	},
+	"block": {
+		"BP/blocks/ashen_endstone.json": {
+			"identifiers": [
+				"endless_bedrock:ashen_endstone"
+			],
+			"events": [
+				"on_break"
+			],
+			"recipe_tags": [],
+			"custom_components": []
+		},
+		"BP/blocks/crystillium_endstone.json": {
+			"identifiers": [
+				"endless_bedrock:crystillium_endstone"
+			],
+			"events": [],
+			"recipe_tags": [],
+			"custom_components": []
+		}
+	},
+	"item": {
+		"BP/items/finallium_shard.json": {
+			"identifiers": [
+				"endless_bedrock:finallium_shard"
+			],
+			"custom_commands": []
+		},
+		"BP/items/topaz_gem.json": {
+			"identifiers": [],
+			"custom_commands": []
+		}
+	}
+}

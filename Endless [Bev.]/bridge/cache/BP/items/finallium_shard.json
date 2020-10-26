@@ -1,0 +1,184 @@
+{
+	"file_path": "C:\\Users\\Pikachu\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Endless [Bev.]\\items\\finallium_shard.json",
+	"file_type": "item",
+	"format_version": 1,
+	"file_uuid": "e7e4a598_3d6f_48f3_8419_de5dce12b28d",
+	"file_version": 1,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.16.100",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.16.100",
+					"minecraft:item": {
+						"description": {
+							"identifier": "endless_bedrock:finallium_shard",
+							"category": "items",
+							"is_experimental": false
+						},
+						"components": {
+							"minecraft:max_stack_size": 64,
+							"minecraft:use_duration": 0,
+							"minecraft:hand_equipped": false,
+							"minecraft:stacked_by_data": true,
+							"minecraft:foil": false,
+							"minecraft:allow_off_hand": false,
+							"minecraft:render_offsets": "miscellaneous",
+							"minecraft:icon": {
+								"texture": "finallium_shard"
+							},
+							"minecraft:hover_text_color": "white",
+							"minecraft:display_name": {
+								"value": "item.endless_bedrock:finallium_shard.name"
+							}
+						}
+					}
+				},
+				"key": "minecraft:item",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "endless_bedrock:finallium_shard",
+								"category": "items",
+								"is_experimental": false
+							},
+							"components": {
+								"minecraft:max_stack_size": 64,
+								"minecraft:use_duration": 0,
+								"minecraft:hand_equipped": false,
+								"minecraft:stacked_by_data": true,
+								"minecraft:foil": false,
+								"minecraft:allow_off_hand": false,
+								"minecraft:render_offsets": "miscellaneous",
+								"minecraft:icon": {
+									"texture": "finallium_shard"
+								},
+								"minecraft:hover_text_color": "white",
+								"minecraft:display_name": {
+									"value": "item.endless_bedrock:finallium_shard.name"
+								}
+							}
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "endless_bedrock:finallium_shard",
+							"category": "items",
+							"is_experimental": false
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "endless_bedrock:finallium_shard",
+								"category": "items",
+								"is_experimental": false
+							},
+							"components": {
+								"minecraft:max_stack_size": 64,
+								"minecraft:use_duration": 0,
+								"minecraft:hand_equipped": false,
+								"minecraft:stacked_by_data": true,
+								"minecraft:foil": false,
+								"minecraft:allow_off_hand": false,
+								"minecraft:render_offsets": "miscellaneous",
+								"minecraft:icon": {
+									"texture": "finallium_shard"
+								},
+								"minecraft:hover_text_color": "white",
+								"minecraft:display_name": {
+									"value": "item.endless_bedrock:finallium_shard.name"
+								}
+							}
+						},
+						"key": "components",
+						"children": [
+							{
+								"data": "64",
+								"key": "minecraft:max_stack_size"
+							},
+							{
+								"data": "0",
+								"key": "minecraft:use_duration"
+							},
+							{
+								"data": "false",
+								"key": "minecraft:hand_equipped"
+							},
+							{
+								"data": "true",
+								"key": "minecraft:stacked_by_data"
+							},
+							{
+								"data": "false",
+								"key": "minecraft:foil"
+							},
+							{
+								"data": "false",
+								"key": "minecraft:allow_off_hand"
+							},
+							{
+								"data": "miscellaneous",
+								"key": "minecraft:render_offsets"
+							},
+							{
+								"open": {
+									"minecraft:max_stack_size": 64,
+									"minecraft:use_duration": 0,
+									"minecraft:hand_equipped": false,
+									"minecraft:stacked_by_data": true,
+									"minecraft:foil": false,
+									"minecraft:allow_off_hand": false,
+									"minecraft:render_offsets": "miscellaneous",
+									"minecraft:icon": {
+										"texture": "finallium_shard"
+									},
+									"minecraft:hover_text_color": "white",
+									"minecraft:display_name": {
+										"value": "item.endless_bedrock:finallium_shard.name"
+									}
+								},
+								"key": "minecraft:icon",
+								"is_minified": true,
+								"children": {
+									"texture": "finallium_shard"
+								}
+							},
+							{
+								"data": "white",
+								"key": "minecraft:hover_text_color"
+							},
+							{
+								"open": {
+									"minecraft:max_stack_size": 64,
+									"minecraft:use_duration": 0,
+									"minecraft:hand_equipped": false,
+									"minecraft:stacked_by_data": true,
+									"minecraft:foil": false,
+									"minecraft:allow_off_hand": false,
+									"minecraft:render_offsets": "miscellaneous",
+									"minecraft:icon": {
+										"texture": "finallium_shard"
+									},
+									"minecraft:hover_text_color": "white",
+									"minecraft:display_name": {
+										"value": "item.endless_bedrock:finallium_shard.name"
+									}
+								},
+								"key": "minecraft:display_name",
+								"is_minified": true,
+								"children": {
+									"value": "item.endless_bedrock:finallium_shard.name"
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

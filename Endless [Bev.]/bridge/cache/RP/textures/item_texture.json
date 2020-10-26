@@ -1,0 +1,98 @@
+{
+	"file_path": "C:\\Users\\Pikachu\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_resource_packs\\Endless [Res.]\\textures\\item_texture.json",
+	"file_type": "item_texture",
+	"format_version": 1,
+	"file_uuid": "e9e236fa_cf55_416a_9dac_ad601305395a",
+	"file_version": 1,
+	"cache_content": {
+		"children": [
+			{
+				"data": "bridgeRP",
+				"key": "resource_pack_name"
+			},
+			{
+				"data": "atlas.items",
+				"key": "texture_name"
+			},
+			{
+				"open": {
+					"resource_pack_name": "bridgeRP",
+					"texture_name": "atlas.items",
+					"texture_data": {
+						"topaz_gem": {
+							"textures": [
+								"textures/items/topaz_gem"
+							]
+						},
+						"finallium_shard": {
+							"textures": [
+								"textures/items/finallium_shard"
+							]
+						}
+					}
+				},
+				"key": "texture_data",
+				"children": [
+					{
+						"open": {
+							"topaz_gem": {
+								"textures": [
+									"textures/items/topaz_gem"
+								]
+							},
+							"finallium_shard": {
+								"textures": [
+									"textures/items/finallium_shard"
+								]
+							}
+						},
+						"key": "topaz_gem",
+						"children": [
+							{
+								"open": {
+									"textures": [
+										"textures/items/topaz_gem"
+									]
+								},
+								"key": "textures",
+								"is_minified": true,
+								"children": [
+									"textures/items/topaz_gem"
+								]
+							}
+						]
+					},
+					{
+						"open": {
+							"topaz_gem": {
+								"textures": [
+									"textures/items/topaz_gem"
+								]
+							},
+							"finallium_shard": {
+								"textures": [
+									"textures/items/finallium_shard"
+								]
+							}
+						},
+						"key": "finallium_shard",
+						"children": [
+							{
+								"open": {
+									"textures": [
+										"textures/items/finallium_shard"
+									]
+								},
+								"key": "textures",
+								"is_minified": true,
+								"children": [
+									"textures/items/finallium_shard"
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}
