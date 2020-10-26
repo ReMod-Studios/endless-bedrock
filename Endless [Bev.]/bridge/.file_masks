@@ -46,5 +46,8 @@
 	},
 	"BP/blocks/crystillium_endstone.json": {
 		"data": {}
+	},
+	"BP/loot_tables/blocks/crystillium_endstone.json": {
+		"data": {}
 	}
 }

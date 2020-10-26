@@ -1,4 +1,4 @@
-//bridge-file-version: #1
+//bridge-file-version: #2
 {
 	"pools": [
 		{
@@ -6,7 +6,7 @@
 			"entries": [
 				{
 					"type": "item",
-					"name": "endless:ashen_endstone",
+					"name": "endless:crystillium_endstone",
 					"weight": 1,
 					"functions": [
 						{

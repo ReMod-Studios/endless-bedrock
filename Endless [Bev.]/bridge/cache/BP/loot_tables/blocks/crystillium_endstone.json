@@ -1,9 +1,9 @@
 {
-	"file_path": "C:\\Users\\Pikachu\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Endless [Bev.]\\loot_tables\\blocks\\ashen_endstone.json",
+	"file_path": "C:\\Users\\Pikachu\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Endless [Bev.]\\loot_tables\\blocks\\crystillium_endstone.json",
 	"file_type": "loot_table",
 	"format_version": 1,
-	"file_uuid": "3c85f038_a1fe_4829_adaf_071afa796363",
-	"file_version": 1,
+	"file_uuid": "fddd6121_dbd1_4912_98c6_f9999dc71f91",
+	"file_version": 2,
 	"cache_content": {
 		"children": [
 			{
@@ -14,7 +14,7 @@
 							"entries": [
 								{
 									"type": "item",
-									"name": "endless:ashen_endstone",
+									"name": "endless:crystillium_endstone",
 									"weight": 1,
 									"functions": [
 										{
@@ -36,7 +36,7 @@
 								"entries": [
 									{
 										"type": "item",
-										"name": "endless:ashen_endstone",
+										"name": "endless:crystillium_endstone",
 										"weight": 1,
 										"functions": [
 											{
@@ -59,7 +59,7 @@
 									"entries": [
 										{
 											"type": "item",
-											"name": "endless:ashen_endstone",
+											"name": "endless:crystillium_endstone",
 											"weight": 1,
 											"functions": [
 												{
@@ -76,7 +76,7 @@
 										"open": [
 											{
 												"type": "item",
-												"name": "endless:ashen_endstone",
+												"name": "endless:crystillium_endstone",
 												"weight": 1,
 												"functions": [
 													{
@@ -89,7 +89,7 @@
 										"is_minified": true,
 										"children": {
 											"type": "item",
-											"name": "endless:ashen_endstone",
+											"name": "endless:crystillium_endstone",
 											"weight": 1,
 											"functions": [
 												{
