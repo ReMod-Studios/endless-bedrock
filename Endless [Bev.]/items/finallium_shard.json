@@ -3,7 +3,7 @@
 	"format_version": "1.16.100",
 	"minecraft:item": {
 		"description": {
-			"identifier": "endless_bedrock:finallium_shard",
+			"identifier": "endless:finallium_shard",
 			"category": "items",
 			"is_experimental": false
 		},
@@ -20,7 +20,7 @@
 			},
 			"minecraft:hover_text_color": "white",
 			"minecraft:display_name": {
-				"value": "item.endless_bedrock:finallium_shard.name"
+				"value": "item.endless:finallium_shard.name"
 			}
 		}
 	}

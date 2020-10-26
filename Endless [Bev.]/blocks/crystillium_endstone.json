@@ -3,7 +3,7 @@
 	"format_version": "1.16.100",
 	"minecraft:block": {
 		"description": {
-			"identifier": "endless_bedrock:crystillium_endstone",
+			"identifier": "endless:crystillium_endstone",
 			"is_experimental": false
 		},
 		"components": {

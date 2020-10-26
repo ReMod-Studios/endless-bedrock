@@ -22,7 +22,7 @@
 	"block": {
 		"BP/blocks/ashen_endstone.json": {
 			"identifiers": [
-				"endless_bedrock:ashen_endstone"
+				"endless:ashen_endstone"
 			],
 			"events": [
 				"on_break"
@@ -32,7 +32,7 @@
 		},
 		"BP/blocks/crystillium_endstone.json": {
 			"identifiers": [
-				"endless_bedrock:crystillium_endstone"
+				"endless:crystillium_endstone"
 			],
 			"events": [],
 			"recipe_tags": [],
@@ -42,7 +42,7 @@
 	"item": {
 		"BP/items/finallium_shard.json": {
 			"identifiers": [
-				"endless_bedrock:finallium_shard"
+				"endless:finallium_shard"
 			],
 			"custom_commands": []
 		},

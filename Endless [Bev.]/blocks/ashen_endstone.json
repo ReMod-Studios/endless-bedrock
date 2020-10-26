@@ -3,7 +3,7 @@
 	"format_version": "1.16.100",
 	"minecraft:block": {
 		"description": {
-			"identifier": "endless_bedrock:ashen_endstone",
+			"identifier": "endless:ashen_endstone",
 			"is_experimental": false
 		},
 		"components": {

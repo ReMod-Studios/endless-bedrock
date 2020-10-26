@@ -4,5 +4,5 @@
 	"format_version": 0,
 	"file_uuid": "86f6672a_e4a8_43b3_9f13_1430f8baa5a3",
 	"file_version": 3,
-	"cache_content": "pack.name=Endless [Res.]\r\npack.description=A Project aiming to expand the end in an unique yet wacky alienated way! Available for both Java and Bedrock, created by ReMod Studios!\r\n\r\n##items\r\nitem.endless_bedrock:finallium_shard.name=Finallium Shard\r\nitem.endless_bedrock:topaz_gem.name=Topaz Gem\r\n\r\n##blocks\r\ntile.endless_bedrock:ashen_endstone.name=Ashen End Stone\r\ntile.endless_bedrock:crystillium_endstone.name=Crystillium End Stone"
+	"cache_content": "pack.name=Endless [Res.]\r\npack.description=A Project aiming to expand the end in an unique yet wacky alienated way! Available for both Java and Bedrock, created by ReMod Studios!\r\n\r\n##items\r\nitem.endless:finallium_shard.name=Finallium Shard\r\nitem.endless:topaz_gem.name=Topaz Gem\r\n\r\n##blocks\r\ntile.endless:ashen_endstone.name=Ashen End Stone\r\ntile.endless:crystillium_endstone.name=Crystillium End Stone"
 }
