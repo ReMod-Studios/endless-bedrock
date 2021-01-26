@@ -1,9 +1,9 @@
 {
-	"file_path": "C:\\Users\\Pikachu\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_resource_packs\\Endless [Res.]\\textures\\item_texture.json",
+	"file_path": "W:\\Users\\LEPICHU\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_resource_packs\\Endless [Res.]\\textures\\item_texture.json",
 	"file_type": "item_texture",
 	"format_version": 1,
-	"file_uuid": "e9e236fa_cf55_416a_9dac_ad601305395a",
-	"file_version": 1,
+	"file_uuid": "577cf54b_c9bb_44dd_8b0b_3da4eb0f594d",
+	"file_version": 0,
 	"cache_content": {
 		"children": [
 			{
@@ -28,65 +28,161 @@
 							"textures": [
 								"textures/items/finallium_shard"
 							]
+						},
+						"endless_finallium_helmet": {
+							"textures": [
+								"textures/items/finallium_helmet"
+							]
+						},
+						"endless_finallium_chestplate": {
+							"textures": [
+								"textures/items/finallium_chestplate"
+							]
+						},
+						"endless_finallium_leggings": {
+							"textures": [
+								"textures/items/finallium_leggings"
+							]
+						},
+						"endless_finallium_boots": {
+							"textures": [
+								"textures/items/finallium_boots"
+							]
+						},
+						"shadow_knight": {
+							"textures": [
+								"textures/items/shadow_knight"
+							]
+						},
+						"endless_finallium_pickaxe": {
+							"textures": "textures/items/finallium_pickaxe"
+						},
+						"endless_finallium_axe": {
+							"textures": "textures/items/finallium_axe"
+						},
+						"endless_finallium_sword": {
+							"textures": "textures/items/finallium_sword"
+						},
+						"endless_finallium_shovel": {
+							"textures": [
+								"textures/items/finallium_shovel"
+							]
+						},
+						"endless_finalliun_hoe": {
+							"textures": [
+								"textures/items/finallium_hoe"
+							]
 						}
 					}
 				},
 				"key": "texture_data",
 				"children": [
 					{
-						"open": {
-							"topaz_gem": {
-								"textures": [
-									"textures/items/topaz_gem"
-								]
-							},
-							"finallium_shard": {
-								"textures": [
-									"textures/items/finallium_shard"
-								]
-							}
-						},
 						"key": "topaz_gem",
-						"children": [
-							{
-								"open": {
-									"textures": [
-										"textures/items/topaz_gem"
-									]
-								},
-								"key": "textures",
-								"is_minified": true,
-								"children": [
-									"textures/items/topaz_gem"
-								]
-							}
-						]
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/topaz_gem"
+							]
+						}
 					},
 					{
-						"open": {
-							"topaz_gem": {
-								"textures": [
-									"textures/items/topaz_gem"
-								]
-							},
-							"finallium_shard": {
-								"textures": [
-									"textures/items/finallium_shard"
-								]
-							}
-						},
 						"key": "finallium_shard",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/finallium_shard"
+							]
+						}
+					},
+					{
+						"key": "endless_finallium_helmet",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/finallium_helmet"
+							]
+						}
+					},
+					{
+						"key": "endless_finallium_chestplate",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/finallium_chestplate"
+							]
+						}
+					},
+					{
+						"key": "endless_finallium_leggings",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/finallium_leggings"
+							]
+						}
+					},
+					{
+						"key": "endless_finallium_boots",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/finallium_boots"
+							]
+						}
+					},
+					{
+						"key": "shadow_knight",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/shadow_knight"
+							]
+						}
+					},
+					{
+						"key": "endless_finallium_pickaxe",
+						"is_minified": true,
+						"children": {
+							"textures": "textures/items/finallium_pickaxe"
+						}
+					},
+					{
+						"key": "endless_finallium_axe",
+						"is_minified": true,
+						"children": {
+							"textures": "textures/items/finallium_axe"
+						}
+					},
+					{
+						"key": "endless_finallium_sword",
+						"is_minified": true,
+						"children": {
+							"textures": "textures/items/finallium_sword"
+						}
+					},
+					{
+						"key": "endless_finallium_shovel",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/finallium_shovel"
+							]
+						}
+					},
+					{
+						"key": "endless_finalliun_hoe",
 						"children": [
 							{
 								"open": {
 									"textures": [
-										"textures/items/finallium_shard"
+										"textures/items/finallium_hoe"
 									]
 								},
 								"key": "textures",
 								"is_minified": true,
 								"children": [
-									"textures/items/finallium_shard"
+									"textures/items/finallium_hoe"
 								]
 							}
 						]

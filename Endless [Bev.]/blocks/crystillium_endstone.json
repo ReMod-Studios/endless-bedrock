@@ -1,4 +1,4 @@
-//bridge-file-version: #1
+//bridge-file-version: #5
 {
 	"format_version": "1.16.100",
 	"minecraft:block": {
@@ -24,20 +24,14 @@
 			"minecraft:on_player_destroyed": {
 				"target": "self",
 				"event": "on_break",
-				"condition": "query.equipped_item_any_tag=='minecraft:is_pickaxe'"
+				"condition": "q.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_pickaxe')"
 			},
-			"minecraft:material_instances": {
-				"top": {
-					"texture": "crystillium_top",
-					"render_method": "opaque"
-				},
-				"side": {
-					"texture": "crystillium_side",
-					"render_method": "opaque"
-				},
-				"bottom": {
-					"texture": "end_stone",
-					"render_method": "opaque"
+			"tag:stone": {}
+		},
+		"events": {
+			"on_break": {
+				"spawn_loot": {
+					"table": "loot_tables/blocks/crystillium_endstone.json"
 				}
 			}
 		}

@@ -1,4 +1,4 @@
-//bridge-file-version: #0
+//bridge-file-version: #3
 {
 	"resource_pack_name": "bridgeRP",
 	"texture_name": "atlas.terrain",
@@ -16,6 +16,86 @@
 			"textures": [
 				{
 					"path": "textures/blocks/ashen_endstone_side"
+				}
+			]
+		},
+		"crystillium_top": {
+			"textures": [
+				{
+					"path": "textures/blocks/crystillium_top"
+				}
+			]
+		},
+		"crystillium_side": {
+			"textures": [
+				{
+					"path": "textures/blocks/crystillium_side"
+				}
+			]
+		},
+		"purpur_top": {
+			"textures": [
+				{
+					"path": "textures/blocks/purpur_grass_top"
+				}
+			]
+		},
+		"purpur_side": {
+			"textures": [
+				{
+					"path": "textures/blocks/purpur_grass_side"
+				}
+			]
+		},
+		"tealite_top": {
+			"textures": [
+				{
+					"path": "textures/blocks/tealite_top"
+				}
+			]
+		},
+		"tealite_side": {
+			"textures": [
+				{
+					"path": "textures/blocks/tealite_side"
+				}
+			]
+		},
+		"endless_finallium_ore": {
+			"textures": "textures/blocks/finallium_ore"
+		},
+		"rhyolite": {
+			"textures": [
+				{
+					"path": "textures/blocks/rhyolite"
+				}
+			]
+		},
+		"pol_rhyolite": {
+			"textures": [
+				{
+					"path": "textures/blocks/polished_rhyolite"
+				}
+			]
+		},
+		"endless_finallium_block": {
+			"textures": [
+				{
+					"path": "textures/blocks/finallium_block"
+				}
+			]
+		},
+		"topaz_ore": {
+			"textures": [
+				{
+					"path": "textures/blocks/topaz_ore"
+				}
+			]
+		},
+		"topaz_block": {
+			"textures": [
+				{
+					"path": "textures/blocks/topaz_block"
 				}
 			]
 		}

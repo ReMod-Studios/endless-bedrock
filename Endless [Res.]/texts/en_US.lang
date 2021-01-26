@@ -1,11 +1,36 @@
-##bridge-file-version: #3
-pack.name=Endless [Res.]
+##bridge-file-version: #13
+pack.name=Endless §5[Res.]
 pack.description=A Project aiming to expand the end in an unique yet wacky alienated way! Available for both Java and Bedrock, created by ReMod Studios!
 
 ##items
-item.endless_bedrock:finallium_shard.name=Finallium Shard
-item.endless_bedrock:topaz_gem.name=Topaz Gem
+item.endless:finallium_shard.name=Finallium Shard
+item.endless:topaz_gem.name=Topaz Gem
+
+item.endless:finallium_helmet.name=Finallium Helmet
+item.endless:finallium_chestplate.name=Finallium Chestplate
+item.endless:finallium_leggings.name=Finallium Leggings
+item.endless:finallium_boots.name=Finallium Boots
+
+item.endless:finallium_axe.name=Finallium Axe
+item.endless:finallium_sword.name=Finallium Sword
+item.endless:finallium_pickaxe.name=Finallium Pickaxe
+item.endless:finallium_shovel.name=Finallium Shovel
+item.endless:finallium_hoe.name=Finallium Hoe
 
 ##blocks
-tile.endless_bedrock:ashen_endstone.name=Ashen End Stone
-tile.endless_bedrock:crystillium_endstone.name=Crystillium End Stone
+tile.endless:ashen_endstone.name=Ashen End Stone
+tile.endless:crystillium_endstone.name=Crystillium End Stone
+tile.endless:purpur_endstone.name=Purpur End Stone
+tile.endless:tealite_endstone.name=Tealite End Stone
+tile.endless:finallium_block.name=Block of Finallium
+tile.endless:finallium_ore.name=Finallium Ore
+tile.endless:polished_rhyolite.name=Polished Rhyolite
+tile.endless:rhyolite.name=Rhyolite
+tile.endless:topaz_block.name=Block of Topaz
+tile.endless:topaz_ore.name=Topaz Ore
+
+##entities
+item.spawn_egg.entity.endless:shadow_knight.name=Spawn Shadow Knight
+entity.endless:shadow_knight.name=Shadow Knight
+item.spawn_egg.entity.endless:lost_soul.name=Spawn Lost Soul
+entity.endless:lost_soul.name=Lost Soul

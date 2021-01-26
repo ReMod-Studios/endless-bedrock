@@ -17,9 +17,135 @@
 			],
 			"custom_commands": [],
 			"custom_components": []
+		},
+		"BP/entities/lost_soul.json": {
+			"events": [
+				"minecraft:entity_spawned",
+				"endless:as_adult",
+				"endless:as_baby",
+				"endless:entity_detection"
+			],
+			"bridge_core_tags": [],
+			"identifiers": [
+				"endless:lost_soul"
+			],
+			"animation_references": [],
+			"families": [
+				"lost_soul"
+			],
+			"custom_commands": [],
+			"custom_components": []
+		}
+	},
+	"item": {
+		"BP/items/finallium_pickaxe.json": {
+			"identifiers": [
+				"endless:finallium_pickaxe"
+			],
+			"custom_commands": []
+		},
+		"BP/items/finallium_axe.json": {
+			"identifiers": [
+				"endless:finallium_axe"
+			],
+			"custom_commands": []
+		},
+		"BP/items/finallium_sword.json": {
+			"identifiers": [
+				"endless:finallium_sword"
+			],
+			"custom_commands": []
+		},
+		"BP/items/finallium_shovel.json": {
+			"identifiers": [
+				"endless:finallium_shovel"
+			],
+			"custom_commands": []
+		},
+		"BP/items/finallium_hoe.json": {
+			"identifiers": [
+				"endless:finallium_hoe"
+			],
+			"custom_commands": []
+		},
+		"BP/items/finallium_shield.json": {
+			"identifiers": [
+				"endless:finallium_shield"
+			],
+			"custom_commands": []
+		},
+		"BP/items/finallium_boots.json": {
+			"identifiers": [
+				"endless:finallium_boots"
+			],
+			"custom_commands": []
+		},
+		"BP/items/finallium_leggings.json": {
+			"identifiers": [
+				"endless:finallium_leggings"
+			],
+			"custom_commands": []
+		},
+		"BP/items/finallium_chestplate.json": {
+			"identifiers": [
+				"endless:finallium_chestplate"
+			],
+			"custom_commands": []
+		},
+		"BP/items/finallium_helmet.json": {
+			"identifiers": [
+				"endless:finallium_helmet"
+			],
+			"custom_commands": []
+		}
+	},
+	"feature": {
+		"BP/features/finallium_ore_feature.json": {
+			"identifiers": [
+				"endless:topaz_ore_feature"
+			]
+		},
+		"BP/features/topaz_ore_feature.json": {
+			"identifiers": [
+				"endless:topaz_ore_feature"
+			]
+		}
+	},
+	"feature_rule": {
+		"BP/feature_rules/end_underground_finallium_ore_feature.json": {
+			"identifiers": [
+				"endless:end_underground_topaz_ore_feature"
+			]
+		},
+		"BP/feature_rules/end_underground_topaz_ore_feature.json": {
+			"identifiers": [
+				"endless:end_underground_topaz_ore_feature"
+			]
 		}
 	},
 	"block": {
+		"BP/blocks/finallium_ore.json": {
+			"identifiers": [
+				"endless:topaz_ore"
+			],
+			"events": [
+				"on_break"
+			],
+			"recipe_tags": [],
+			"custom_commands": [],
+			"custom_components": []
+		},
+		"BP/blocks/rhyolite.json": {
+			"identifiers": [
+				"endless:polished_rhyolite"
+			],
+			"events": [
+				"on_break"
+			],
+			"recipe_tags": [],
+			"custom_commands": [],
+			"custom_components": []
+		},
 		"BP/blocks/ashen_endstone.json": {
 			"identifiers": [
 				"endless:ashen_endstone"
@@ -28,27 +154,142 @@
 				"on_break"
 			],
 			"recipe_tags": [],
+			"custom_commands": [],
 			"custom_components": []
 		},
-		"BP/blocks/crystillium_endstone.json": {
+		"BP/blocks/polished_rhyolite.json": {
 			"identifiers": [
-				"endless:crystillium_endstone"
+				"endless:polished_rhyolite"
 			],
-			"events": [],
+			"events": [
+				"on_break"
+			],
 			"recipe_tags": [],
+			"custom_commands": [],
+			"custom_components": []
+		},
+		"BP/blocks/finallium_block.json": {
+			"identifiers": [
+				"endless:topaz_block"
+			],
+			"events": [
+				"on_break"
+			],
+			"recipe_tags": [],
+			"custom_commands": [],
+			"custom_components": []
+		},
+		"BP/blocks/topaz_block.json": {
+			"identifiers": [
+				"endless:topaz_block"
+			],
+			"events": [
+				"on_break"
+			],
+			"recipe_tags": [],
+			"custom_commands": [],
+			"custom_components": []
+		},
+		"BP/blocks/topaz_ore.json": {
+			"identifiers": [
+				"endless:topaz_ore"
+			],
+			"events": [
+				"on_break"
+			],
+			"recipe_tags": [],
+			"custom_commands": [],
 			"custom_components": []
 		}
 	},
-	"item": {
-		"BP/items/finallium_shard.json": {
+	"client_entity": {
+		"RP/entity/shadow_knight.json": {
 			"identifiers": [
-				"endless:finallium_shard"
+				"endless:shadow_knight"
 			],
+			"particle_references": [],
+			"animation_references": [
+				"humanoid_big_head",
+				"look_at_target_default",
+				"look_at_target_gliding",
+				"look_at_target_swimming",
+				"move",
+				"riding.arms",
+				"riding.legs",
+				"holding",
+				"brandish_spear",
+				"charging",
+				"attack.rotations",
+				"sneaking",
+				"bob",
+				"damage_nearby_mobs",
+				"bow_and_arrow",
+				"swimming",
+				"use_item_progress",
+				"zombie_attack_bare_hand",
+				"zombie_swimming"
+			],
+			"sound_references": [],
+			"texture_references": [
+				"default"
+			],
+			"material_references": [
+				"default"
+			],
+			"geometry_references": [
+				"default",
+				"cape"
+			],
+			"geometry_identifiers": [
+				"default",
+				"cape"
+			]
+		},
+		"RP/entity/lost_soul.json": {
+			"identifiers": [
+				"endless:lost_soul"
+			],
+			"particle_references": [],
+			"animation_references": [
+				"humanoid_big_head",
+				"look_at_target_default",
+				"look_at_target_gliding",
+				"look_at_target_swimming",
+				"move",
+				"riding.arms",
+				"riding.legs",
+				"holding",
+				"brandish_spear",
+				"charging",
+				"attack.rotations",
+				"sneaking",
+				"bob",
+				"damage_nearby_mobs",
+				"bow_and_arrow",
+				"swimming",
+				"use_item_progress",
+				"zombie_attack_bare_hand",
+				"zombie_swimming"
+			],
+			"sound_references": [],
+			"texture_references": [
+				"default"
+			],
+			"material_references": [
+				"default"
+			],
+			"geometry_references": [
+				"default"
+			],
+			"geometry_identifiers": [
+				"default"
+			]
+		}
+	},
+	"function": {
+		"BP/functions/getItems/getBlocks.mcfunction": {
 			"custom_commands": []
 		},
-		"BP/items/topaz_gem.json": {
-			"identifiers": [],
-			"custom_commands": []
-		}
+		"4e9fdb36_d573_474a_a6a2_0745bceaea53": {}
 	}
 }

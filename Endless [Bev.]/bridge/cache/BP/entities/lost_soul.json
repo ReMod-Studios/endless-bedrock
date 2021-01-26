@@ -1,0 +1,1797 @@
+{
+	"file_path": "C:\\Users\\IshatGupta\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Endless [Bev.]\\entities\\lost_soul.json",
+	"file_type": "entity",
+	"format_version": 1,
+	"file_uuid": "4e9fdb36_d573_474a_a6a2_0745bceaea53",
+	"file_version": 1,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.13.0",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.13.0",
+					"minecraft:entity": {
+						"description": {
+							"identifier": "endless:lost_soul",
+							"is_spawnable": true,
+							"is_summonable": true,
+							"is_experimental": false
+						},
+						"component_groups": {
+							"endless:lost_soul_baby": {
+								"minecraft:is_baby": {},
+								"minecraft:scale": {
+									"value": 0.5
+								},
+								"minecraft:movement": {
+									"value": 0.35
+								}
+							},
+							"endless:lost_soul_adult": {
+								"minecraft:movement": {
+									"value": 0.23
+								},
+								"minecraft:rideable": {
+									"seat_count": 1,
+									"family_types": [
+										"lost_soul"
+									],
+									"seats": {
+										"position": [
+											0,
+											1.1,
+											-0.35
+										],
+										"lock_rider_rotation": 0
+									}
+								},
+								"minecraft:behavior.mount_pathing": {
+									"priority": 2,
+									"speed_multiplier": 1.25,
+									"target_dist": 0,
+									"track_target": true
+								}
+							},
+							"endless:lost_soul_jockey": {
+								"minecraft:behavior.find_mount": {
+									"priority": 1,
+									"within_radius": 16
+								}
+							},
+							"endless:despawn": {
+								"minecraft:instant_despawn": {
+									"remove_child_entities": true
+								}
+							},
+							"endless:transform": {
+								"minecraft:transformation": {
+									"into": "endless:shadow_knight"
+								}
+							}
+						},
+						"components": {
+							"minecraft:nameable": {},
+							"minecraft:type_family": {
+								"family": [
+									"lost_soul"
+								]
+							},
+							"minecraft:collision_box": {
+								"width": 0.6,
+								"height": 1.9
+							},
+							"minecraft:movement.basic": {},
+							"minecraft:navigation.walk": {
+								"is_amphibious": true,
+								"can_pass_doors": true,
+								"can_walk": true,
+								"can_break_doors": true
+							},
+							"minecraft:annotation.break_door": {},
+							"minecraft:jump.static": {},
+							"minecraft:can_climb": {},
+							"minecraft:health": {
+								"value": 20,
+								"max": 20
+							},
+							"minecraft:hurt_on_condition": {
+								"damage_conditions": [
+									{
+										"filters": {
+											"test": "in_lava",
+											"subject": "self",
+											"operator": "==",
+											"value": true
+										},
+										"cause": "lava",
+										"damage_per_tick": 4
+									}
+								]
+							},
+							"minecraft:breathable": {
+								"total_supply": 15,
+								"suffocate_time": 0,
+								"breathes_air": true,
+								"breathes_water": true
+							},
+							"minecraft:attack": {
+								"damage": 3
+							},
+							"minecraft:loot": {
+								"table": "loot_tables/entities/lost_soul.json"
+							},
+							"minecraft:behavior.melee_attack": {
+								"priority": 3,
+								"speed_multiplier": 1,
+								"track_target": false
+							},
+							"minecraft:behavior.move_towards_restriction": {
+								"priority": 5,
+								"speed_multiplier": 1
+							},
+							"minecraft:behavior.random_stroll": {
+								"priority": 6,
+								"speed_multiplier": 1
+							},
+							"minecraft:behavior.look_at_player": {
+								"priority": 7,
+								"look_distance": 6,
+								"probability": 0.02
+							},
+							"minecraft:behavior.random_look_around": {
+								"priority": 7
+							},
+							"minecraft:behavior.hurt_by_target": {
+								"priority": 1
+							},
+							"minecraft:physics": {},
+							"minecraft:pushable": {
+								"is_pushable": true,
+								"is_pushable_by_piston": true
+							},
+							"minecraft:entity_sensor": {
+								"sensor_range": 5,
+								"minimum_count": 0,
+								"maximum_count": 5,
+								"event": "endless:entity_detection"
+							}
+						},
+						"events": {
+							"minecraft:entity_spawned": {
+								"randomize": [
+									{
+										"weight": 380,
+										"remove": {},
+										"add": {
+											"component_groups": [
+												"endless:lost_soul_adult"
+											]
+										}
+									},
+									{
+										"weight": 17,
+										"remove": {},
+										"add": {
+											"component_groups": [
+												"endless:lost_soul_baby"
+											]
+										}
+									},
+									{
+										"weight": 3,
+										"remove": {},
+										"add": {
+											"component_groups": [
+												"endless:lost_soul_baby",
+												"endless:lost_soul_jockey"
+											]
+										}
+									}
+								]
+							},
+							"endless:as_adult": {
+								"add": {
+									"component_groups": [
+										"endless:lost_soul_adult"
+									]
+								}
+							},
+							"endless:as_baby": {
+								"add": {
+									"component_groups": [
+										"endless:lost_soul_baby"
+									]
+								}
+							},
+							"endless:entity_detection": {
+								"sequence": [
+									{
+										"execute": {
+											"commands": [
+												"/particle minecraft:huge_explosion_emitter ~~~"
+											]
+										}
+									},
+									{
+										"randomize": [
+											{
+												"weight": 5,
+												"add": {
+													"component_groups": [
+														"endless:despawn"
+													]
+												}
+											},
+											{
+												"weight": 1,
+												"add": {
+													"component_groups": [
+														"endless:transform"
+													]
+												}
+											}
+										]
+									}
+								]
+							}
+						}
+					}
+				},
+				"key": "minecraft:entity",
+				"children": [
+					{
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "endless:lost_soul",
+							"is_spawnable": true,
+							"is_summonable": true,
+							"is_experimental": false
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "endless:lost_soul",
+								"is_spawnable": true,
+								"is_summonable": true,
+								"is_experimental": false
+							},
+							"component_groups": {
+								"endless:lost_soul_baby": {
+									"minecraft:is_baby": {},
+									"minecraft:scale": {
+										"value": 0.5
+									},
+									"minecraft:movement": {
+										"value": 0.35
+									}
+								},
+								"endless:lost_soul_adult": {
+									"minecraft:movement": {
+										"value": 0.23
+									},
+									"minecraft:rideable": {
+										"seat_count": 1,
+										"family_types": [
+											"lost_soul"
+										],
+										"seats": {
+											"position": [
+												0,
+												1.1,
+												-0.35
+											],
+											"lock_rider_rotation": 0
+										}
+									},
+									"minecraft:behavior.mount_pathing": {
+										"priority": 2,
+										"speed_multiplier": 1.25,
+										"target_dist": 0,
+										"track_target": true
+									}
+								},
+								"endless:lost_soul_jockey": {
+									"minecraft:behavior.find_mount": {
+										"priority": 1,
+										"within_radius": 16
+									}
+								},
+								"endless:despawn": {
+									"minecraft:instant_despawn": {
+										"remove_child_entities": true
+									}
+								},
+								"endless:transform": {
+									"minecraft:transformation": {
+										"into": "endless:shadow_knight"
+									}
+								}
+							},
+							"components": {
+								"minecraft:nameable": {},
+								"minecraft:type_family": {
+									"family": [
+										"lost_soul"
+									]
+								},
+								"minecraft:collision_box": {
+									"width": 0.6,
+									"height": 1.9
+								},
+								"minecraft:movement.basic": {},
+								"minecraft:navigation.walk": {
+									"is_amphibious": true,
+									"can_pass_doors": true,
+									"can_walk": true,
+									"can_break_doors": true
+								},
+								"minecraft:annotation.break_door": {},
+								"minecraft:jump.static": {},
+								"minecraft:can_climb": {},
+								"minecraft:health": {
+									"value": 20,
+									"max": 20
+								},
+								"minecraft:hurt_on_condition": {
+									"damage_conditions": [
+										{
+											"filters": {
+												"test": "in_lava",
+												"subject": "self",
+												"operator": "==",
+												"value": true
+											},
+											"cause": "lava",
+											"damage_per_tick": 4
+										}
+									]
+								},
+								"minecraft:breathable": {
+									"total_supply": 15,
+									"suffocate_time": 0,
+									"breathes_air": true,
+									"breathes_water": true
+								},
+								"minecraft:attack": {
+									"damage": 3
+								},
+								"minecraft:loot": {
+									"table": "loot_tables/entities/lost_soul.json"
+								},
+								"minecraft:behavior.melee_attack": {
+									"priority": 3,
+									"speed_multiplier": 1,
+									"track_target": false
+								},
+								"minecraft:behavior.move_towards_restriction": {
+									"priority": 5,
+									"speed_multiplier": 1
+								},
+								"minecraft:behavior.random_stroll": {
+									"priority": 6,
+									"speed_multiplier": 1
+								},
+								"minecraft:behavior.look_at_player": {
+									"priority": 7,
+									"look_distance": 6,
+									"probability": 0.02
+								},
+								"minecraft:behavior.random_look_around": {
+									"priority": 7
+								},
+								"minecraft:behavior.hurt_by_target": {
+									"priority": 1
+								},
+								"minecraft:physics": {},
+								"minecraft:pushable": {
+									"is_pushable": true,
+									"is_pushable_by_piston": true
+								},
+								"minecraft:entity_sensor": {
+									"sensor_range": 5,
+									"minimum_count": 0,
+									"maximum_count": 5,
+									"event": "endless:entity_detection"
+								}
+							},
+							"events": {
+								"minecraft:entity_spawned": {
+									"randomize": [
+										{
+											"weight": 380,
+											"remove": {},
+											"add": {
+												"component_groups": [
+													"endless:lost_soul_adult"
+												]
+											}
+										},
+										{
+											"weight": 17,
+											"remove": {},
+											"add": {
+												"component_groups": [
+													"endless:lost_soul_baby"
+												]
+											}
+										},
+										{
+											"weight": 3,
+											"remove": {},
+											"add": {
+												"component_groups": [
+													"endless:lost_soul_baby",
+													"endless:lost_soul_jockey"
+												]
+											}
+										}
+									]
+								},
+								"endless:as_adult": {
+									"add": {
+										"component_groups": [
+											"endless:lost_soul_adult"
+										]
+									}
+								},
+								"endless:as_baby": {
+									"add": {
+										"component_groups": [
+											"endless:lost_soul_baby"
+										]
+									}
+								},
+								"endless:entity_detection": {
+									"sequence": [
+										{
+											"execute": {
+												"commands": [
+													"/particle minecraft:huge_explosion_emitter ~~~"
+												]
+											}
+										},
+										{
+											"randomize": [
+												{
+													"weight": 5,
+													"add": {
+														"component_groups": [
+															"endless:despawn"
+														]
+													}
+												},
+												{
+													"weight": 1,
+													"add": {
+														"component_groups": [
+															"endless:transform"
+														]
+													}
+												}
+											]
+										}
+									]
+								}
+							}
+						},
+						"key": "component_groups",
+						"children": [
+							{
+								"key": "endless:lost_soul_baby",
+								"is_minified": true,
+								"children": {
+									"minecraft:is_baby": {},
+									"minecraft:scale": {
+										"value": 0.5
+									},
+									"minecraft:movement": {
+										"value": 0.35
+									}
+								}
+							},
+							{
+								"key": "endless:lost_soul_adult",
+								"is_minified": true,
+								"children": {
+									"minecraft:movement": {
+										"value": 0.23
+									},
+									"minecraft:rideable": {
+										"seat_count": 1,
+										"family_types": [
+											"lost_soul"
+										],
+										"seats": {
+											"position": [
+												0,
+												1.1,
+												-0.35
+											],
+											"lock_rider_rotation": 0
+										}
+									},
+									"minecraft:behavior.mount_pathing": {
+										"priority": 2,
+										"speed_multiplier": 1.25,
+										"target_dist": 0,
+										"track_target": true
+									}
+								}
+							},
+							{
+								"key": "endless:lost_soul_jockey",
+								"is_minified": true,
+								"children": {
+									"minecraft:behavior.find_mount": {
+										"priority": 1,
+										"within_radius": 16
+									}
+								}
+							},
+							{
+								"open": {
+									"endless:lost_soul_baby": {
+										"minecraft:is_baby": {},
+										"minecraft:scale": {
+											"value": 0.5
+										},
+										"minecraft:movement": {
+											"value": 0.35
+										}
+									},
+									"endless:lost_soul_adult": {
+										"minecraft:movement": {
+											"value": 0.23
+										},
+										"minecraft:rideable": {
+											"seat_count": 1,
+											"family_types": [
+												"lost_soul"
+											],
+											"seats": {
+												"position": [
+													0,
+													1.1,
+													-0.35
+												],
+												"lock_rider_rotation": 0
+											}
+										},
+										"minecraft:behavior.mount_pathing": {
+											"priority": 2,
+											"speed_multiplier": 1.25,
+											"target_dist": 0,
+											"track_target": true
+										}
+									},
+									"endless:lost_soul_jockey": {
+										"minecraft:behavior.find_mount": {
+											"priority": 1,
+											"within_radius": 16
+										}
+									},
+									"endless:despawn": {
+										"minecraft:instant_despawn": {
+											"remove_child_entities": true
+										}
+									},
+									"endless:transform": {
+										"minecraft:transformation": {
+											"into": "endless:shadow_knight"
+										}
+									}
+								},
+								"key": "endless:despawn",
+								"children": [
+									{
+										"open": {
+											"minecraft:instant_despawn": {
+												"remove_child_entities": true
+											}
+										},
+										"key": "minecraft:instant_despawn",
+										"is_minified": true,
+										"children": {
+											"remove_child_entities": true
+										}
+									}
+								]
+							},
+							{
+								"open": {
+									"endless:lost_soul_baby": {
+										"minecraft:is_baby": {},
+										"minecraft:scale": {
+											"value": 0.5
+										},
+										"minecraft:movement": {
+											"value": 0.35
+										}
+									},
+									"endless:lost_soul_adult": {
+										"minecraft:movement": {
+											"value": 0.23
+										},
+										"minecraft:rideable": {
+											"seat_count": 1,
+											"family_types": [
+												"lost_soul"
+											],
+											"seats": {
+												"position": [
+													0,
+													1.1,
+													-0.35
+												],
+												"lock_rider_rotation": 0
+											}
+										},
+										"minecraft:behavior.mount_pathing": {
+											"priority": 2,
+											"speed_multiplier": 1.25,
+											"target_dist": 0,
+											"track_target": true
+										}
+									},
+									"endless:lost_soul_jockey": {
+										"minecraft:behavior.find_mount": {
+											"priority": 1,
+											"within_radius": 16
+										}
+									},
+									"endless:despawn": {
+										"minecraft:instant_despawn": {
+											"remove_child_entities": true
+										}
+									},
+									"endless:transform": {
+										"minecraft:transformation": {
+											"into": "endless:shadow_knight"
+										}
+									}
+								},
+								"key": "endless:transform",
+								"children": [
+									{
+										"open": {
+											"minecraft:transformation": {
+												"into": "endless:shadow_knight"
+											}
+										},
+										"key": "minecraft:transformation",
+										"is_minified": true,
+										"children": {
+											"into": "endless:shadow_knight"
+										}
+									}
+								]
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "endless:lost_soul",
+								"is_spawnable": true,
+								"is_summonable": true,
+								"is_experimental": false
+							},
+							"component_groups": {
+								"endless:lost_soul_baby": {
+									"minecraft:is_baby": {},
+									"minecraft:scale": {
+										"value": 0.5
+									},
+									"minecraft:movement": {
+										"value": 0.35
+									}
+								},
+								"endless:lost_soul_adult": {
+									"minecraft:movement": {
+										"value": 0.23
+									},
+									"minecraft:rideable": {
+										"seat_count": 1,
+										"family_types": [
+											"lost_soul"
+										],
+										"seats": {
+											"position": [
+												0,
+												1.1,
+												-0.35
+											],
+											"lock_rider_rotation": 0
+										}
+									},
+									"minecraft:behavior.mount_pathing": {
+										"priority": 2,
+										"speed_multiplier": 1.25,
+										"target_dist": 0,
+										"track_target": true
+									}
+								},
+								"endless:lost_soul_jockey": {
+									"minecraft:behavior.find_mount": {
+										"priority": 1,
+										"within_radius": 16
+									}
+								},
+								"endless:despawn": {
+									"minecraft:instant_despawn": {
+										"remove_child_entities": true
+									}
+								},
+								"endless:transform": {
+									"minecraft:transformation": {
+										"into": "endless:shadow_knight"
+									}
+								}
+							},
+							"components": {
+								"minecraft:nameable": {},
+								"minecraft:type_family": {
+									"family": [
+										"lost_soul"
+									]
+								},
+								"minecraft:collision_box": {
+									"width": 0.6,
+									"height": 1.9
+								},
+								"minecraft:movement.basic": {},
+								"minecraft:navigation.walk": {
+									"is_amphibious": true,
+									"can_pass_doors": true,
+									"can_walk": true,
+									"can_break_doors": true
+								},
+								"minecraft:annotation.break_door": {},
+								"minecraft:jump.static": {},
+								"minecraft:can_climb": {},
+								"minecraft:health": {
+									"value": 20,
+									"max": 20
+								},
+								"minecraft:hurt_on_condition": {
+									"damage_conditions": [
+										{
+											"filters": {
+												"test": "in_lava",
+												"subject": "self",
+												"operator": "==",
+												"value": true
+											},
+											"cause": "lava",
+											"damage_per_tick": 4
+										}
+									]
+								},
+								"minecraft:breathable": {
+									"total_supply": 15,
+									"suffocate_time": 0,
+									"breathes_air": true,
+									"breathes_water": true
+								},
+								"minecraft:attack": {
+									"damage": 3
+								},
+								"minecraft:loot": {
+									"table": "loot_tables/entities/lost_soul.json"
+								},
+								"minecraft:behavior.melee_attack": {
+									"priority": 3,
+									"speed_multiplier": 1,
+									"track_target": false
+								},
+								"minecraft:behavior.move_towards_restriction": {
+									"priority": 5,
+									"speed_multiplier": 1
+								},
+								"minecraft:behavior.random_stroll": {
+									"priority": 6,
+									"speed_multiplier": 1
+								},
+								"minecraft:behavior.look_at_player": {
+									"priority": 7,
+									"look_distance": 6,
+									"probability": 0.02
+								},
+								"minecraft:behavior.random_look_around": {
+									"priority": 7
+								},
+								"minecraft:behavior.hurt_by_target": {
+									"priority": 1
+								},
+								"minecraft:physics": {},
+								"minecraft:pushable": {
+									"is_pushable": true,
+									"is_pushable_by_piston": true
+								},
+								"minecraft:entity_sensor": {
+									"sensor_range": 5,
+									"minimum_count": 0,
+									"maximum_count": 5,
+									"event": "endless:entity_detection"
+								}
+							},
+							"events": {
+								"minecraft:entity_spawned": {
+									"randomize": [
+										{
+											"weight": 380,
+											"remove": {},
+											"add": {
+												"component_groups": [
+													"endless:lost_soul_adult"
+												]
+											}
+										},
+										{
+											"weight": 17,
+											"remove": {},
+											"add": {
+												"component_groups": [
+													"endless:lost_soul_baby"
+												]
+											}
+										},
+										{
+											"weight": 3,
+											"remove": {},
+											"add": {
+												"component_groups": [
+													"endless:lost_soul_baby",
+													"endless:lost_soul_jockey"
+												]
+											}
+										}
+									]
+								},
+								"endless:as_adult": {
+									"add": {
+										"component_groups": [
+											"endless:lost_soul_adult"
+										]
+									}
+								},
+								"endless:as_baby": {
+									"add": {
+										"component_groups": [
+											"endless:lost_soul_baby"
+										]
+									}
+								},
+								"endless:entity_detection": {
+									"sequence": [
+										{
+											"execute": {
+												"commands": [
+													"/particle minecraft:huge_explosion_emitter ~~~"
+												]
+											}
+										},
+										{
+											"randomize": [
+												{
+													"weight": 5,
+													"add": {
+														"component_groups": [
+															"endless:despawn"
+														]
+													}
+												},
+												{
+													"weight": 1,
+													"add": {
+														"component_groups": [
+															"endless:transform"
+														]
+													}
+												}
+											]
+										}
+									]
+								}
+							}
+						},
+						"key": "components",
+						"children": [
+							{
+								"key": "minecraft:nameable",
+								"is_minified": true,
+								"children": {}
+							},
+							{
+								"key": "minecraft:type_family",
+								"is_minified": true,
+								"children": {
+									"family": [
+										"lost_soul"
+									]
+								}
+							},
+							{
+								"key": "minecraft:collision_box",
+								"is_minified": true,
+								"children": {
+									"width": 0.6,
+									"height": 1.9
+								}
+							},
+							{
+								"key": "minecraft:movement.basic",
+								"is_minified": true,
+								"children": {}
+							},
+							{
+								"key": "minecraft:navigation.walk",
+								"is_minified": true,
+								"children": {
+									"is_amphibious": true,
+									"can_pass_doors": true,
+									"can_walk": true,
+									"can_break_doors": true
+								}
+							},
+							{
+								"key": "minecraft:annotation.break_door",
+								"is_minified": true,
+								"children": {}
+							},
+							{
+								"key": "minecraft:jump.static",
+								"is_minified": true,
+								"children": {}
+							},
+							{
+								"key": "minecraft:can_climb",
+								"is_minified": true,
+								"children": {}
+							},
+							{
+								"key": "minecraft:health",
+								"is_minified": true,
+								"children": {
+									"value": 20,
+									"max": 20
+								}
+							},
+							{
+								"key": "minecraft:hurt_on_condition",
+								"is_minified": true,
+								"children": {
+									"damage_conditions": [
+										{
+											"filters": {
+												"test": "in_lava",
+												"subject": "self",
+												"operator": "==",
+												"value": true
+											},
+											"cause": "lava",
+											"damage_per_tick": 4
+										}
+									]
+								}
+							},
+							{
+								"key": "minecraft:breathable",
+								"is_minified": true,
+								"children": {
+									"total_supply": 15,
+									"suffocate_time": 0,
+									"breathes_air": true,
+									"breathes_water": true
+								}
+							},
+							{
+								"key": "minecraft:attack",
+								"is_minified": true,
+								"children": {
+									"damage": 3
+								}
+							},
+							{
+								"key": "minecraft:loot",
+								"is_minified": true,
+								"children": {
+									"table": "loot_tables/entities/lost_soul.json"
+								}
+							},
+							{
+								"key": "minecraft:behavior.melee_attack",
+								"is_minified": true,
+								"children": {
+									"priority": 3,
+									"speed_multiplier": 1,
+									"track_target": false
+								}
+							},
+							{
+								"key": "minecraft:behavior.move_towards_restriction",
+								"is_minified": true,
+								"children": {
+									"priority": 5,
+									"speed_multiplier": 1
+								}
+							},
+							{
+								"key": "minecraft:behavior.random_stroll",
+								"is_minified": true,
+								"children": {
+									"priority": 6,
+									"speed_multiplier": 1
+								}
+							},
+							{
+								"key": "minecraft:behavior.look_at_player",
+								"is_minified": true,
+								"children": {
+									"priority": 7,
+									"look_distance": 6,
+									"probability": 0.02
+								}
+							},
+							{
+								"key": "minecraft:behavior.random_look_around",
+								"is_minified": true,
+								"children": {
+									"priority": 7
+								}
+							},
+							{
+								"key": "minecraft:behavior.hurt_by_target",
+								"is_minified": true,
+								"children": {
+									"priority": 1
+								}
+							},
+							{
+								"key": "minecraft:physics",
+								"is_minified": true,
+								"children": {}
+							},
+							{
+								"key": "minecraft:pushable",
+								"is_minified": true,
+								"children": {
+									"is_pushable": true,
+									"is_pushable_by_piston": true
+								}
+							},
+							{
+								"open": {
+									"minecraft:nameable": {},
+									"minecraft:type_family": {
+										"family": [
+											"lost_soul"
+										]
+									},
+									"minecraft:collision_box": {
+										"width": 0.6,
+										"height": 1.9
+									},
+									"minecraft:movement.basic": {},
+									"minecraft:navigation.walk": {
+										"is_amphibious": true,
+										"can_pass_doors": true,
+										"can_walk": true,
+										"can_break_doors": true
+									},
+									"minecraft:annotation.break_door": {},
+									"minecraft:jump.static": {},
+									"minecraft:can_climb": {},
+									"minecraft:health": {
+										"value": 20,
+										"max": 20
+									},
+									"minecraft:hurt_on_condition": {
+										"damage_conditions": [
+											{
+												"filters": {
+													"test": "in_lava",
+													"subject": "self",
+													"operator": "==",
+													"value": true
+												},
+												"cause": "lava",
+												"damage_per_tick": 4
+											}
+										]
+									},
+									"minecraft:breathable": {
+										"total_supply": 15,
+										"suffocate_time": 0,
+										"breathes_air": true,
+										"breathes_water": true
+									},
+									"minecraft:attack": {
+										"damage": 3
+									},
+									"minecraft:loot": {
+										"table": "loot_tables/entities/lost_soul.json"
+									},
+									"minecraft:behavior.melee_attack": {
+										"priority": 3,
+										"speed_multiplier": 1,
+										"track_target": false
+									},
+									"minecraft:behavior.move_towards_restriction": {
+										"priority": 5,
+										"speed_multiplier": 1
+									},
+									"minecraft:behavior.random_stroll": {
+										"priority": 6,
+										"speed_multiplier": 1
+									},
+									"minecraft:behavior.look_at_player": {
+										"priority": 7,
+										"look_distance": 6,
+										"probability": 0.02
+									},
+									"minecraft:behavior.random_look_around": {
+										"priority": 7
+									},
+									"minecraft:behavior.hurt_by_target": {
+										"priority": 1
+									},
+									"minecraft:physics": {},
+									"minecraft:pushable": {
+										"is_pushable": true,
+										"is_pushable_by_piston": true
+									},
+									"minecraft:entity_sensor": {
+										"sensor_range": 5,
+										"minimum_count": 0,
+										"maximum_count": 5,
+										"event": "endless:entity_detection"
+									}
+								},
+								"key": "minecraft:entity_sensor",
+								"is_minified": true,
+								"children": {
+									"sensor_range": 5,
+									"minimum_count": 0,
+									"maximum_count": 5,
+									"event": "endless:entity_detection"
+								}
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "endless:lost_soul",
+								"is_spawnable": true,
+								"is_summonable": true,
+								"is_experimental": false
+							},
+							"component_groups": {
+								"endless:lost_soul_baby": {
+									"minecraft:is_baby": {},
+									"minecraft:scale": {
+										"value": 0.5
+									},
+									"minecraft:movement": {
+										"value": 0.35
+									}
+								},
+								"endless:lost_soul_adult": {
+									"minecraft:movement": {
+										"value": 0.23
+									},
+									"minecraft:rideable": {
+										"seat_count": 1,
+										"family_types": [
+											"lost_soul"
+										],
+										"seats": {
+											"position": [
+												0,
+												1.1,
+												-0.35
+											],
+											"lock_rider_rotation": 0
+										}
+									},
+									"minecraft:behavior.mount_pathing": {
+										"priority": 2,
+										"speed_multiplier": 1.25,
+										"target_dist": 0,
+										"track_target": true
+									}
+								},
+								"endless:lost_soul_jockey": {
+									"minecraft:behavior.find_mount": {
+										"priority": 1,
+										"within_radius": 16
+									}
+								},
+								"endless:despawn": {
+									"minecraft:instant_despawn": {
+										"remove_child_entities": true
+									}
+								},
+								"endless:transform": {
+									"minecraft:transformation": {
+										"into": "endless:shadow_knight"
+									}
+								}
+							},
+							"components": {
+								"minecraft:nameable": {},
+								"minecraft:type_family": {
+									"family": [
+										"lost_soul"
+									]
+								},
+								"minecraft:collision_box": {
+									"width": 0.6,
+									"height": 1.9
+								},
+								"minecraft:movement.basic": {},
+								"minecraft:navigation.walk": {
+									"is_amphibious": true,
+									"can_pass_doors": true,
+									"can_walk": true,
+									"can_break_doors": true
+								},
+								"minecraft:annotation.break_door": {},
+								"minecraft:jump.static": {},
+								"minecraft:can_climb": {},
+								"minecraft:health": {
+									"value": 20,
+									"max": 20
+								},
+								"minecraft:hurt_on_condition": {
+									"damage_conditions": [
+										{
+											"filters": {
+												"test": "in_lava",
+												"subject": "self",
+												"operator": "==",
+												"value": true
+											},
+											"cause": "lava",
+											"damage_per_tick": 4
+										}
+									]
+								},
+								"minecraft:breathable": {
+									"total_supply": 15,
+									"suffocate_time": 0,
+									"breathes_air": true,
+									"breathes_water": true
+								},
+								"minecraft:attack": {
+									"damage": 3
+								},
+								"minecraft:loot": {
+									"table": "loot_tables/entities/lost_soul.json"
+								},
+								"minecraft:behavior.melee_attack": {
+									"priority": 3,
+									"speed_multiplier": 1,
+									"track_target": false
+								},
+								"minecraft:behavior.move_towards_restriction": {
+									"priority": 5,
+									"speed_multiplier": 1
+								},
+								"minecraft:behavior.random_stroll": {
+									"priority": 6,
+									"speed_multiplier": 1
+								},
+								"minecraft:behavior.look_at_player": {
+									"priority": 7,
+									"look_distance": 6,
+									"probability": 0.02
+								},
+								"minecraft:behavior.random_look_around": {
+									"priority": 7
+								},
+								"minecraft:behavior.hurt_by_target": {
+									"priority": 1
+								},
+								"minecraft:physics": {},
+								"minecraft:pushable": {
+									"is_pushable": true,
+									"is_pushable_by_piston": true
+								},
+								"minecraft:entity_sensor": {
+									"sensor_range": 5,
+									"minimum_count": 0,
+									"maximum_count": 5,
+									"event": "endless:entity_detection"
+								}
+							},
+							"events": {
+								"minecraft:entity_spawned": {
+									"randomize": [
+										{
+											"weight": 380,
+											"remove": {},
+											"add": {
+												"component_groups": [
+													"endless:lost_soul_adult"
+												]
+											}
+										},
+										{
+											"weight": 17,
+											"remove": {},
+											"add": {
+												"component_groups": [
+													"endless:lost_soul_baby"
+												]
+											}
+										},
+										{
+											"weight": 3,
+											"remove": {},
+											"add": {
+												"component_groups": [
+													"endless:lost_soul_baby",
+													"endless:lost_soul_jockey"
+												]
+											}
+										}
+									]
+								},
+								"endless:as_adult": {
+									"add": {
+										"component_groups": [
+											"endless:lost_soul_adult"
+										]
+									}
+								},
+								"endless:as_baby": {
+									"add": {
+										"component_groups": [
+											"endless:lost_soul_baby"
+										]
+									}
+								},
+								"endless:entity_detection": {
+									"sequence": [
+										{
+											"execute": {
+												"commands": [
+													"/particle minecraft:huge_explosion_emitter ~~~"
+												]
+											}
+										},
+										{
+											"randomize": [
+												{
+													"weight": 5,
+													"add": {
+														"component_groups": [
+															"endless:despawn"
+														]
+													}
+												},
+												{
+													"weight": 1,
+													"add": {
+														"component_groups": [
+															"endless:transform"
+														]
+													}
+												}
+											]
+										}
+									]
+								}
+							}
+						},
+						"key": "events",
+						"children": [
+							{
+								"key": "minecraft:entity_spawned",
+								"is_minified": true,
+								"children": {
+									"randomize": [
+										{
+											"weight": 380,
+											"remove": {},
+											"add": {
+												"component_groups": [
+													"endless:lost_soul_adult"
+												]
+											}
+										},
+										{
+											"weight": 17,
+											"remove": {},
+											"add": {
+												"component_groups": [
+													"endless:lost_soul_baby"
+												]
+											}
+										},
+										{
+											"weight": 3,
+											"remove": {},
+											"add": {
+												"component_groups": [
+													"endless:lost_soul_baby",
+													"endless:lost_soul_jockey"
+												]
+											}
+										}
+									]
+								}
+							},
+							{
+								"key": "endless:as_adult",
+								"is_minified": true,
+								"children": {
+									"add": {
+										"component_groups": [
+											"endless:lost_soul_adult"
+										]
+									}
+								}
+							},
+							{
+								"key": "endless:as_baby",
+								"is_minified": true,
+								"children": {
+									"add": {
+										"component_groups": [
+											"endless:lost_soul_baby"
+										]
+									}
+								}
+							},
+							{
+								"open": {
+									"minecraft:entity_spawned": {
+										"randomize": [
+											{
+												"weight": 380,
+												"remove": {},
+												"add": {
+													"component_groups": [
+														"endless:lost_soul_adult"
+													]
+												}
+											},
+											{
+												"weight": 17,
+												"remove": {},
+												"add": {
+													"component_groups": [
+														"endless:lost_soul_baby"
+													]
+												}
+											},
+											{
+												"weight": 3,
+												"remove": {},
+												"add": {
+													"component_groups": [
+														"endless:lost_soul_baby",
+														"endless:lost_soul_jockey"
+													]
+												}
+											}
+										]
+									},
+									"endless:as_adult": {
+										"add": {
+											"component_groups": [
+												"endless:lost_soul_adult"
+											]
+										}
+									},
+									"endless:as_baby": {
+										"add": {
+											"component_groups": [
+												"endless:lost_soul_baby"
+											]
+										}
+									},
+									"endless:entity_detection": {
+										"sequence": [
+											{
+												"execute": {
+													"commands": [
+														"/particle minecraft:huge_explosion_emitter ~~~"
+													]
+												}
+											},
+											{
+												"randomize": [
+													{
+														"weight": 5,
+														"add": {
+															"component_groups": [
+																"endless:despawn"
+															]
+														}
+													},
+													{
+														"weight": 1,
+														"add": {
+															"component_groups": [
+																"endless:transform"
+															]
+														}
+													}
+												]
+											}
+										]
+									}
+								},
+								"key": "endless:entity_detection",
+								"children": [
+									{
+										"open": {
+											"sequence": [
+												{
+													"execute": {
+														"commands": [
+															"/particle minecraft:huge_explosion_emitter ~~~"
+														]
+													}
+												},
+												{
+													"randomize": [
+														{
+															"weight": 5,
+															"add": {
+																"component_groups": [
+																	"endless:despawn"
+																]
+															}
+														},
+														{
+															"weight": 1,
+															"add": {
+																"component_groups": [
+																	"endless:transform"
+																]
+															}
+														}
+													]
+												}
+											]
+										},
+										"key": "sequence",
+										"children": [
+											{
+												"open": [
+													{
+														"execute": {
+															"commands": [
+																"/particle minecraft:huge_explosion_emitter ~~~"
+															]
+														}
+													},
+													{
+														"randomize": [
+															{
+																"weight": 5,
+																"add": {
+																	"component_groups": [
+																		"endless:despawn"
+																	]
+																}
+															},
+															{
+																"weight": 1,
+																"add": {
+																	"component_groups": [
+																		"endless:transform"
+																	]
+																}
+															}
+														]
+													}
+												],
+												"children": [
+													{
+														"open": {
+															"execute": {
+																"commands": [
+																	"/particle minecraft:huge_explosion_emitter ~~~"
+																]
+															}
+														},
+														"key": "execute",
+														"children": [
+															{
+																"open": {
+																	"commands": [
+																		"/particle minecraft:huge_explosion_emitter ~~~"
+																	]
+																},
+																"key": "commands",
+																"is_minified": true,
+																"children": [
+																	"/particle minecraft:huge_explosion_emitter ~~~"
+																]
+															}
+														]
+													}
+												]
+											},
+											{
+												"open": [
+													{
+														"execute": {
+															"commands": [
+																"/particle minecraft:huge_explosion_emitter ~~~"
+															]
+														}
+													},
+													{
+														"randomize": [
+															{
+																"weight": 5,
+																"add": {
+																	"component_groups": [
+																		"endless:despawn"
+																	]
+																}
+															},
+															{
+																"weight": 1,
+																"add": {
+																	"component_groups": [
+																		"endless:transform"
+																	]
+																}
+															}
+														]
+													}
+												],
+												"children": [
+													{
+														"open": {
+															"randomize": [
+																{
+																	"weight": 5,
+																	"add": {
+																		"component_groups": [
+																			"endless:despawn"
+																		]
+																	}
+																},
+																{
+																	"weight": 1,
+																	"add": {
+																		"component_groups": [
+																			"endless:transform"
+																		]
+																	}
+																}
+															]
+														},
+														"key": "randomize",
+														"children": [
+															{
+																"open": [
+																	{
+																		"weight": 5,
+																		"add": {
+																			"component_groups": [
+																				"endless:despawn"
+																			]
+																		}
+																	},
+																	{
+																		"weight": 1,
+																		"add": {
+																			"component_groups": [
+																				"endless:transform"
+																			]
+																		}
+																	}
+																],
+																"children": [
+																	{
+																		"data": "5",
+																		"key": "weight"
+																	},
+																	{
+																		"open": {
+																			"weight": 5,
+																			"add": {
+																				"component_groups": [
+																					"endless:despawn"
+																				]
+																			}
+																		},
+																		"key": "add",
+																		"children": [
+																			{
+																				"open": {
+																					"component_groups": [
+																						"endless:despawn"
+																					]
+																				},
+																				"key": "component_groups",
+																				"is_minified": true,
+																				"children": [
+																					"endless:despawn"
+																				]
+																			}
+																		]
+																	}
+																]
+															},
+															{
+																"open": [
+																	{
+																		"weight": 5,
+																		"add": {
+																			"component_groups": [
+																				"endless:despawn"
+																			]
+																		}
+																	},
+																	{
+																		"weight": 1,
+																		"add": {
+																			"component_groups": [
+																				"endless:transform"
+																			]
+																		}
+																	}
+																],
+																"children": [
+																	{
+																		"data": "1",
+																		"key": "weight"
+																	},
+																	{
+																		"open": {
+																			"weight": 1,
+																			"add": {
+																				"component_groups": [
+																					"endless:transform"
+																				]
+																			}
+																		},
+																		"key": "add",
+																		"children": [
+																			{
+																				"open": {
+																					"component_groups": [
+																						"endless:transform"
+																					]
+																				},
+																				"key": "component_groups",
+																				"is_minified": true,
+																				"children": [
+																					"endless:transform"
+																				]
+																			}
+																		]
+																	}
+																]
+															}
+														]
+													}
+												]
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

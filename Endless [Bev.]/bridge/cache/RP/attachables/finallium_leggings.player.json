@@ -1,0 +1,34 @@
+{
+	"file_path": "W:\\Users\\LEPICHU\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_resource_packs\\Endless [Res.]\\attachables\\finallium_leggings.player.json",
+	"file_type": "attachable",
+	"format_version": 0,
+	"cache_content": {
+		"format_version": "1.10.0",
+		"minecraft:attachable": {
+			"description": {
+				"identifier": "endless:finallium_leggings.player",
+				"item": {
+					"endless:finallium_leggings": "query.owner_identifier == 'minecraft:player'"
+				},
+				"materials": {
+					"default": "armor",
+					"enchanted": "armor_enchanted"
+				},
+				"textures": {
+					"default": "textures/models/armor/finallium_2",
+					"enchanted": "textures/misc/enchanted_item_glint"
+				},
+				"geometry": {
+					"default": "geometry.player.armor.leggings"
+				},
+				"scripts": {
+					"parent_setup": "variable.leg_layer_visible = 0.0;"
+				},
+				"render_controllers": [
+					"controller.render.armor"
+				]
+			}
+		}
+	},
+	"file_uuid": "7a0276e5_adfe_46f3_a773_9a5675c6e819"
+}

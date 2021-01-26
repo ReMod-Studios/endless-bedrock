@@ -1,0 +1,191 @@
+{
+	"file_path": "C:\\Users\\IshatGupta\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Endless [Bev.]\\blocks\\finallium_block.json",
+	"file_type": "block",
+	"format_version": 1,
+	"file_uuid": "ef3f1bb1_4c91_4faf_baf2_2b162fa7bd4f",
+	"file_version": 12,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.16.100",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.16.100",
+					"minecraft:block": {
+						"description": {
+							"identifier": "endless:finallium_block",
+							"is_experimental": false
+						},
+						"components": {
+							"minecraft:destroy_time": 15,
+							"minecraft:block_light_emission": 0,
+							"minecraft:block_light_absorption": 1,
+							"minecraft:flammable": {
+								"burn_odds": 0,
+								"flame_odds": 0
+							},
+							"minecraft:friction": 0.5,
+							"minecraft:explosion_resistance": 2.5,
+							"minecraft:map_color": "#E9E08E",
+							"minecraft:loot": "loot_tables/empty.json",
+							"minecraft:unit_cube": {},
+							"minecraft:breathability": "solid",
+							"minecraft:breakonpush": false,
+							"minecraft:on_player_destroyed": {
+								"target": "self",
+								"event": "on_break",
+								"condition": "q.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_pickaxe')"
+							},
+							"tag:stone": {}
+						},
+						"events": {
+							"on_break": {
+								"spawn_loot": {
+									"table": "loot_tables/blocks/finallium_block.json"
+								}
+							}
+						}
+					}
+				},
+				"key": "minecraft:block",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "endless:finallium_block",
+								"is_experimental": false
+							},
+							"components": {
+								"minecraft:destroy_time": 15,
+								"minecraft:block_light_emission": 0,
+								"minecraft:block_light_absorption": 1,
+								"minecraft:flammable": {
+									"burn_odds": 0,
+									"flame_odds": 0
+								},
+								"minecraft:friction": 0.5,
+								"minecraft:explosion_resistance": 2.5,
+								"minecraft:map_color": "#E9E08E",
+								"minecraft:loot": "loot_tables/empty.json",
+								"minecraft:unit_cube": {},
+								"minecraft:breathability": "solid",
+								"minecraft:breakonpush": false,
+								"minecraft:on_player_destroyed": {
+									"target": "self",
+									"event": "on_break",
+									"condition": "q.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_pickaxe')"
+								},
+								"tag:stone": {}
+							},
+							"events": {
+								"on_break": {
+									"spawn_loot": {
+										"table": "loot_tables/blocks/finallium_block.json"
+									}
+								}
+							}
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "endless:finallium_block",
+							"is_experimental": false
+						}
+					},
+					{
+						"key": "components",
+						"is_minified": true,
+						"children": {
+							"minecraft:destroy_time": 15,
+							"minecraft:block_light_emission": 0,
+							"minecraft:block_light_absorption": 1,
+							"minecraft:flammable": {
+								"burn_odds": 0,
+								"flame_odds": 0
+							},
+							"minecraft:friction": 0.5,
+							"minecraft:explosion_resistance": 2.5,
+							"minecraft:map_color": "#E9E08E",
+							"minecraft:loot": "loot_tables/empty.json",
+							"minecraft:unit_cube": {},
+							"minecraft:breathability": "solid",
+							"minecraft:breakonpush": false,
+							"minecraft:on_player_destroyed": {
+								"target": "self",
+								"event": "on_break",
+								"condition": "q.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_pickaxe')"
+							},
+							"tag:stone": {}
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "endless:finallium_block",
+								"is_experimental": false
+							},
+							"components": {
+								"minecraft:destroy_time": 15,
+								"minecraft:block_light_emission": 0,
+								"minecraft:block_light_absorption": 1,
+								"minecraft:flammable": {
+									"burn_odds": 0,
+									"flame_odds": 0
+								},
+								"minecraft:friction": 0.5,
+								"minecraft:explosion_resistance": 2.5,
+								"minecraft:map_color": "#E9E08E",
+								"minecraft:loot": "loot_tables/empty.json",
+								"minecraft:unit_cube": {},
+								"minecraft:breathability": "solid",
+								"minecraft:breakonpush": false,
+								"minecraft:on_player_destroyed": {
+									"target": "self",
+									"event": "on_break",
+									"condition": "q.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_pickaxe')"
+								},
+								"tag:stone": {}
+							},
+							"events": {
+								"on_break": {
+									"spawn_loot": {
+										"table": "loot_tables/blocks/finallium_block.json"
+									}
+								}
+							}
+						},
+						"key": "events",
+						"children": [
+							{
+								"open": {
+									"on_break": {
+										"spawn_loot": {
+											"table": "loot_tables/blocks/finallium_block.json"
+										}
+									}
+								},
+								"key": "on_break",
+								"children": [
+									{
+										"open": {
+											"spawn_loot": {
+												"table": "loot_tables/blocks/finallium_block.json"
+											}
+										},
+										"key": "spawn_loot",
+										"is_minified": true,
+										"children": {
+											"table": "loot_tables/blocks/finallium_block.json"
+										}
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

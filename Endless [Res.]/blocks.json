@@ -1,3 +1,72 @@
+//bridge-file-version: #4
 {
-  "format_version": [1, 1, 0]
+	"format_version": [
+		1,
+		1,
+		0
+	],
+	"endless:ashen_endstone": {
+		"sound": "stone",
+		"textures": {
+			"up": "ashen_top",
+			"side": "ashen_side",
+			"down": "end_stone"
+		},
+		"brightness_gamma": 0.2
+	},
+	"endless:crystillium_endstone": {
+		"sound": "stone",
+		"textures": {
+			"up": "crystillium_top",
+			"side": "crystillium_side",
+			"down": "end_stone"
+		},
+		"brightness_gamma": 0.2
+	},
+	"endless:tealite_endstone": {
+		"sound": "stone",
+		"textures": {
+			"up": "tealite_top",
+			"side": "tealite_side",
+			"down": "end_stone"
+		},
+		"brightness_gamma": 0.2
+	},
+	"endless:purpur_endstone": {
+		"sound": "stone",
+		"textures": {
+			"up": "purpur_top",
+			"side": "purpur_side",
+			"down": "end_stone"
+		},
+		"brightness_gamma": 0.2
+	},
+	"endless:rhyolite": {
+		"textures": "rhyolite",
+		"sound": "stone",
+		"brightness_gamma": 0.2,
+		"isotropic": true
+	},
+	"endless:polished_rhyolite": {
+		"textures": "pol_rhyolite",
+		"sound": "stone",
+		"brightness_gamma": 0.2,
+		"isotropic": false
+	},
+	"endless:finallium_ore": {
+		"textures": "endless_finallium_ore",
+		"sound": "stone"
+	},
+	"endless:finallium_block": {
+		"textures": "endless_finallium_block",
+		"sound": "stone"
+	},
+	"endless:topaz_ore": {
+		"sound": "stone",
+		"textures": "topaz_ore"
+	},
+	"endless:topaz_block": {
+		"sound": "stone",
+		"textures": "topaz_block"
+	}
 }

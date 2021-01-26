@@ -1,0 +1,37 @@
+{
+	"file_path": "C:\\Users\\IshatGupta\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Endless [Bev.]\\spawn_rules\\lost_soul.json",
+	"file_type": "spawn_rule",
+	"format_version": 0,
+	"cache_content": {
+		"format_version": "1.8.0",
+		"minecraft:spawn_rules": {
+			"description": {
+				"identifier": "endless:lost_soul",
+				"population_control": "animal"
+			},
+			"conditions": [
+				{
+					"minecraft:spawns_on_surface": {},
+					"minecraft:brightness_filter": {
+						"min": 7,
+						"max": 15,
+						"adjust_for_weather": false
+					},
+					"minecraft:weight": {
+						"default": 10
+					},
+					"minecraft:herd": {
+						"min_size": 2,
+						"max_size": 4
+					},
+					"minecraft:biome_filter": {
+						"test": "has_biome_tag",
+						"operator": "==",
+						"value": "animal"
+					}
+				}
+			]
+		}
+	},
+	"file_uuid": "274b8b6d_c370_4520_bba3_c03ac73b5ae1"
+}

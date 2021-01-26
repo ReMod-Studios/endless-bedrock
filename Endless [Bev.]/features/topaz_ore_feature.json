@@ -1,0 +1,16 @@
+//bridge-file-version: #3
+{
+	"format_version": "1.13.0",
+	"minecraft:ore_feature": {
+		"description": {
+			"identifier": "endless:topaz_ore_feature"
+		},
+		"count": 12,
+		"places_block": "endless:topaz_ore",
+		"may_replace": [
+			{
+				"name": "minecraft:end_stone"
+			}
+		]
+	}
+}
