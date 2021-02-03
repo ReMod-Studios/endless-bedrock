@@ -1,8 +1,8 @@
 {
-	"file_path": "W:\\Users\\LEPICHU\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_resource_packs\\Endless [Res.]\\textures\\item_texture.json",
+	"file_path": "C:\\Users\\IshatGupta\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_resource_packs\\Endless [Res.]\\textures\\item_texture.json",
 	"file_type": "item_texture",
 	"format_version": 1,
-	"file_uuid": "577cf54b_c9bb_44dd_8b0b_3da4eb0f594d",
+	"file_uuid": "85b698ee_1087_4190_be1e_03ef766445b6",
 	"file_version": 0,
 	"cache_content": {
 		"children": [
@@ -49,11 +49,6 @@
 								"textures/items/finallium_boots"
 							]
 						},
-						"shadow_knight": {
-							"textures": [
-								"textures/items/shadow_knight"
-							]
-						},
 						"endless_finallium_pickaxe": {
 							"textures": "textures/items/finallium_pickaxe"
 						},
@@ -71,6 +66,16 @@
 						"endless_finalliun_hoe": {
 							"textures": [
 								"textures/items/finallium_hoe"
+							]
+						},
+						"cobalt_dust": {
+							"textures": [
+								"textures/items/cobalt_dust"
+							]
+						},
+						"cobalt_ingot": {
+							"textures": [
+								"textures/items/cobalt_ingot"
 							]
 						}
 					}
@@ -132,15 +137,6 @@
 						}
 					},
 					{
-						"key": "shadow_knight",
-						"is_minified": true,
-						"children": {
-							"textures": [
-								"textures/items/shadow_knight"
-							]
-						}
-					},
-					{
 						"key": "endless_finallium_pickaxe",
 						"is_minified": true,
 						"children": {
@@ -172,17 +168,165 @@
 					},
 					{
 						"key": "endless_finalliun_hoe",
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/finallium_hoe"
+							]
+						}
+					},
+					{
+						"open": {
+							"topaz_gem": {
+								"textures": [
+									"textures/items/topaz_gem"
+								]
+							},
+							"finallium_shard": {
+								"textures": [
+									"textures/items/finallium_shard"
+								]
+							},
+							"endless_finallium_helmet": {
+								"textures": [
+									"textures/items/finallium_helmet"
+								]
+							},
+							"endless_finallium_chestplate": {
+								"textures": [
+									"textures/items/finallium_chestplate"
+								]
+							},
+							"endless_finallium_leggings": {
+								"textures": [
+									"textures/items/finallium_leggings"
+								]
+							},
+							"endless_finallium_boots": {
+								"textures": [
+									"textures/items/finallium_boots"
+								]
+							},
+							"endless_finallium_pickaxe": {
+								"textures": "textures/items/finallium_pickaxe"
+							},
+							"endless_finallium_axe": {
+								"textures": "textures/items/finallium_axe"
+							},
+							"endless_finallium_sword": {
+								"textures": "textures/items/finallium_sword"
+							},
+							"endless_finallium_shovel": {
+								"textures": [
+									"textures/items/finallium_shovel"
+								]
+							},
+							"endless_finalliun_hoe": {
+								"textures": [
+									"textures/items/finallium_hoe"
+								]
+							},
+							"cobalt_dust": {
+								"textures": [
+									"textures/items/cobalt_dust"
+								]
+							},
+							"cobalt_ingot": {
+								"textures": [
+									"textures/items/cobalt_ingot"
+								]
+							}
+						},
+						"key": "cobalt_dust",
 						"children": [
 							{
 								"open": {
 									"textures": [
-										"textures/items/finallium_hoe"
+										"textures/items/cobalt_dust"
 									]
 								},
 								"key": "textures",
 								"is_minified": true,
 								"children": [
+									"textures/items/cobalt_dust"
+								]
+							}
+						]
+					},
+					{
+						"open": {
+							"topaz_gem": {
+								"textures": [
+									"textures/items/topaz_gem"
+								]
+							},
+							"finallium_shard": {
+								"textures": [
+									"textures/items/finallium_shard"
+								]
+							},
+							"endless_finallium_helmet": {
+								"textures": [
+									"textures/items/finallium_helmet"
+								]
+							},
+							"endless_finallium_chestplate": {
+								"textures": [
+									"textures/items/finallium_chestplate"
+								]
+							},
+							"endless_finallium_leggings": {
+								"textures": [
+									"textures/items/finallium_leggings"
+								]
+							},
+							"endless_finallium_boots": {
+								"textures": [
+									"textures/items/finallium_boots"
+								]
+							},
+							"endless_finallium_pickaxe": {
+								"textures": "textures/items/finallium_pickaxe"
+							},
+							"endless_finallium_axe": {
+								"textures": "textures/items/finallium_axe"
+							},
+							"endless_finallium_sword": {
+								"textures": "textures/items/finallium_sword"
+							},
+							"endless_finallium_shovel": {
+								"textures": [
+									"textures/items/finallium_shovel"
+								]
+							},
+							"endless_finalliun_hoe": {
+								"textures": [
 									"textures/items/finallium_hoe"
+								]
+							},
+							"cobalt_dust": {
+								"textures": [
+									"textures/items/cobalt_dust"
+								]
+							},
+							"cobalt_ingot": {
+								"textures": [
+									"textures/items/cobalt_ingot"
+								]
+							}
+						},
+						"key": "cobalt_ingot",
+						"children": [
+							{
+								"open": {
+									"textures": [
+										"textures/items/cobalt_ingot"
+									]
+								},
+								"key": "textures",
+								"is_minified": true,
+								"children": [
+									"textures/items/cobalt_ingot"
 								]
 							}
 						]

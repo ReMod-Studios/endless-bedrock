@@ -97,6 +97,18 @@
 				"endless:finallium_helmet"
 			],
 			"custom_commands": []
+		},
+		"BP/items/cobalt_dust.json": {
+			"identifiers": [
+				"endless:cobalt_ingot"
+			],
+			"custom_commands": []
+		},
+		"BP/items/cobalt_ingot.json": {
+			"identifiers": [
+				"endless:cobalt_ingot"
+			],
+			"custom_commands": []
 		}
 	},
 	"feature": {
@@ -107,7 +119,12 @@
 		},
 		"BP/features/topaz_ore_feature.json": {
 			"identifiers": [
-				"endless:topaz_ore_feature"
+				"endless:cobalt_ore_feature"
+			]
+		},
+		"BP/features/cobalt_ore_feature.json": {
+			"identifiers": [
+				"endless:cobalt_ore_feature"
 			]
 		}
 	},
@@ -119,7 +136,12 @@
 		},
 		"BP/feature_rules/end_underground_topaz_ore_feature.json": {
 			"identifiers": [
-				"endless:end_underground_topaz_ore_feature"
+				"endless:end_underground_cobalt_ore_feature"
+			]
+		},
+		"BP/feature_rules/end_underground_cobalt_ore_feature.json": {
+			"identifiers": [
+				"endless:end_underground_cobalt_ore_feature"
 			]
 		}
 	},
@@ -192,7 +214,40 @@
 		},
 		"BP/blocks/topaz_ore.json": {
 			"identifiers": [
-				"endless:topaz_ore"
+				"endless:cobalt_block"
+			],
+			"events": [
+				"on_break"
+			],
+			"recipe_tags": [],
+			"custom_commands": [],
+			"custom_components": []
+		},
+		"BP/blocks/cobalt_ore.json": {
+			"identifiers": [
+				"endless:cobalt_block"
+			],
+			"events": [
+				"on_break"
+			],
+			"recipe_tags": [],
+			"custom_commands": [],
+			"custom_components": []
+		},
+		"BP/blocks/cobalt_ingot.json": {
+			"identifiers": [
+				"endless:cobalt_block"
+			],
+			"events": [
+				"on_break"
+			],
+			"recipe_tags": [],
+			"custom_commands": [],
+			"custom_components": []
+		},
+		"BP/blocks/cobalt_block.json": {
+			"identifiers": [
+				"endless:cobalt_block"
 			],
 			"events": [
 				"on_break"

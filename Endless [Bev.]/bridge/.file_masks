@@ -189,6 +189,26 @@
 						}
 					}
 				}
+			},
+			"8a579956_1b1f_42d8_9305_13a4ed0cea49": {
+				"format_version": "1.10.0",
+				"animation_controllers": {
+					"controller.animation.bridge_custom_item_behavior": {
+						"states": {
+							"default": {}
+						}
+					}
+				}
+			},
+			"736738ee_29b9_4ab9_9e22_76f68d874ccd": {
+				"format_version": "1.10.0",
+				"animation_controllers": {
+					"controller.animation.bridge_custom_item_behavior": {
+						"states": {
+							"default": {}
+						}
+					}
+				}
 			}
 		}
 	},
@@ -322,6 +342,33 @@
 		"data": {}
 	},
 	"BP/loot_tables/entities/lost_soul.json": {
+		"data": {}
+	},
+	"BP/items/cobalt_dust.json": {
+		"data": {}
+	},
+	"BP/items/cobalt_ingot.json": {
+		"data": {}
+	},
+	"BP/blocks/cobalt_ore.json": {
+		"data": {}
+	},
+	"BP/loot_tables/blocks/cobalt_ore.json": {
+		"data": {}
+	},
+	"BP/blocks/cobalt_ingot.json": {
+		"data": {}
+	},
+	"BP/blocks/cobalt_block.json": {
+		"data": {}
+	},
+	"BP/loot_tables/blocks/cobalt_block.json": {
+		"data": {}
+	},
+	"BP/feature_rules/end_underground_cobalt_ore_feature.json": {
+		"data": {}
+	},
+	"BP/features/cobalt_ore_feature.json": {
 		"data": {}
 	}
 }

@@ -1,0 +1,18 @@
+//bridge-file-version: #5
+{
+	"format_version": "1.13.0",
+	"minecraft:ore_feature": {
+		"description": {
+			"identifier": "endless:cobalt_ore_feature"
+		},
+		"count": 8,
+		"places_block": {
+			"name": "endless:cobalt_ore"
+		},
+		"may_replace": [
+			{
+				"name": "minecraft:end_stone"
+			}
+		]
+	}
+}

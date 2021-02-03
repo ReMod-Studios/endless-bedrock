@@ -3,7 +3,7 @@
 	"file_type": "terrain_texture",
 	"format_version": 1,
 	"file_uuid": "363ce652_ff1c_42c1_bd37_fa9407d636f0",
-	"file_version": 3,
+	"file_version": 4,
 	"cache_content": {
 		"children": [
 			{
@@ -122,6 +122,20 @@
 									"path": "textures/blocks/topaz_block"
 								}
 							]
+						},
+						"cobalt_ore": {
+							"textures": [
+								{
+									"path": "textures/blocks/cobalt_ore"
+								}
+							]
+						},
+						"cobalt_block": {
+							"textures": [
+								{
+									"path": "textures/blocks/cobalt_block"
+								}
+							]
 						}
 					}
 				},
@@ -223,102 +237,6 @@
 						}
 					},
 					{
-						"open": {
-							"ashen_top": {
-								"textures": [
-									{
-										"path": "textures/blocks/ashen_endstone_top"
-									}
-								]
-							},
-							"ashen_side": {
-								"textures": [
-									{
-										"path": "textures/blocks/ashen_endstone_side"
-									}
-								]
-							},
-							"crystillium_top": {
-								"textures": [
-									{
-										"path": "textures/blocks/crystillium_top"
-									}
-								]
-							},
-							"crystillium_side": {
-								"textures": [
-									{
-										"path": "textures/blocks/crystillium_side"
-									}
-								]
-							},
-							"purpur_top": {
-								"textures": [
-									{
-										"path": "textures/blocks/purpur_grass_top"
-									}
-								]
-							},
-							"purpur_side": {
-								"textures": [
-									{
-										"path": "textures/blocks/purpur_grass_side"
-									}
-								]
-							},
-							"tealite_top": {
-								"textures": [
-									{
-										"path": "textures/blocks/tealite_top"
-									}
-								]
-							},
-							"tealite_side": {
-								"textures": [
-									{
-										"path": "textures/blocks/tealite_side"
-									}
-								]
-							},
-							"endless_finallium_ore": {
-								"textures": "textures/blocks/finallium_ore"
-							},
-							"rhyolite": {
-								"textures": [
-									{
-										"path": "textures/blocks/rhyolite"
-									}
-								]
-							},
-							"pol_rhyolite": {
-								"textures": [
-									{
-										"path": "textures/blocks/polished_rhyolite"
-									}
-								]
-							},
-							"endless_finallium_block": {
-								"textures": [
-									{
-										"path": "textures/blocks/finallium_block"
-									}
-								]
-							},
-							"topaz_ore": {
-								"textures": [
-									{
-										"path": "textures/blocks/topaz_ore"
-									}
-								]
-							},
-							"topaz_block": {
-								"textures": [
-									{
-										"path": "textures/blocks/topaz_block"
-									}
-								]
-							}
-						},
 						"key": "rhyolite",
 						"children": [
 							{
@@ -347,102 +265,6 @@
 						]
 					},
 					{
-						"open": {
-							"ashen_top": {
-								"textures": [
-									{
-										"path": "textures/blocks/ashen_endstone_top"
-									}
-								]
-							},
-							"ashen_side": {
-								"textures": [
-									{
-										"path": "textures/blocks/ashen_endstone_side"
-									}
-								]
-							},
-							"crystillium_top": {
-								"textures": [
-									{
-										"path": "textures/blocks/crystillium_top"
-									}
-								]
-							},
-							"crystillium_side": {
-								"textures": [
-									{
-										"path": "textures/blocks/crystillium_side"
-									}
-								]
-							},
-							"purpur_top": {
-								"textures": [
-									{
-										"path": "textures/blocks/purpur_grass_top"
-									}
-								]
-							},
-							"purpur_side": {
-								"textures": [
-									{
-										"path": "textures/blocks/purpur_grass_side"
-									}
-								]
-							},
-							"tealite_top": {
-								"textures": [
-									{
-										"path": "textures/blocks/tealite_top"
-									}
-								]
-							},
-							"tealite_side": {
-								"textures": [
-									{
-										"path": "textures/blocks/tealite_side"
-									}
-								]
-							},
-							"endless_finallium_ore": {
-								"textures": "textures/blocks/finallium_ore"
-							},
-							"rhyolite": {
-								"textures": [
-									{
-										"path": "textures/blocks/rhyolite"
-									}
-								]
-							},
-							"pol_rhyolite": {
-								"textures": [
-									{
-										"path": "textures/blocks/polished_rhyolite"
-									}
-								]
-							},
-							"endless_finallium_block": {
-								"textures": [
-									{
-										"path": "textures/blocks/finallium_block"
-									}
-								]
-							},
-							"topaz_ore": {
-								"textures": [
-									{
-										"path": "textures/blocks/topaz_ore"
-									}
-								]
-							},
-							"topaz_block": {
-								"textures": [
-									{
-										"path": "textures/blocks/topaz_block"
-									}
-								]
-							}
-						},
 						"key": "pol_rhyolite",
 						"children": [
 							{
@@ -471,102 +293,6 @@
 						]
 					},
 					{
-						"open": {
-							"ashen_top": {
-								"textures": [
-									{
-										"path": "textures/blocks/ashen_endstone_top"
-									}
-								]
-							},
-							"ashen_side": {
-								"textures": [
-									{
-										"path": "textures/blocks/ashen_endstone_side"
-									}
-								]
-							},
-							"crystillium_top": {
-								"textures": [
-									{
-										"path": "textures/blocks/crystillium_top"
-									}
-								]
-							},
-							"crystillium_side": {
-								"textures": [
-									{
-										"path": "textures/blocks/crystillium_side"
-									}
-								]
-							},
-							"purpur_top": {
-								"textures": [
-									{
-										"path": "textures/blocks/purpur_grass_top"
-									}
-								]
-							},
-							"purpur_side": {
-								"textures": [
-									{
-										"path": "textures/blocks/purpur_grass_side"
-									}
-								]
-							},
-							"tealite_top": {
-								"textures": [
-									{
-										"path": "textures/blocks/tealite_top"
-									}
-								]
-							},
-							"tealite_side": {
-								"textures": [
-									{
-										"path": "textures/blocks/tealite_side"
-									}
-								]
-							},
-							"endless_finallium_ore": {
-								"textures": "textures/blocks/finallium_ore"
-							},
-							"rhyolite": {
-								"textures": [
-									{
-										"path": "textures/blocks/rhyolite"
-									}
-								]
-							},
-							"pol_rhyolite": {
-								"textures": [
-									{
-										"path": "textures/blocks/polished_rhyolite"
-									}
-								]
-							},
-							"endless_finallium_block": {
-								"textures": [
-									{
-										"path": "textures/blocks/finallium_block"
-									}
-								]
-							},
-							"topaz_ore": {
-								"textures": [
-									{
-										"path": "textures/blocks/topaz_ore"
-									}
-								]
-							},
-							"topaz_block": {
-								"textures": [
-									{
-										"path": "textures/blocks/topaz_block"
-									}
-								]
-							}
-						},
 						"key": "endless_finallium_block",
 						"children": [
 							{
@@ -595,102 +321,6 @@
 						]
 					},
 					{
-						"open": {
-							"ashen_top": {
-								"textures": [
-									{
-										"path": "textures/blocks/ashen_endstone_top"
-									}
-								]
-							},
-							"ashen_side": {
-								"textures": [
-									{
-										"path": "textures/blocks/ashen_endstone_side"
-									}
-								]
-							},
-							"crystillium_top": {
-								"textures": [
-									{
-										"path": "textures/blocks/crystillium_top"
-									}
-								]
-							},
-							"crystillium_side": {
-								"textures": [
-									{
-										"path": "textures/blocks/crystillium_side"
-									}
-								]
-							},
-							"purpur_top": {
-								"textures": [
-									{
-										"path": "textures/blocks/purpur_grass_top"
-									}
-								]
-							},
-							"purpur_side": {
-								"textures": [
-									{
-										"path": "textures/blocks/purpur_grass_side"
-									}
-								]
-							},
-							"tealite_top": {
-								"textures": [
-									{
-										"path": "textures/blocks/tealite_top"
-									}
-								]
-							},
-							"tealite_side": {
-								"textures": [
-									{
-										"path": "textures/blocks/tealite_side"
-									}
-								]
-							},
-							"endless_finallium_ore": {
-								"textures": "textures/blocks/finallium_ore"
-							},
-							"rhyolite": {
-								"textures": [
-									{
-										"path": "textures/blocks/rhyolite"
-									}
-								]
-							},
-							"pol_rhyolite": {
-								"textures": [
-									{
-										"path": "textures/blocks/polished_rhyolite"
-									}
-								]
-							},
-							"endless_finallium_block": {
-								"textures": [
-									{
-										"path": "textures/blocks/finallium_block"
-									}
-								]
-							},
-							"topaz_ore": {
-								"textures": [
-									{
-										"path": "textures/blocks/topaz_ore"
-									}
-								]
-							},
-							"topaz_block": {
-								"textures": [
-									{
-										"path": "textures/blocks/topaz_block"
-									}
-								]
-							}
-						},
 						"key": "topaz_ore",
 						"children": [
 							{
@@ -719,102 +349,6 @@
 						]
 					},
 					{
-						"open": {
-							"ashen_top": {
-								"textures": [
-									{
-										"path": "textures/blocks/ashen_endstone_top"
-									}
-								]
-							},
-							"ashen_side": {
-								"textures": [
-									{
-										"path": "textures/blocks/ashen_endstone_side"
-									}
-								]
-							},
-							"crystillium_top": {
-								"textures": [
-									{
-										"path": "textures/blocks/crystillium_top"
-									}
-								]
-							},
-							"crystillium_side": {
-								"textures": [
-									{
-										"path": "textures/blocks/crystillium_side"
-									}
-								]
-							},
-							"purpur_top": {
-								"textures": [
-									{
-										"path": "textures/blocks/purpur_grass_top"
-									}
-								]
-							},
-							"purpur_side": {
-								"textures": [
-									{
-										"path": "textures/blocks/purpur_grass_side"
-									}
-								]
-							},
-							"tealite_top": {
-								"textures": [
-									{
-										"path": "textures/blocks/tealite_top"
-									}
-								]
-							},
-							"tealite_side": {
-								"textures": [
-									{
-										"path": "textures/blocks/tealite_side"
-									}
-								]
-							},
-							"endless_finallium_ore": {
-								"textures": "textures/blocks/finallium_ore"
-							},
-							"rhyolite": {
-								"textures": [
-									{
-										"path": "textures/blocks/rhyolite"
-									}
-								]
-							},
-							"pol_rhyolite": {
-								"textures": [
-									{
-										"path": "textures/blocks/polished_rhyolite"
-									}
-								]
-							},
-							"endless_finallium_block": {
-								"textures": [
-									{
-										"path": "textures/blocks/finallium_block"
-									}
-								]
-							},
-							"topaz_ore": {
-								"textures": [
-									{
-										"path": "textures/blocks/topaz_ore"
-									}
-								]
-							},
-							"topaz_block": {
-								"textures": [
-									{
-										"path": "textures/blocks/topaz_block"
-									}
-								]
-							}
-						},
 						"key": "topaz_block",
 						"children": [
 							{
@@ -836,6 +370,62 @@
 										"is_minified": true,
 										"children": {
 											"path": "textures/blocks/topaz_block"
+										}
+									}
+								]
+							}
+						]
+					},
+					{
+						"key": "cobalt_ore",
+						"children": [
+							{
+								"open": {
+									"textures": [
+										{
+											"path": "textures/blocks/cobalt_ore"
+										}
+									]
+								},
+								"key": "textures",
+								"children": [
+									{
+										"open": [
+											{
+												"path": "textures/blocks/cobalt_ore"
+											}
+										],
+										"is_minified": true,
+										"children": {
+											"path": "textures/blocks/cobalt_ore"
+										}
+									}
+								]
+							}
+						]
+					},
+					{
+						"key": "cobalt_block",
+						"children": [
+							{
+								"open": {
+									"textures": [
+										{
+											"path": "textures/blocks/cobalt_block"
+										}
+									]
+								},
+								"key": "textures",
+								"children": [
+									{
+										"open": [
+											{
+												"path": "textures/blocks/cobalt_block"
+											}
+										],
+										"is_minified": true,
+										"children": {
+											"path": "textures/blocks/cobalt_block"
 										}
 									}
 								]

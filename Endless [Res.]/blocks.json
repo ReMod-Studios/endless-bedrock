@@ -1,4 +1,4 @@
-//bridge-file-version: #4
+//bridge-file-version: #6
 {
 	"format_version": [
 		1,
@@ -68,5 +68,13 @@
 	"endless:topaz_block": {
 		"sound": "stone",
 		"textures": "topaz_block"
+	},
+	"endless:cobalt_ore": {
+		"sound": "stone",
+		"textures": "cobalt_ore"
+	},
+	"endless:cobalt_block": {
+		"sound": "stone",
+		"textures": "cobalt_block"
 	}
 }
