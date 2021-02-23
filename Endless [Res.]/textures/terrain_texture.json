@@ -1,4 +1,4 @@
-//bridge-file-version: #4
+//bridge-file-version: #0
 {
 	"resource_pack_name": "bridgeRP",
 	"texture_name": "atlas.terrain",
@@ -110,6 +110,13 @@
 			"textures": [
 				{
 					"path": "textures/blocks/cobalt_block"
+				}
+			]
+		},
+		"end_sand": {
+			"textures": [
+				{
+					"path": "textures/blocks/end_sand"
 				}
 			]
 		}

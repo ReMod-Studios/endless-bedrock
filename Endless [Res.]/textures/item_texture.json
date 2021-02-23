@@ -1,4 +1,4 @@
-//bridge-file-version: #0
+//bridge-file-version: #1
 {
 	"resource_pack_name": "bridgeRP",
 	"texture_name": "atlas.items",
@@ -60,6 +60,16 @@
 		"cobalt_ingot": {
 			"textures": [
 				"textures/items/cobalt_ingot"
+			]
+		},
+		"cobalt_magnet": {
+			"textures": [
+				"textures/items/cobalt_magnet"
+			]
+		},
+		"papaya": {
+			"textures": [
+				"textures/items/papaya"
 			]
 		}
 	}

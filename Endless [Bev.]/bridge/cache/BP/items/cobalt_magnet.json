@@ -1,0 +1,735 @@
+{
+	"file_path": "C:\\Users\\IshatGupta\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Endless [Bev.]\\items\\cobalt_magnet.json",
+	"file_type": "item",
+	"format_version": 1,
+	"file_uuid": "7077d882_a5a8_4154_b1bc_5b031d068537",
+	"file_version": 6,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.16.100",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.16.100",
+					"minecraft:item": {
+						"description": {
+							"identifier": "endless:cobalt_magnet",
+							"category": "equipment"
+						},
+						"components": {
+							"minecraft:max_stack_size": 1,
+							"minecraft:hand_equipped": false,
+							"minecraft:stacked_by_data": true,
+							"minecraft:foil": false,
+							"minecraft:use_duration": 1,
+							"minecraft:durability": {
+								"max_durability": 127,
+								"damage_chance": {
+									"min": 1,
+									"max": 1
+								}
+							},
+							"minecraft:cooldown": {
+								"category": "cm",
+								"duration": 1
+							},
+							"minecraft:on_use": {
+								"on_use": {
+									"event": "on_use"
+								}
+							},
+							"minecraft:icon": {
+								"texture": "cobalt_magnet"
+							},
+							"minecraft:render_offsets": "miscellaneous",
+							"minecraft:creative_category": {
+								"parent": "equipment"
+							},
+							"minecraft:display_name": {
+								"value": "Cobalt Magnet"
+							}
+						},
+						"events": {
+							"on_use": {
+								"sequence": [
+									{
+										"swing": {}
+									},
+									{
+										"damage": {
+											"type": "durability",
+											"amount": 1
+										}
+									},
+									{
+										"run_command": {
+											"command": [
+												"function onUseFunc/useMagnet"
+											]
+										}
+									}
+								]
+							}
+						}
+					}
+				},
+				"key": "minecraft:item",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "endless:cobalt_magnet",
+								"category": "equipment"
+							},
+							"components": {
+								"minecraft:max_stack_size": 1,
+								"minecraft:hand_equipped": false,
+								"minecraft:stacked_by_data": true,
+								"minecraft:foil": false,
+								"minecraft:use_duration": 1,
+								"minecraft:durability": {
+									"max_durability": 127,
+									"damage_chance": {
+										"min": 1,
+										"max": 1
+									}
+								},
+								"minecraft:cooldown": {
+									"category": "cm",
+									"duration": 1
+								},
+								"minecraft:on_use": {
+									"on_use": {
+										"event": "on_use"
+									}
+								},
+								"minecraft:icon": {
+									"texture": "cobalt_magnet"
+								},
+								"minecraft:render_offsets": "miscellaneous",
+								"minecraft:creative_category": {
+									"parent": "equipment"
+								},
+								"minecraft:display_name": {
+									"value": "Cobalt Magnet"
+								}
+							},
+							"events": {
+								"on_use": {
+									"sequence": [
+										{
+											"swing": {}
+										},
+										{
+											"damage": {
+												"type": "durability",
+												"amount": 1
+											}
+										},
+										{
+											"run_command": {
+												"command": [
+													"function onUseFunc/useMagnet"
+												]
+											}
+										}
+									]
+								}
+							}
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "endless:cobalt_magnet",
+							"category": "equipment"
+						}
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "endless:cobalt_magnet",
+								"category": "equipment"
+							},
+							"components": {
+								"minecraft:max_stack_size": 1,
+								"minecraft:hand_equipped": false,
+								"minecraft:stacked_by_data": true,
+								"minecraft:foil": false,
+								"minecraft:use_duration": 1,
+								"minecraft:durability": {
+									"max_durability": 127,
+									"damage_chance": {
+										"min": 1,
+										"max": 1
+									}
+								},
+								"minecraft:cooldown": {
+									"category": "cm",
+									"duration": 1
+								},
+								"minecraft:on_use": {
+									"on_use": {
+										"event": "on_use"
+									}
+								},
+								"minecraft:icon": {
+									"texture": "cobalt_magnet"
+								},
+								"minecraft:render_offsets": "miscellaneous",
+								"minecraft:creative_category": {
+									"parent": "equipment"
+								},
+								"minecraft:display_name": {
+									"value": "Cobalt Magnet"
+								}
+							},
+							"events": {
+								"on_use": {
+									"sequence": [
+										{
+											"swing": {}
+										},
+										{
+											"damage": {
+												"type": "durability",
+												"amount": 1
+											}
+										},
+										{
+											"run_command": {
+												"command": [
+													"function onUseFunc/useMagnet"
+												]
+											}
+										}
+									]
+								}
+							}
+						},
+						"key": "components",
+						"children": [
+							{
+								"data": "1",
+								"key": "minecraft:max_stack_size"
+							},
+							{
+								"data": "false",
+								"key": "minecraft:hand_equipped"
+							},
+							{
+								"data": "true",
+								"key": "minecraft:stacked_by_data"
+							},
+							{
+								"data": "false",
+								"key": "minecraft:foil"
+							},
+							{
+								"data": "1.0",
+								"key": "minecraft:use_duration"
+							},
+							{
+								"open": {
+									"minecraft:max_stack_size": 1,
+									"minecraft:hand_equipped": false,
+									"minecraft:stacked_by_data": true,
+									"minecraft:foil": false,
+									"minecraft:use_duration": 1,
+									"minecraft:durability": {
+										"max_durability": 127,
+										"damage_chance": {
+											"min": 1,
+											"max": 1
+										}
+									},
+									"minecraft:cooldown": {
+										"category": "cm",
+										"duration": 1
+									},
+									"minecraft:on_use": {
+										"on_use": {
+											"event": "on_use"
+										}
+									},
+									"minecraft:icon": {
+										"texture": "cobalt_magnet"
+									},
+									"minecraft:render_offsets": "miscellaneous",
+									"minecraft:creative_category": {
+										"parent": "equipment"
+									},
+									"minecraft:display_name": {
+										"value": "Cobalt Magnet"
+									}
+								},
+								"key": "minecraft:durability",
+								"children": [
+									{
+										"data": "127",
+										"key": "max_durability"
+									},
+									{
+										"open": {
+											"max_durability": 127,
+											"damage_chance": {
+												"min": 1,
+												"max": 1
+											}
+										},
+										"key": "damage_chance",
+										"is_minified": true,
+										"children": {
+											"min": 1,
+											"max": 1
+										}
+									}
+								]
+							},
+							{
+								"open": {
+									"minecraft:max_stack_size": 1,
+									"minecraft:hand_equipped": false,
+									"minecraft:stacked_by_data": true,
+									"minecraft:foil": false,
+									"minecraft:use_duration": 1,
+									"minecraft:durability": {
+										"max_durability": 127,
+										"damage_chance": {
+											"min": 1,
+											"max": 1
+										}
+									},
+									"minecraft:cooldown": {
+										"category": "cm",
+										"duration": 1
+									},
+									"minecraft:on_use": {
+										"on_use": {
+											"event": "on_use"
+										}
+									},
+									"minecraft:icon": {
+										"texture": "cobalt_magnet"
+									},
+									"minecraft:render_offsets": "miscellaneous",
+									"minecraft:creative_category": {
+										"parent": "equipment"
+									},
+									"minecraft:display_name": {
+										"value": "Cobalt Magnet"
+									}
+								},
+								"key": "minecraft:cooldown",
+								"is_minified": true,
+								"children": {
+									"category": "cm",
+									"duration": 1
+								}
+							},
+							{
+								"open": {
+									"minecraft:max_stack_size": 1,
+									"minecraft:hand_equipped": false,
+									"minecraft:stacked_by_data": true,
+									"minecraft:foil": false,
+									"minecraft:use_duration": 1,
+									"minecraft:durability": {
+										"max_durability": 127,
+										"damage_chance": {
+											"min": 1,
+											"max": 1
+										}
+									},
+									"minecraft:cooldown": {
+										"category": "cm",
+										"duration": 1
+									},
+									"minecraft:on_use": {
+										"on_use": {
+											"event": "on_use"
+										}
+									},
+									"minecraft:icon": {
+										"texture": "cobalt_magnet"
+									},
+									"minecraft:render_offsets": "miscellaneous",
+									"minecraft:creative_category": {
+										"parent": "equipment"
+									},
+									"minecraft:display_name": {
+										"value": "Cobalt Magnet"
+									}
+								},
+								"key": "minecraft:on_use",
+								"children": [
+									{
+										"open": {
+											"on_use": {
+												"event": "on_use"
+											}
+										},
+										"key": "on_use",
+										"is_minified": true,
+										"children": {
+											"event": "on_use"
+										}
+									}
+								]
+							},
+							{
+								"open": {
+									"minecraft:max_stack_size": 1,
+									"minecraft:hand_equipped": false,
+									"minecraft:stacked_by_data": true,
+									"minecraft:foil": false,
+									"minecraft:use_duration": 1,
+									"minecraft:durability": {
+										"max_durability": 127,
+										"damage_chance": {
+											"min": 1,
+											"max": 1
+										}
+									},
+									"minecraft:cooldown": {
+										"category": "cm",
+										"duration": 1
+									},
+									"minecraft:on_use": {
+										"on_use": {
+											"event": "on_use"
+										}
+									},
+									"minecraft:icon": {
+										"texture": "cobalt_magnet"
+									},
+									"minecraft:render_offsets": "miscellaneous",
+									"minecraft:creative_category": {
+										"parent": "equipment"
+									},
+									"minecraft:display_name": {
+										"value": "Cobalt Magnet"
+									}
+								},
+								"key": "minecraft:icon",
+								"is_minified": true,
+								"children": {
+									"texture": "cobalt_magnet"
+								}
+							},
+							{
+								"data": "miscellaneous",
+								"key": "minecraft:render_offsets"
+							},
+							{
+								"open": {
+									"minecraft:max_stack_size": 1,
+									"minecraft:hand_equipped": false,
+									"minecraft:stacked_by_data": true,
+									"minecraft:foil": false,
+									"minecraft:use_duration": 1,
+									"minecraft:durability": {
+										"max_durability": 127,
+										"damage_chance": {
+											"min": 1,
+											"max": 1
+										}
+									},
+									"minecraft:cooldown": {
+										"category": "cm",
+										"duration": 1
+									},
+									"minecraft:on_use": {
+										"on_use": {
+											"event": "on_use"
+										}
+									},
+									"minecraft:icon": {
+										"texture": "cobalt_magnet"
+									},
+									"minecraft:render_offsets": "miscellaneous",
+									"minecraft:creative_category": {
+										"parent": "equipment"
+									},
+									"minecraft:display_name": {
+										"value": "Cobalt Magnet"
+									}
+								},
+								"key": "minecraft:creative_category",
+								"is_minified": true,
+								"children": {
+									"parent": "equipment"
+								}
+							},
+							{
+								"open": {
+									"minecraft:max_stack_size": 1,
+									"minecraft:hand_equipped": false,
+									"minecraft:stacked_by_data": true,
+									"minecraft:foil": false,
+									"minecraft:use_duration": 1,
+									"minecraft:durability": {
+										"max_durability": 127,
+										"damage_chance": {
+											"min": 1,
+											"max": 1
+										}
+									},
+									"minecraft:cooldown": {
+										"category": "cm",
+										"duration": 1
+									},
+									"minecraft:on_use": {
+										"on_use": {
+											"event": "on_use"
+										}
+									},
+									"minecraft:icon": {
+										"texture": "cobalt_magnet"
+									},
+									"minecraft:render_offsets": "miscellaneous",
+									"minecraft:creative_category": {
+										"parent": "equipment"
+									},
+									"minecraft:display_name": {
+										"value": "Cobalt Magnet"
+									}
+								},
+								"key": "minecraft:display_name",
+								"is_minified": true,
+								"children": {
+									"value": "Cobalt Magnet"
+								}
+							}
+						]
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "endless:cobalt_magnet",
+								"category": "equipment"
+							},
+							"components": {
+								"minecraft:max_stack_size": 1,
+								"minecraft:hand_equipped": false,
+								"minecraft:stacked_by_data": true,
+								"minecraft:foil": false,
+								"minecraft:use_duration": 1,
+								"minecraft:durability": {
+									"max_durability": 127,
+									"damage_chance": {
+										"min": 1,
+										"max": 1
+									}
+								},
+								"minecraft:cooldown": {
+									"category": "cm",
+									"duration": 1
+								},
+								"minecraft:on_use": {
+									"on_use": {
+										"event": "on_use"
+									}
+								},
+								"minecraft:icon": {
+									"texture": "cobalt_magnet"
+								},
+								"minecraft:render_offsets": "miscellaneous",
+								"minecraft:creative_category": {
+									"parent": "equipment"
+								},
+								"minecraft:display_name": {
+									"value": "Cobalt Magnet"
+								}
+							},
+							"events": {
+								"on_use": {
+									"sequence": [
+										{
+											"swing": {}
+										},
+										{
+											"damage": {
+												"type": "durability",
+												"amount": 1
+											}
+										},
+										{
+											"run_command": {
+												"command": [
+													"function onUseFunc/useMagnet"
+												]
+											}
+										}
+									]
+								}
+							}
+						},
+						"key": "events",
+						"children": [
+							{
+								"open": {
+									"on_use": {
+										"sequence": [
+											{
+												"swing": {}
+											},
+											{
+												"damage": {
+													"type": "durability",
+													"amount": 1
+												}
+											},
+											{
+												"run_command": {
+													"command": [
+														"function onUseFunc/useMagnet"
+													]
+												}
+											}
+										]
+									}
+								},
+								"key": "on_use",
+								"children": [
+									{
+										"open": {
+											"sequence": [
+												{
+													"swing": {}
+												},
+												{
+													"damage": {
+														"type": "durability",
+														"amount": 1
+													}
+												},
+												{
+													"run_command": {
+														"command": [
+															"function onUseFunc/useMagnet"
+														]
+													}
+												}
+											]
+										},
+										"key": "sequence",
+										"children": [
+											{
+												"open": [
+													{
+														"swing": {}
+													},
+													{
+														"damage": {
+															"type": "durability",
+															"amount": 1
+														}
+													},
+													{
+														"run_command": {
+															"command": [
+																"function onUseFunc/useMagnet"
+															]
+														}
+													}
+												],
+												"is_minified": true,
+												"children": {
+													"swing": {}
+												}
+											},
+											{
+												"open": [
+													{
+														"swing": {}
+													},
+													{
+														"damage": {
+															"type": "durability",
+															"amount": 1
+														}
+													},
+													{
+														"run_command": {
+															"command": [
+																"function onUseFunc/useMagnet"
+															]
+														}
+													}
+												],
+												"children": [
+													{
+														"open": {
+															"damage": {
+																"type": "durability",
+																"amount": 1
+															}
+														},
+														"key": "damage",
+														"is_minified": true,
+														"children": {
+															"type": "durability",
+															"amount": 1
+														}
+													}
+												]
+											},
+											{
+												"open": [
+													{
+														"swing": {}
+													},
+													{
+														"damage": {
+															"type": "durability",
+															"amount": 1
+														}
+													},
+													{
+														"run_command": {
+															"command": [
+																"function onUseFunc/useMagnet"
+															]
+														}
+													}
+												],
+												"children": [
+													{
+														"open": {
+															"run_command": {
+																"command": [
+																	"function onUseFunc/useMagnet"
+																]
+															}
+														},
+														"key": "run_command",
+														"children": [
+															{
+																"open": {
+																	"command": [
+																		"function onUseFunc/useMagnet"
+																	]
+																},
+																"key": "command",
+																"is_minified": true,
+																"children": [
+																	"function onUseFunc/useMagnet"
+																]
+															}
+														]
+													}
+												]
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

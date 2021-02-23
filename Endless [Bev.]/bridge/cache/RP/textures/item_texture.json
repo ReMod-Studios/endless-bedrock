@@ -3,7 +3,7 @@
 	"file_type": "item_texture",
 	"format_version": 1,
 	"file_uuid": "85b698ee_1087_4190_be1e_03ef766445b6",
-	"file_version": 0,
+	"file_version": 1,
 	"cache_content": {
 		"children": [
 			{
@@ -76,6 +76,16 @@
 						"cobalt_ingot": {
 							"textures": [
 								"textures/items/cobalt_ingot"
+							]
+						},
+						"cobalt_magnet": {
+							"textures": [
+								"textures/items/cobalt_magnet"
+							]
+						},
+						"papaya": {
+							"textures": [
+								"textures/items/papaya"
 							]
 						}
 					}
@@ -176,145 +186,15 @@
 						}
 					},
 					{
-						"open": {
-							"topaz_gem": {
-								"textures": [
-									"textures/items/topaz_gem"
-								]
-							},
-							"finallium_shard": {
-								"textures": [
-									"textures/items/finallium_shard"
-								]
-							},
-							"endless_finallium_helmet": {
-								"textures": [
-									"textures/items/finallium_helmet"
-								]
-							},
-							"endless_finallium_chestplate": {
-								"textures": [
-									"textures/items/finallium_chestplate"
-								]
-							},
-							"endless_finallium_leggings": {
-								"textures": [
-									"textures/items/finallium_leggings"
-								]
-							},
-							"endless_finallium_boots": {
-								"textures": [
-									"textures/items/finallium_boots"
-								]
-							},
-							"endless_finallium_pickaxe": {
-								"textures": "textures/items/finallium_pickaxe"
-							},
-							"endless_finallium_axe": {
-								"textures": "textures/items/finallium_axe"
-							},
-							"endless_finallium_sword": {
-								"textures": "textures/items/finallium_sword"
-							},
-							"endless_finallium_shovel": {
-								"textures": [
-									"textures/items/finallium_shovel"
-								]
-							},
-							"endless_finalliun_hoe": {
-								"textures": [
-									"textures/items/finallium_hoe"
-								]
-							},
-							"cobalt_dust": {
-								"textures": [
-									"textures/items/cobalt_dust"
-								]
-							},
-							"cobalt_ingot": {
-								"textures": [
-									"textures/items/cobalt_ingot"
-								]
-							}
-						},
 						"key": "cobalt_dust",
-						"children": [
-							{
-								"open": {
-									"textures": [
-										"textures/items/cobalt_dust"
-									]
-								},
-								"key": "textures",
-								"is_minified": true,
-								"children": [
-									"textures/items/cobalt_dust"
-								]
-							}
-						]
+						"is_minified": true,
+						"children": {
+							"textures": [
+								"textures/items/cobalt_dust"
+							]
+						}
 					},
 					{
-						"open": {
-							"topaz_gem": {
-								"textures": [
-									"textures/items/topaz_gem"
-								]
-							},
-							"finallium_shard": {
-								"textures": [
-									"textures/items/finallium_shard"
-								]
-							},
-							"endless_finallium_helmet": {
-								"textures": [
-									"textures/items/finallium_helmet"
-								]
-							},
-							"endless_finallium_chestplate": {
-								"textures": [
-									"textures/items/finallium_chestplate"
-								]
-							},
-							"endless_finallium_leggings": {
-								"textures": [
-									"textures/items/finallium_leggings"
-								]
-							},
-							"endless_finallium_boots": {
-								"textures": [
-									"textures/items/finallium_boots"
-								]
-							},
-							"endless_finallium_pickaxe": {
-								"textures": "textures/items/finallium_pickaxe"
-							},
-							"endless_finallium_axe": {
-								"textures": "textures/items/finallium_axe"
-							},
-							"endless_finallium_sword": {
-								"textures": "textures/items/finallium_sword"
-							},
-							"endless_finallium_shovel": {
-								"textures": [
-									"textures/items/finallium_shovel"
-								]
-							},
-							"endless_finalliun_hoe": {
-								"textures": [
-									"textures/items/finallium_hoe"
-								]
-							},
-							"cobalt_dust": {
-								"textures": [
-									"textures/items/cobalt_dust"
-								]
-							},
-							"cobalt_ingot": {
-								"textures": [
-									"textures/items/cobalt_ingot"
-								]
-							}
-						},
 						"key": "cobalt_ingot",
 						"children": [
 							{
@@ -327,6 +207,40 @@
 								"is_minified": true,
 								"children": [
 									"textures/items/cobalt_ingot"
+								]
+							}
+						]
+					},
+					{
+						"key": "cobalt_magnet",
+						"children": [
+							{
+								"open": {
+									"textures": [
+										"textures/items/cobalt_magnet"
+									]
+								},
+								"key": "textures",
+								"is_minified": true,
+								"children": [
+									"textures/items/cobalt_magnet"
+								]
+							}
+						]
+					},
+					{
+						"key": "papaya",
+						"children": [
+							{
+								"open": {
+									"textures": [
+										"textures/items/papaya"
+									]
+								},
+								"key": "textures",
+								"is_minified": true,
+								"children": [
+									"textures/items/papaya"
 								]
 							}
 						]

@@ -1,0 +1,72 @@
+//bridge-file-version: #4
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "endless:end_sand",
+			"is_experimental": false,
+			"properties": {
+				"stepped_on": [
+					true,
+					false
+				]
+			}
+		},
+		"components": {
+			"minecraft:destroy_time": 4,
+			"minecraft:block_light_emission": 0,
+			"minecraft:block_light_absorption": 1,
+			"minecraft:flammable": {
+				"burn_odds": 0,
+				"flame_odds": 0
+			},
+			"minecraft:friction": 0.5,
+			"minecraft:explosion_resistance": 2.5,
+			"minecraft:map_color": "#5C6BCA",
+			"minecraft:loot": "loot_tables/empty.json",
+			"minecraft:unit_cube": {},
+			"minecraft:breathability": "solid",
+			"minecraft:breakonpush": false,
+			"minecraft:on_player_destroyed": {
+				"target": "self",
+				"event": "on_break",
+				"condition": "q.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_shovel')"
+			},
+			"tag:sand": {},
+			"minecraft:on_step_on": {
+				"event": "sink_player"
+			}
+		},
+		"events": {
+			"on_break": {
+				"spawn_loot": {
+					"table": "loot_tables/blocks/end_sand.json"
+				}
+			},
+			"sink_player": {
+				"set_block_property": {
+					"stepped_on": true
+				}
+			}
+		},
+		"permutations": [
+			{
+				"condition": "query.block_property('stepped_on'==true)",
+				"components": {
+					"minecraft:entity_collision": {
+						"origin": [
+							-8,
+							0,
+							-8
+						],
+						"size": [
+							16,
+							1,
+							16
+						]
+					}
+				}
+			}
+		]
+	}
+}

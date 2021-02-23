@@ -1,4 +1,4 @@
-//bridge-file-version: #6
+//bridge-file-version: #7
 {
 	"format_version": [
 		1,
@@ -76,5 +76,10 @@
 	"endless:cobalt_block": {
 		"sound": "stone",
 		"textures": "cobalt_block"
+	},
+	"endless:end_sand": {
+		"sound": "gravel",
+		"brightness_gamma": 0.2,
+		"textures": "end_sand"
 	}
 }

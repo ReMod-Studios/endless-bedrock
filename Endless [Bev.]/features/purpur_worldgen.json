@@ -1,0 +1,18 @@
+//bridge-file-version: #0
+{
+	"format_version": "1.16.100",
+	"minecraft:ore_feature": {
+		"description": {
+			"identifier": "endless:purpur_worldgen"
+		},
+		"count": 128,
+		"places_block": {
+			"name": "endless:purpur_endstone"
+		},
+		"may_replace": [
+			{
+				"name": "minecraft:end_stone"
+			}
+		]
+	}
+}

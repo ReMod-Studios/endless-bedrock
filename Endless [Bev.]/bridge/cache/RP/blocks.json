@@ -3,7 +3,7 @@
 	"file_type": "client_block",
 	"format_version": 1,
 	"file_uuid": "02ed32c2_7c7e_44d2_b094_ca19ee0aa9c7",
-	"file_version": 6,
+	"file_version": 7,
 	"cache_content": {
 		"is_minified": true,
 		"children": {
@@ -83,6 +83,11 @@
 			"endless:cobalt_block": {
 				"sound": "stone",
 				"textures": "cobalt_block"
+			},
+			"endless:end_sand": {
+				"sound": "gravel",
+				"brightness_gamma": 0.2,
+				"textures": "end_sand"
 			}
 		}
 	}

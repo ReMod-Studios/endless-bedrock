@@ -109,6 +109,18 @@
 				"endless:cobalt_ingot"
 			],
 			"custom_commands": []
+		},
+		"BP/items/cobalt_magnet.json": {
+			"identifiers": [
+				"endless:cobalt_magnet"
+			],
+			"custom_commands": []
+		},
+		"BP/items/papaya.json": {
+			"identifiers": [
+				"endless:papaya"
+			],
+			"custom_commands": []
 		}
 	},
 	"feature": {
@@ -126,6 +138,11 @@
 			"identifiers": [
 				"endless:cobalt_ore_feature"
 			]
+		},
+		"BP/features/purpur_worldgen.json": {
+			"identifiers": [
+				"endless:purpur_worldgen"
+			]
 		}
 	},
 	"feature_rule": {
@@ -142,6 +159,11 @@
 		"BP/feature_rules/end_underground_cobalt_ore_feature.json": {
 			"identifiers": [
 				"endless:end_underground_cobalt_ore_feature"
+			]
+		},
+		"BP/feature_rules/purple_worldgen_rules.json": {
+			"identifiers": [
+				"endless:purple_worldgen_rules"
 			]
 		}
 	},
@@ -255,6 +277,18 @@
 			"recipe_tags": [],
 			"custom_commands": [],
 			"custom_components": []
+		},
+		"BP/blocks/end_sand.json": {
+			"identifiers": [
+				"endless:end_sand"
+			],
+			"events": [
+				"on_break",
+				"sink_player"
+			],
+			"recipe_tags": [],
+			"custom_commands": [],
+			"custom_components": []
 		}
 	},
 	"client_entity": {
@@ -345,6 +379,11 @@
 		"BP/functions/getItems/getBlocks.mcfunction": {
 			"custom_commands": []
 		},
-		"4e9fdb36_d573_474a_a6a2_0745bceaea53": {}
+		"4e9fdb36_d573_474a_a6a2_0745bceaea53": {},
+		"BP/functions/onUseFunc/useMagnet.mcfunction": {
+			"custom_commands": []
+		},
+		"7077d882_a5a8_4154_b1bc_5b031d068537": {},
+		"dcea0c5b_358f_4aa4_8079_1eed1782c1b1": {}
 	}
 }

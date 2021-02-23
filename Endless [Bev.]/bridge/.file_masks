@@ -209,6 +209,26 @@
 						}
 					}
 				}
+			},
+			"7077d882_a5a8_4154_b1bc_5b031d068537": {
+				"format_version": "1.10.0",
+				"animation_controllers": {
+					"controller.animation.bridge_custom_item_behavior": {
+						"states": {
+							"default": {}
+						}
+					}
+				}
+			},
+			"3f3976e0_4f0e_4f3d_a532_a57031cecd3f": {
+				"format_version": "1.10.0",
+				"animation_controllers": {
+					"controller.animation.bridge_custom_item_behavior": {
+						"states": {
+							"default": {}
+						}
+					}
+				}
 			}
 		}
 	},
@@ -369,6 +389,24 @@
 		"data": {}
 	},
 	"BP/features/cobalt_ore_feature.json": {
+		"data": {}
+	},
+	"BP/features/purpur_worldgen.json": {
+		"data": {}
+	},
+	"BP/feature_rules/purple_worldgen_rules.json": {
+		"data": {}
+	},
+	"BP/items/cobalt_magnet.json": {
+		"data": {}
+	},
+	"BP/items/papaya.json": {
+		"data": {}
+	},
+	"BP/blocks/end_sand.json": {
+		"data": {}
+	},
+	"BP/loot_tables/blocks/end_sand.json": {
 		"data": {}
 	}
 }

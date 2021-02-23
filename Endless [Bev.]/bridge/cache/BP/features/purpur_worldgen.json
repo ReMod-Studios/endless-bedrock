@@ -1,0 +1,99 @@
+{
+	"file_path": "C:\\Users\\IshatGupta\\AppData\\Local\\Packages\\Microsoft.MinecraftUWP_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\Endless [Bev.]\\features\\purpur_worldgen.json",
+	"file_type": "feature",
+	"format_version": 1,
+	"file_uuid": "f4cf4bad_5487_4afd_a8c5_91a09e8dec8b",
+	"file_version": 0,
+	"cache_content": {
+		"children": [
+			{
+				"data": "1.16.100",
+				"key": "format_version"
+			},
+			{
+				"open": {
+					"format_version": "1.16.100",
+					"minecraft:ore_feature": {
+						"description": {
+							"identifier": "endless:purpur_worldgen"
+						},
+						"count": 128,
+						"places_block": {
+							"name": "endless:purpur_endstone"
+						},
+						"may_replace": [
+							{
+								"name": "minecraft:end_stone"
+							}
+						]
+					}
+				},
+				"key": "minecraft:ore_feature",
+				"children": [
+					{
+						"open": {
+							"description": {
+								"identifier": "endless:purpur_worldgen"
+							},
+							"count": 128,
+							"places_block": {
+								"name": "endless:purpur_endstone"
+							},
+							"may_replace": [
+								{
+									"name": "minecraft:end_stone"
+								}
+							]
+						},
+						"key": "description",
+						"is_minified": true,
+						"children": {
+							"identifier": "endless:purpur_worldgen"
+						}
+					},
+					{
+						"data": "128",
+						"key": "count"
+					},
+					{
+						"open": {
+							"description": {
+								"identifier": "endless:purpur_worldgen"
+							},
+							"count": 128,
+							"places_block": {
+								"name": "endless:purpur_endstone"
+							},
+							"may_replace": [
+								{
+									"name": "minecraft:end_stone"
+								}
+							]
+						},
+						"key": "places_block",
+						"is_minified": true,
+						"children": {
+							"name": "endless:purpur_endstone"
+						}
+					},
+					{
+						"key": "may_replace",
+						"children": [
+							{
+								"open": [
+									{
+										"name": "minecraft:end_stone"
+									}
+								],
+								"is_minified": true,
+								"children": {
+									"name": "minecraft:end_stone"
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

@@ -1,0 +1,49 @@
+//bridge-file-version: #1
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "endless:papaya",
+			"category": "nature"
+		},
+		"components": {
+			"minecraft:use_duration": 1.6,
+			"minecraft:max_stack_size": 64,
+			"minecraft:hand_equipped": false,
+			"minecraft:stacked_by_data": true,
+			"minecraft:food": {
+				"nutrition": 5,
+				"can_always_eat": true,
+				"saturation_modifier": "normal",
+				"on_consume": {
+					"event": "on_use"
+				}
+			},
+			"minecraft:icon": {
+				"texture": "papaya"
+			},
+			"minecraft:render_offsets": "melon",
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.rawFood"
+			},
+			"minecraft:display_name": {
+				"value": "Papaya"
+			},
+			"minecraft:use_animation": "eat"
+		},
+		"events": {
+			"on_use": {
+				"teleport": {
+					"target": "holder",
+					"avoid_water": true,
+					"land_on_block": true,
+					"max_range": [
+						8,
+						8,
+						8
+					]
+				}
+			}
+		}
+	}
+}
