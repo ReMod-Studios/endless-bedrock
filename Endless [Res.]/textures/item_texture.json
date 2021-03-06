@@ -1,4 +1,3 @@
-//bridge-file-version: #1
 {
 	"resource_pack_name": "bridgeRP",
 	"texture_name": "atlas.items",
@@ -13,41 +12,41 @@
 				"textures/items/finallium_shard"
 			]
 		},
-		"endless_finallium_helmet": {
+		"finallium_helmet": {
 			"textures": [
 				"textures/items/finallium_helmet"
 			]
 		},
-		"endless_finallium_chestplate": {
+		"finallium_chestplate": {
 			"textures": [
 				"textures/items/finallium_chestplate"
 			]
 		},
-		"endless_finallium_leggings": {
+		"finallium_leggings": {
 			"textures": [
 				"textures/items/finallium_leggings"
 			]
 		},
-		"endless_finallium_boots": {
+		"finallium_boots": {
 			"textures": [
 				"textures/items/finallium_boots"
 			]
 		},
-		"endless_finallium_pickaxe": {
+		"finallium_pickaxe": {
 			"textures": "textures/items/finallium_pickaxe"
 		},
-		"endless_finallium_axe": {
+		"finallium_axe": {
 			"textures": "textures/items/finallium_axe"
 		},
-		"endless_finallium_sword": {
+		"finallium_sword": {
 			"textures": "textures/items/finallium_sword"
 		},
-		"endless_finallium_shovel": {
+		"finallium_shovel": {
 			"textures": [
 				"textures/items/finallium_shovel"
 			]
 		},
-		"endless_finalliun_hoe": {
+		"finalliun_hoe": {
 			"textures": [
 				"textures/items/finallium_hoe"
 			]

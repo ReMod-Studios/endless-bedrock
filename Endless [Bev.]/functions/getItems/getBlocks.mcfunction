@@ -1,4 +1,3 @@
-#bridge-file-version: #2
 give @s endless:purpur_endstone
 give @s endless:ashen_endstone
 give @s endless:tealite_endstone
