@@ -1,3 +1,7 @@
 ##bridge-file-version: #13
 pack.name=Endless §5[Res.]
 pack.description=A Project aiming to expand the end in an unique yet wacky alienated way! Available for both Java and Bedrock, created by ReMod Studios!
+
+## Blocks
+tile.endless:cobalt_ore.name=Cobalt Ore
+tile.endless:cobalt_block.name=Block of Cobalt
