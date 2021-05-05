@@ -1,0 +1,26 @@
+name: Build and upload MC Addon
+on:
+    push:
+        branches: [ main ]
+    workflow_dispatch:
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v2
+            
+            - name: Build mcaddon files.
+              run: |
+                  tmp=(*_BP)
+                  tmp2=(*_RP)
+                  zip -r "cibuild_endless.mcaddon" "$tmp" "$tmp2"
+
+            - name: Upload Release File
+              uses: djnicholson/release-action@v2.11
+              with:
+                  token: ${{ secrets.GITHUB_TOKEN }}
+                  release-name: 'Fun & Games latest rolling build'
+                  tag-name: 'v0.0-rolling-build'
+                  asset-name: 'release.mcaddon'
+                  file: 'release.mcaddon'
