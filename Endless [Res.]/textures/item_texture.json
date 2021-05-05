@@ -2,6 +2,10 @@
 	"resource_pack_name": "bridgeRP",
 	"texture_name": "atlas.items",
 	"texture_data": {
-		
+		"cobalt_dust": {
+			"textures": [
+				"textures/items/cobalt_dust"
+			]
+		}
 	}
 }

@@ -4,6 +4,15 @@
 	"padding": 8,
 	"num_mip_levels": 4,
 	"texture_data": {
-		
+		"cobalt_ore": {
+			"textures": [
+				"textures/blocks/cobalt_ore"
+			]
+		},
+		"cobalt_block": {
+			"textures": [
+				"textures/blocks/cobalt_block"
+			]
+		}
 	}
 }

@@ -1,0 +1,14 @@
+{
+    "format_version": "1.16.100",
+	"minecraft:recipe_furnace": {
+		"description": {
+			"identifier": "endless:furnace_cobalt_ore"
+		},
+		"tags": [
+			"furnace",
+			"blast_furnace"
+		],
+		"input": "endless:cobalt_ore",
+		"output": "endless:cobalt_dust"
+	}
+}
