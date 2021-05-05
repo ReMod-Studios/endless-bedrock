@@ -14,7 +14,7 @@ jobs:
               run: |
                   tmp=(*_BP)
                   tmp2=(*_RP)
-                  zip -r "cibuild_endless_release.mcaddon" "$tmp" "$tmp2"
+                  zip -r "release.mcaddon" "$tmp" "$tmp2"
 
             - name: Upload Release File
               uses: djnicholson/release-action@v2.11
