@@ -27,7 +27,6 @@
 				"event": "on_break",
 				"condition": "query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_pickaxe')"
 			},
-			"minecraft:display_name": "Cobalt Ore",
 			"tag:cobalt_ore": {},
             "tag:cobalt": {},
 			"tag:metal": {},

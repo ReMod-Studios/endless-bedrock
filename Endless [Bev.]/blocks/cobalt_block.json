@@ -35,7 +35,6 @@
 			"minecraft:on_step_on": {
 				"event": "on_step_on"
 			},
-            "minecraft:display_name": "Block of Cobalt",
             "tag:cobalt_block": {},
             "tag:cobalt": {},
             "tag:metal": {},
