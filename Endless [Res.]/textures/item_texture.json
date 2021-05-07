@@ -7,6 +7,11 @@
 				"textures/items/cobalt_dust"
 			]
 		},
+		"cobalt_dynamite": {
+			"textures": [
+				"textures/items/cobalt_dynamite"
+			]
+		},
 		"therakium_shard": {
 			"textures": [
 				"textures/items/therakium_shard"
