@@ -48,7 +48,7 @@
 			"minecraft:particle_motion_collision": {
 				"collision_drag": 10,
 				"coefficient_of_restitution": 3,
-				"collision_radius": 1
+				"collision_radius": 0.2
 			},
 			"minecraft:particle_appearance_lighting": {},
 			"minecraft:particle_appearance_tinting": {

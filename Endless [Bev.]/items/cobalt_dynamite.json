@@ -1,5 +1,5 @@
 {
-    "format_version": "1.16.100",
+	"format_version": "1.16.100",
 	"minecraft:item": {
 		"description": {
 			"identifier": "endless:cobalt_dynamite",
@@ -10,15 +10,11 @@
 			"minecraft:hand_equipped": false,
 			"minecraft:stacked_by_data": true,
 			"minecraft:foil": false,
-			"minecraft:throwable": {
-				"do_swing_animation": true,
-				"max_draw_duration": 1,
-				"scale_power_by_draw_duration": true,
-				"launch_power_scale": 1
-            },
-            "minecrart:projectile": {
-                "projectile_entity": "endless:dynamite"
-            },
+			"minecraft:on_use": {
+				"on_use": {
+					"event": "on_use"
+				}
+			},
 			"minecraft:icon": {
 				"texture": "cobalt_dynamite"
 			},
@@ -31,6 +27,21 @@
 			},
 			"tag:cobalt": {},
 			"tag:cobalt_dynamite": {}
+		},
+		"events": {
+			"on_use": {
+				"sequence": [
+					{
+						"swing": {}
+					},
+					{
+						"shoot": {
+							"projectile": "endless:dynamite",
+							"launch_power": 2
+						}
+					}
+				]
+			}
 		}
 	}
 }
