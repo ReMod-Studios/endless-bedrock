@@ -1,0 +1,106 @@
+{
+    "format_version": "1.16.100",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "endless:dynamite",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false,
+			"runtime_identifier": "minecraft:snowball",
+			"animations": {
+				"post_hit": "controller.animation.cobalt_dynamite.post_hit"
+			},
+			"scripts": {
+				"animate": [
+					"post_hit"
+				]
+			}
+		},
+		"components": {
+			"minecraft:collision_box": {
+				"width": 0.25,
+				"height": 0.25
+			},
+			"minecraft:projectile": {
+				"on_hit": {
+					"impact_damage": {
+						"damage": 3,
+						"knockback": true
+					},
+					"spawn_aoe_cloud": {
+						"radius": 5,
+						"particle": "endless:cobalt_dynamite_smoke",
+						"duration": 10,
+						"affect_owner": true
+					},
+					"stick_in_ground": {}
+				},
+				"anchor": 1,
+				"power": 1.5,
+				"gravity": 0.03,
+				"angle_offset": 0,
+				"offset": [
+					0,
+					-0.1,
+					0
+				]
+			},
+			"minecraft:physics": {},
+			"minecraft:pushable": {
+				"is_pushable": true,
+				"is_pushable_by_piston": true
+			},
+			"minecraft:conditional_bandwidth_optimization": {
+				"default_values": {
+					"max_optimized_distance": 100,
+					"max_dropped_ticks": 5,
+					"use_motion_prediction_hints": true
+				}
+			}
+		},
+		"component_groups": {
+			"endless:post_hit": {
+				"minecraft:timer": {
+					"time": [
+						10,
+						10
+					],
+					"time_down_event": {
+						"event": "endless:despawn"
+					}
+				}
+			},
+			"endless:despawn": {
+				"minecraft:instant_despawn": {}
+			}
+		},
+		"events": {
+			"endless:post_hit_event": {
+				"sequence": [
+					{
+						"add": {
+							"component_groups": [
+								"endless:post_hit"
+							]
+						}
+					},
+					{
+						"run_command": {
+							"command": [
+                                "tag @s post_hit",
+                                "particle endless:cobalt_dynamite_smoke ~ ~ ~"
+							]
+						}
+					}
+				]
+			},
+			"endless:despawn": {
+				"add": {
+					"component_groups": [
+						"endless:despawn"
+					]
+				}
+			}
+		}
+	}
+}

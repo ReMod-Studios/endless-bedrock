@@ -15,7 +15,10 @@
 				"max_draw_duration": 1,
 				"scale_power_by_draw_duration": true,
 				"launch_power_scale": 1
-			},
+            },
+            "minecrart:projectile": {
+                "projectile_entity": "endless:dynamite"
+            },
 			"minecraft:icon": {
 				"texture": "cobalt_dynamite"
 			},
