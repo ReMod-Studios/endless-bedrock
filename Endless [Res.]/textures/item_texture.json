@@ -6,6 +6,11 @@
 			"textures": [
 				"textures/items/cobalt_dust"
 			]
+		},
+		"therakium_shard": {
+			"textures": [
+				"textures/items/therakium_shard"
+			]
 		}
 	}
 }

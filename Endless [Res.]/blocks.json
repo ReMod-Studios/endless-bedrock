@@ -9,5 +9,11 @@
 	},
 	"endless:cobalt_block": {
 		"sound": "metal"
+	},
+	"endless:therakium_ore": {
+		"sound": "stone"
+	},
+	"endless:therakium_block": {
+		"sound": "redstone_ore"
 	}
 }

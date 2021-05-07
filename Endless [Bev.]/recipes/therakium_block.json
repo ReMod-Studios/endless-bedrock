@@ -1,0 +1,27 @@
+{
+    "format_version": "1.16.100",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "endless:therakium_block"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+            "###",
+            "###",
+            "###"
+		],
+		"key": {
+			"#": {
+				"item": "endless:therakium_shard"
+			}
+		},
+		"result": [
+			{
+                "item": "endless:therakium_block",
+			    "count": 1
+            }
+        ]
+	}
+}

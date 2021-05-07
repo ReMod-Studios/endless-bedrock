@@ -13,6 +13,16 @@
 			"textures": [
 				"textures/blocks/cobalt_block"
 			]
+		},
+		"therakium_ore": {
+			"textures": [
+				"textures/blocks/therakium_ore"
+			]
+		},
+		"therakium_block": {
+			"textures": [
+				"textures/blocks/therakium_block"
+			]
 		}
 	}
 }

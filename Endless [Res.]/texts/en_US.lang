@@ -1,6 +1,9 @@
-##bridge-file-version: #13
 pack.name=Endless §5[Res.]
 pack.description=A Project aiming to expand the end in an unique yet wacky alienated way! Available for both Java and Bedrock, created by ReMod Studios!
+
+## Items
+item.endless:cobalt_dust.name=Cobalt Dust
+item.endless:therakium_shard.name=Therakium Shard
 
 ## Blocks
 tile.endless:cobalt_ore.name=Cobalt Ore
