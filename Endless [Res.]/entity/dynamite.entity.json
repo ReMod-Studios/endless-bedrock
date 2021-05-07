@@ -1,0 +1,28 @@
+{
+    "format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "endless:dynamite",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/items/cobalt_dynamite"
+			},
+			"geometry": {
+				"default": "geometry.item_sprite"
+			},
+			"render_controllers": [
+				"controller.render.item_sprite"
+			],
+			"animations": {
+				"flying": "animation.actor.billboard"
+			},
+			"scripts": {
+				"animate": [
+					"flying"
+				]
+			}
+		}
+	}
+}
