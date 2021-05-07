@@ -8,3 +8,5 @@ item.endless:therakium_shard.name=Therakium Shard
 ## Blocks
 tile.endless:cobalt_ore.name=Cobalt Ore
 tile.endless:cobalt_block.name=Block of Cobalt
+tile.endless:therakium_ore.name=Therakium Ore
+tile.endless:therakium_block.name=Block of Therakium
