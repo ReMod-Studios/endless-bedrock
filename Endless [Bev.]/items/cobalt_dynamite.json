@@ -10,10 +10,20 @@
 			"minecraft:hand_equipped": false,
 			"minecraft:stacked_by_data": true,
 			"minecraft:foil": false,
-			"minecraft:on_use": {
-				"on_use": {
-					"event": "on_use"
-				}
+			// "minecraft:on_use": {
+			// 	"on_use": {
+			// 		"event": ""
+			// 	}
+			// },
+			"minecraft:throwable": {
+				"do_swing_animation": true
+			},
+			"minecraft:projectile": {
+				"projectile_entity": "endless:dynamite"
+			},
+			"minecraft:cooldown": {
+				"category": "custom_items",
+				"duration": 1
 			},
 			"minecraft:icon": {
 				"texture": "cobalt_dynamite"
@@ -38,6 +48,13 @@
 						"shoot": {
 							"projectile": "endless:dynamite",
 							"launch_power": 2
+						}
+					},
+					{
+						"run_command": {
+							"command": [
+								"clear @s endless:dynamite 1"
+							]
 						}
 					}
 				]

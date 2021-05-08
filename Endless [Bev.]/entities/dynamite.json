@@ -1,5 +1,5 @@
 {
-    "format_version": "1.16.100",
+	"format_version": "1.16.100",
 	"minecraft:entity": {
 		"description": {
 			"identifier": "endless:dynamite",
@@ -8,11 +8,15 @@
 			"is_experimental": false,
 			"runtime_identifier": "minecraft:snowball",
 			"animations": {
-				"post_hit": "controller.animation.cobalt_dynamite.post_hit"
+				"tick": "animation.dynamite.tick",
+				"tick_on_ground": "animation.dynamite.tick_on_ground"
 			},
 			"scripts": {
 				"animate": [
-					"post_hit"
+					{
+						"tick": "query.is_alive",
+						"tick_on_ground": "query.is_on_ground"
+					}
 				]
 			}
 		},
@@ -27,17 +31,16 @@
 						"damage": 3,
 						"knockback": true
 					},
-					"spawn_aoe_cloud": {
-						"radius": 5,
-						"particle": "endless:cobalt_dynamite_smoke",
-						"duration": 10,
-						"affect_owner": true
-					},
-					"stick_in_ground": {}
+					"stick_in_ground": {},
+					"definition_event": {
+						"event_trigger": {
+							"event": "endless:post_hit"
+						}
+					}
 				},
 				"anchor": 1,
 				"power": 1.5,
-				"gravity": 0.03,
+				"gravity": 0.2,
 				"angle_offset": 0,
 				"offset": [
 					0,
@@ -59,40 +62,17 @@
 			}
 		},
 		"component_groups": {
-			"endless:post_hit": {
-				"minecraft:timer": {
-					"time": [
-						10,
-						10
-					],
-					"time_down_event": {
-						"event": "endless:despawn"
-					}
-				}
-			},
 			"endless:despawn": {
 				"minecraft:instant_despawn": {}
 			}
 		},
 		"events": {
-			"endless:post_hit_event": {
-				"sequence": [
-					{
-						"add": {
-							"component_groups": [
-								"endless:post_hit"
-							]
-						}
-					},
-					{
-						"run_command": {
-							"command": [
-                                "tag @s post_hit",
-                                "particle endless:cobalt_dynamite_smoke ~ ~ ~"
-							]
-						}
-					}
-				]
+			"endless:post_hit": {
+				"run_command": {
+					"command": [
+						"particle endless:cobalt_dynamite_smoke ~~~"
+					]
+				}
 			},
 			"endless:despawn": {
 				"add": {
