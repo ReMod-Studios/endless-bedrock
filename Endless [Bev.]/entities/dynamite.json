@@ -14,7 +14,9 @@
 			"scripts": {
 				"animate": [
 					{
-						"tick": "query.is_alive",
+						"tick": "query.is_alive"
+					},
+					{
 						"tick_on_ground": "query.is_on_ground"
 					}
 				]
@@ -28,7 +30,7 @@
 			"minecraft:projectile": {
 				"on_hit": {
 					"impact_damage": {
-						"damage": 3,
+						"damage": 4,
 						"knockback": true
 					},
 					"stick_in_ground": {},
@@ -40,7 +42,7 @@
 				},
 				"anchor": 1,
 				"power": 1.5,
-				"gravity": 0.2,
+				"gravity": 0.08,
 				"angle_offset": 0,
 				"offset": [
 					0,
