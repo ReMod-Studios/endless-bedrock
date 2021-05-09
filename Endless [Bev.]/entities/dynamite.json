@@ -6,21 +6,7 @@
 			"is_spawnable": false,
 			"is_summonable": true,
 			"is_experimental": false,
-			"runtime_identifier": "minecraft:snowball",
-			"animations": {
-				"tick": "animation.dynamite.tick",
-				"tick_on_ground": "animation.dynamite.tick_on_ground"
-			},
-			"scripts": {
-				"animate": [
-					{
-						"tick": "query.is_alive"
-					},
-					{
-						"tick_on_ground": "query.is_on_ground"
-					}
-				]
-			}
+			"runtime_identifier": "minecraft:snowball"
 		},
 		"components": {
 			"minecraft:collision_box": {
@@ -61,18 +47,41 @@
 					"max_dropped_ticks": 5,
 					"use_motion_prediction_hints": true
 				}
+			},
+			"minecraft:environment_sensor": {
+				"triggers": {
+					"filters": {
+						"test": "has_tag",
+						"subject": "self",
+						"operator": "equals",
+						"value": "despawn"
+					},
+					"event": "endless:despawn"
+				}
 			}
 		},
 		"component_groups": {
 			"endless:despawn": {
 				"minecraft:instant_despawn": {}
+			},
+			"endless:tick": {
+				"minecraft:timer": {
+					"time": [
+						1,
+						1
+					],
+					"looping": true,
+					"time_down_event": {
+						"event": "endless:tick_command"
+					}
+				}
 			}
 		},
 		"events": {
 			"endless:post_hit": {
-				"run_command": {
-					"command": [
-						"particle endless:cobalt_dynamite_smoke ~~~"
+				"add": {
+					"component_groups": [
+						"endless:tick"
 					]
 				}
 			},
@@ -80,6 +89,13 @@
 				"add": {
 					"component_groups": [
 						"endless:despawn"
+					]
+				}
+			},
+			"endless:tick_command": {
+				"run_command": {
+					"command": [
+						"function EntityFunc/CobaltDynamite"
 					]
 				}
 			}

@@ -14,7 +14,17 @@
 			},
 			"render_controllers": [
 				"controller.render.item_sprite"
-			]
+			],
+			"animations": {
+				"fly": "animation.throwable_item.sycthe.fly"
+			},
+			"scripts": {
+				"animate": [
+					{
+						"fly": "!q.is_on_ground"
+					}
+				]
+			}
 		}
 	}
 }
