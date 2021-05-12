@@ -1,15 +1,22 @@
 {
 	"format_version": "1.8.0",
 	"animations": {
-		"animation.throwable_item.sycthe.fly": {
+		"animation.throwable_item.fly": {
 			"loop": true,
 			"animation_length": 1,
 			"bones": {
 				"main": {
-					"rotation": {
-						"0.0": [0, 0, 0],
-						"0.50": [360, 0, 0]
-					}
+					"rotation": ["query.modified_distance_moved * 20", "query.modified_distance_moved * 20" , "query.modified_distance_moved * 20"]
+				}
+			}
+		},
+		"animation.throwable_item.ground": {
+			"loop": true,
+			"animation_length": 1,
+			"bones": {
+				"main": {
+					"rotation": [-25, 0, 90],
+					"position": [0, -7, 0]
 				}
 			}
 		}

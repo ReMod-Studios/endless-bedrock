@@ -2,12 +2,12 @@
     "format_version": "1.10.0",
 	"minecraft:client_entity": {
 		"description": {
-			"identifier": "endless:dynamite",
+			"identifier": "endless:repel_entity",
 			"materials": {
 				"default": "entity_alphatest"
 			},
 			"textures": {
-				"default": "textures/items/cobalt_dynamite"
+				"default": "textures/items/transparent"
 			},
 			"geometry": {
 				"default": "geometry.throwable_item"

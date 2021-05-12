@@ -23,6 +23,11 @@
 			"textures": [
 				"textures/blocks/therakium_block"
 			]
+		},
+		"static_charge": {
+			"textures": [
+				"textures/blocks/static_charge"
+			]
 		}
 	}
 }

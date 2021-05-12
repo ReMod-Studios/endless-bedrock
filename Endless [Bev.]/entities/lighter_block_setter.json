@@ -1,0 +1,67 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "endless:lighter_block_setter",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false,
+			"runtime_identifier": "minecraft:snowball"
+		},
+		"components": {
+			"minecraft:collision_box": {
+				"width": 0.25,
+				"height": 0.25
+			},
+			"minecraft:projectile": {
+				"on_hit": {
+					"impact_damage": {
+						"damage": 0,
+						"knockback": true
+					},
+					"stick_in_ground": {},
+					"definition_event": {
+						"event_trigger": {
+							"event": "endless:post_hit"
+						}
+					}
+				},
+				"anchor": 1,
+				"power": 1.5,
+				"gravity": 0.08,
+				"angle_offset": 0,
+				"offset": [
+					0,
+					-0.1,
+					0
+				]
+			},
+			"minecraft:physics": {}
+		},
+		"component_groups": {
+			"endless:despawn": {
+				"minecraft:instant_despawn": {}
+			}
+		},
+		"events": {
+			"endless:post_hit": {
+				"sequence": [
+					{
+						"run_command": {
+							"command": [
+								"setblock ~~~ endless:static_charge"
+							]
+						}
+					},
+					{
+						"add": {
+							"component_groups": [
+								"endless:despawn"
+							]
+						}
+					}
+				]
+			}
+		}
+	}
+}

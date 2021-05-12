@@ -1,0 +1,152 @@
+{
+    "format_version": "1.16.100",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "endless:repel_entity",
+			"is_spawnable": false,
+			"is_summonable": true,
+            "is_experimental": false,
+            "animations": {
+                "attack": "controller.animation.repel.attack"
+            },
+            "scripts": {
+                "animate": [
+                    "attack"
+                ]
+            }
+		},
+		"components": {
+			"minecraft:collision_box": {
+				"width": 1,
+				"height": 1.8
+			},
+			"minecraft:health": {
+				"value": 20,
+				"max": 20
+			},
+			"minecraft:movement": {
+				"value": 0.25
+			},
+			"minecraft:movement.generic": {},
+			"minecraft:navigation.generic": {},
+			"minecraft:jump.static": {},
+			"minecraft:can_climb": {},
+			"minecraft:breathable": {
+				"totalSupply": 15,
+				"suffocateTime": 0,
+				"breathesAir": true,
+				"breathesWater": false
+			},
+			"minecraft:physics": {},
+			"minecraft:behavior.float": {
+				"priority": 0
+			},
+			"minecraft:behavior.random_stroll": {
+				"priority": 6,
+				"speed_multiplier": 1
+			},
+			"minecraft:behavior.look_at_player": {
+				"priority": 7,
+				"look_distance": 6,
+				"probability": 0.02
+			},
+			"minecraft:behavior.random_look_around": {
+				"priority": 7
+			},
+			"minecraft:behavior.hurt_by_target": {
+				"priority": 1
+			}
+		},
+		"component_groups": {
+			"endless:attack_state": {
+				"minecraft:behavior.nearest_attackable_target": {
+					"priority": 2,
+					"within_radius": 25,
+					"reselect_targets": true,
+					"entity_types": [
+						{
+							"filters": {
+								"test": "is_family",
+								"subject": "other",
+								"operator": "equals",
+								"value": "monster"
+							},
+							"max_dist": 35
+						}
+					],
+					"must_see": true,
+					"must_see_forget_duration": 17
+				},
+				"minecraft:area_attack": {
+					"damage_range": 5,
+					"damage_per_tick": 1,
+					"cause": "contact",
+					"entity_filter": {
+						"subject": "other",
+						"test": "is_family",
+						"operator": "equals",
+						"value": "monster"
+					}
+				}
+			},
+			"endless:escape_state": {
+				"minecraft:behavior.avoid_mob_type": {
+					"priority": 1,
+					"entity_types": [
+						{
+							"filters": {
+								"test": "is_family",
+								"subject": "other",
+								"operator": "equals",
+								"value": "monster"
+							}
+						}
+					],
+					"max_flee": 10,
+					"walk_speed_multiplier": 2,
+					"sprint_speed_multiplier": 2,
+					"on_escape_event": {
+						"event": "endless:despawn"
+					}
+				}
+			},
+			"endless:despawn": {
+				"minecraft:instant_despawn": {}
+			}
+		},
+		"events": {
+			"endless:despawn": {
+				"add": {
+					"component_groups": [
+						"endless:despawn"
+					]
+				}
+			},
+			"endless:start_escape": {
+				"sequence": [
+					{
+						"remove": {
+							"component_groups": [
+								"endless:attack_state"
+							]
+						}
+					},
+					{
+						"add": {
+							"component_groups": [
+								"endless:escape_state"
+							]
+						}
+					}
+				]
+			},
+			"minecraft:entity_spawned": {
+				"add": {
+					"component_groups": [
+						"endless:attack_state"
+					]
+				}
+			}
+		}
+	}
+}

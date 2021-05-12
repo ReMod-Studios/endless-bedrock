@@ -1,0 +1,66 @@
+{
+    "format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "endless:static_charge"
+		},
+		"components": {
+			"minecraft:destroy_time": 0,
+			"minecraft:block_light_emission": 1,
+			"minecraft:block_light_absorption": 0,
+			"minecraft:map_color": "#FFFF00",
+			"minecraft:flammable": {
+				"burn_odds": 0,
+				"flame_odds": 0
+			},
+			"minecraft:friction": 0.5,
+			"minecraft:explosion_resistance": 0,
+            "minecraft:loot": "loot_tables/empty.json",
+            "minecraft:on_step_on": {
+				"event": "on_step_on"
+			},
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "static_charge",
+					"render_method": "blend"
+				}
+			},
+            "minecraft:geometry": "geometry.flat_block",
+            "minecraft:pick_collision": {
+				"origin": [
+					-8,
+					0,
+					-8
+				],
+				"size": [
+					16,
+					1,
+					16
+				]
+            },
+            "minecraft:entity_collision": {
+				"origin": [
+					-8,
+					0,
+					-8
+				],
+				"size": [
+					16,
+					1,
+					16
+				]
+			},
+			"tag:static_charge": {},
+            "tag:cobalt": {}
+        }, 
+        "events": {
+			"on_step_on": {
+				"run_command": {
+                    "command": [
+                        "function BlocksFunc/StaticCharge"
+                    ]
+                }
+			}
+		}
+	}
+}

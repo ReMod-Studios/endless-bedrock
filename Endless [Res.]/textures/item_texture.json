@@ -12,6 +12,16 @@
 				"textures/items/cobalt_dynamite"
 			]
 		},
+		"cobalt_lighter": {
+			"textures": [
+				"textures/items/cobalt_lighter"
+			]
+		},
+		"cobalt_repel": {
+			"textures": [
+				"textures/items/cobalt_repel"
+			]
+		},
 		"therakium_shard": {
 			"textures": [
 				"textures/items/therakium_shard"
