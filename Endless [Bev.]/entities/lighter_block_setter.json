@@ -49,7 +49,7 @@
 					{
 						"run_command": {
 							"command": [
-								"setblock ~~~ endless:static_charge"
+								"setblock ~ ~ ~ endless:static_charge"
 							]
 						}
 					},

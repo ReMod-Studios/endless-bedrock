@@ -15,9 +15,8 @@
 			"minecraft:emitter_lifetime_once": {
 				"active_time": 1
 			},
-			"minecraft:emitter_shape_box": {
-				"offset": ["math.random(-0.8, 0.8)", "math.random(-0.8, 0.8)", "math.random(-0.8, 0.8)"],
-				"half_dimensions": [1, 1, 1],
+			"minecraft:emitter_shape_sphere": {
+				"offset": ["math.random(-1.8, 1.8)", "math.random(-0.8, 2.4)", "math.random(-1.8, 1.8)"],
 				"direction": "outwards"
 			},
 			"minecraft:particle_lifetime_expression": {

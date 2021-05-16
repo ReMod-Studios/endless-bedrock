@@ -19,6 +19,9 @@
             "minecraft:on_step_on": {
 				"event": "on_step_on"
 			},
+			"minecraft:on_step_off": {
+				"event": "on_step_on"
+			},
 			"minecraft:material_instances": {
 				"*": {
 					"texture": "static_charge",

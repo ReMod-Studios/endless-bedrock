@@ -22,6 +22,7 @@ item.endless:therakium_boots.name=Therakium Boots
 ## Blocks
 tile.endless:cobalt_ore.name=Cobalt Ore
 tile.endless:cobalt_block.name=Block of Cobalt
+tile.endless:static_charge.name=Static Charge Block
 
 tile.endless:therakium_ore.name=Therakium Ore
 tile.endless:therakium_block.name=Block of Therakium
