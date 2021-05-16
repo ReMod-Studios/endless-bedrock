@@ -28,6 +28,16 @@
 			"textures": [
 				"textures/blocks/static_charge"
 			]
-		}
+		},
+		"lunar_end_stone_top": {
+			"textures": [
+				"textures/blocks/lunar_end_stone_top"
+			]
+		},
+		"lunar_end_stone_side": {
+			"textures": [
+				"textures/blocks/lunar_end_stone_side"
+			]
+		} 
 	}
 }

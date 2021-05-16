@@ -26,3 +26,5 @@ tile.endless:static_charge.name=Static Charge Block
 
 tile.endless:therakium_ore.name=Therakium Ore
 tile.endless:therakium_block.name=Block of Therakium
+
+tile.endless:lunar_end_stone.name=Lunar End Stone
