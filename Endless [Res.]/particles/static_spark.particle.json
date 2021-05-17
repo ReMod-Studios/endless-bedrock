@@ -46,6 +46,7 @@
 			},
 			"minecraft:particle_motion_collision": {
 				"coefficient_of_restitution": 0.5,
+				"collision_radius": 0.1,
 				"expire_on_contact": true
 			},
 			"minecraft:particle_appearance_lighting": {},

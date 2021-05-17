@@ -7,14 +7,14 @@
 				"default": {
 					"transitions": [
 						{
-							"on_hold": "q.get_equipped_item_name(0)=='cobalt_repel'"
+							"on_hold": "q.get_equipped_item_name == 'cobalt_repel'"
 						}
 					]
 				},
 				"on_hold": {
 					"transitions": [
 						{
-							"default": "!q.get_equipped_item_name(0)=='cobalt_repel'"
+							"default": "q.get_equipped_item_name != 'cobalt_repel'"
 						}
 					],
 					"on_entry": [

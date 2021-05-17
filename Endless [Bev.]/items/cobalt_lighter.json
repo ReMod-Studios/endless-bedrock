@@ -42,12 +42,11 @@
 							"type": "durability",
 							"amount": 1,
 							"target": "self"
-						}
-					},
-					{
+						},
 						"shoot": {
 							"projectile": "endless:lighter_block_setter",
-							"launch_power": 10
+							"launch_power": 10,
+							"angle_offset": 3
 						}
 					}
 				]

@@ -2,7 +2,7 @@
     "format_version": "1.16.100",
 	"minecraft:block": {
 		"description": {
-			"identifier": "endless:lunar_end_stone"
+			"identifier": "endless:lunaric_end_stone"
 		},
 		"components": {
 			"minecraft:destroy_time": 7.5,
@@ -21,11 +21,11 @@
 					"render_method": "opaque"
 				},
 				"up": {
-					"texture": "lunar_end_stone_top",
+					"texture": "lunaric_end_stone_top",
 					"render_method": "opaque"
 				},
 				"side": {
-					"texture": "lunar_end_stone_side",
+					"texture": "lunaric_end_stone_side",
 					"render_method": "opaque"
 				},
 				"down": {
@@ -43,7 +43,7 @@
 					"event": "on_tick"
 				}
 			},
-			"tag:lunar_end_stone": {},
+			"tag:lunaric_end_stone": {},
 			"tag:end_stone": {},
 			"tag:metal": {},
 			"tag:stone": {}
@@ -51,7 +51,7 @@
 		"events": {
 			"on_break": {
 				"spawn_loot": {
-					"table": "loot_tables/blocks/lunar_end_stone.json"
+					"table": "loot_tables/blocks/lunaric_end_stone.json"
 				}
 			},
 			"on_tick": {
@@ -62,7 +62,7 @@
 								"weight": 1,
 								"run_command": {
 									"command": [
-										"fill ~~~ ~1 ~ ~ endless:lunar_end_stone 0 replace end_stone"
+										"fill ~~~ ~1 ~ ~ endless:lunaric_end_stone 0 replace end_stone"
 									]
 								}
 							},
@@ -70,7 +70,7 @@
 								"weight": 1,
 								"run_command": {
 									"command": [
-										"fill ~~~ ~-1 ~ ~ endless:lunar_end_stone 0 replace end_stone"
+										"fill ~~~ ~-1 ~ ~ endless:lunaric_end_stone 0 replace end_stone"
 									]
 								}
 							},
@@ -78,7 +78,7 @@
 								"weight": 1,
 								"run_command": {
 									"command": [
-										"fill ~~~ ~ ~ ~1 endless:lunar_end_stone 0 replace end_stone"
+										"fill ~~~ ~ ~ ~1 endless:lunaric_end_stone 0 replace end_stone"
 									]
 								}
 							},
@@ -86,7 +86,7 @@
 								"weight": 1,
 								"run_command": {
 									"command": [
-										"fill ~~~ ~ ~ ~-1 endless:lunar_end_stone 0 replace end_stone"
+										"fill ~~~ ~ ~ ~-1 endless:lunaric_end_stone 0 replace end_stone"
 									]
 								}
 							}
@@ -95,8 +95,7 @@
 					{
 						"run_command": {
 							"command": [
-								"execute @s ^^^ detect ~ ~1 ~ end_stone setblock ~~~ end_stone",
-								"execute @s ^^^ detect ~ ~1 ~ endless:lunar_end_stone setblock ~ ~ ~ end_stone"
+								"function BlocksFunc/LunarEndStone"
 							]
 						}
 					}
