@@ -1,0 +1,22 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:fog_settings": {
+        "description": {
+            "identifier": "endless:lunar_shines"
+        },
+        "distance": {
+            "air": {
+                "fog_start": 0,
+                "fog_end": 10,
+                "fog_color": "#210e64",
+                "render_distance_type": "fixed"
+            },
+            "weather": {
+                "fog_start": 0,
+                "fog_end": 20,
+                "fog_color": "#001c9b",
+                "render_distance_type": "fixed"
+            }
+        }
+    }
+}
