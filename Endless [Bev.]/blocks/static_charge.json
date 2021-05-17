@@ -1,5 +1,5 @@
 {
-    "format_version": "1.16.100",
+	"format_version": "1.16.100",
 	"minecraft:block": {
 		"description": {
 			"identifier": "endless:static_charge"
@@ -15,8 +15,13 @@
 			},
 			"minecraft:friction": 0.5,
 			"minecraft:explosion_resistance": 0,
-            "minecraft:loot": "loot_tables/empty.json",
-            "minecraft:on_step_on": {
+			"minecraft:loot": "loot_tables/empty.json",
+			"minecraft:ticking": {
+				"on_tick": {
+					"event": "on_tick"
+				}
+			},
+			"minecraft:on_step_on": {
 				"event": "on_step_on"
 			},
 			"minecraft:on_step_off": {
@@ -28,8 +33,8 @@
 					"render_method": "blend"
 				}
 			},
-            "minecraft:geometry": "geometry.flat_block",
-            "minecraft:pick_collision": {
+			"minecraft:geometry": "geometry.flat_block",
+			"minecraft:pick_collision": {
 				"origin": [
 					-8,
 					0,
@@ -40,8 +45,8 @@
 					1,
 					16
 				]
-            },
-            "minecraft:entity_collision": {
+			},
+			"minecraft:entity_collision": {
 				"origin": [
 					-8,
 					0,
@@ -54,15 +59,15 @@
 				]
 			},
 			"tag:static_charge": {},
-            "tag:cobalt": {}
-        }, 
-        "events": {
-			"on_step_on": {
+			"tag:cobalt": {}
+		},
+		"events": {
+			"on_tick": {
 				"run_command": {
-                    "command": [
-                        "function BlocksFunc/StaticCharge"
-                    ]
-                }
+					"command": [
+						"execute @p ~ ~1 ~ function BlocksFunc/StaticCharge"
+					]
+				}
 			}
 		}
 	}
