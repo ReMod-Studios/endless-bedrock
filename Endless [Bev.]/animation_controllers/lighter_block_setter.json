@@ -1,0 +1,28 @@
+{
+    "format_version": "1.10",
+	"animation_controllers": {
+		"controller.animation.lighter_block_setter.on_ground": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"on_ground": "q.is_on_ground"
+						}
+					]
+				},
+				"on_ground": {
+					"transitions": [
+						{
+							"default": "!q.is_on_ground"
+						}
+					],
+					"on_entry": [
+                        "/setblock ~~~ endless:static_charge",
+                        "@s endless:despawn"
+                    ]
+				}
+			}
+		}
+	}
+}

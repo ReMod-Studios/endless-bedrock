@@ -1,0 +1,29 @@
+{
+    "format_version": "1.16.100",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "endless:cobalt_repel"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+            "G#G",
+            " G "
+		],
+		"key": {
+			"#": {
+				"item": "endless:cobalt_dust"
+            },
+            "G": {
+                "item": "minecraft:glass"
+            }
+		},
+		"result": [
+			{
+                "item": "endless:cobalt_repel",
+			    "count": 1
+            }
+        ]
+	}
+}

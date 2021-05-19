@@ -43,10 +43,11 @@
 							"amount": 1,
 							"target": "self"
 						},
-						"shoot": {
-							"projectile": "endless:lighter_block_setter",
-							"launch_power": 10,
-							"angle_offset": 3
+						"run_command": {
+							"command": [
+								"tag @s add ShootStaticSetter"
+							],
+							"target": "holder"
 						}
 					}
 				]

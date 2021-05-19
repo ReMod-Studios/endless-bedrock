@@ -23,7 +23,7 @@
 				"looping": true,
 				"range": [
 					0,
-					10
+					2
 				]
 			},
 			"minecraft:on_step_on": {
@@ -70,7 +70,8 @@
 			"on_tick": {
 				"run_command": {
 					"command": [
-						"execute @p ~ ~1 ~ function BlocksFunc/StaticCharge"
+						"execute @p ~ ~1 ~ function BlocksFunc/StaticCharge",
+						"execute @p ~ ~1 ~ setblock ~~~ air"
 					]
 				}
 			}

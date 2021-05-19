@@ -6,7 +6,15 @@
 			"is_spawnable": false,
 			"is_summonable": true,
 			"is_experimental": false,
-			"runtime_identifier": "minecraft:snowball"
+			"runtime_identifier": "minecraft:snowball",
+			"animations": {
+				"on_ground": "controller.animation.lighter_block_setter.on_ground"
+			},
+			"scripts": {
+				"animate": [
+					"on_ground"
+				]
+			}
 		},
 		"components": {
 			"minecraft:collision_box": {
@@ -19,12 +27,7 @@
 						"damage": 0,
 						"knockback": true
 					},
-					"stick_in_ground": {},
-					"definition_event": {
-						"event_trigger": {
-							"event": "endless:post_hit"
-						}
-					}
+					"stick_in_ground": {}
 				},
 				"anchor": 1,
 				"power": 1.5,
@@ -44,23 +47,12 @@
 			}
 		},
 		"events": {
-			"endless:post_hit": {
-				"sequence": [
-					{
-						"run_command": {
-							"command": [
-								"setblock ~~~ endless:static_charge"
-							]
-						}
-					},
-					{
-						"add": {
-							"component_groups": [
-								"endless:despawn"
-							]
-						}
-					}
-				]
+			"endless:after_on_ground": {
+				"add": {
+					"component_groups": [
+						"endless:despawn"
+					]
+				}
 			}
 		}
 	}
