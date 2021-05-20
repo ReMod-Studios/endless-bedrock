@@ -29,3 +29,6 @@ tile.endless:therakium_block.name=Block of Therakium
 
 tile.endless:lunaric_end_stone.name=Lunar End Stone
 tile.endless:murky_end_stone.name=Murky End Stone
+
+tile.endless:rhyolite.name=Rhyolite
+tile.endless:polished_rhyolite.name=Polished Rhyolite

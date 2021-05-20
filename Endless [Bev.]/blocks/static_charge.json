@@ -57,7 +57,7 @@
 			"on_step_on": {
 				"run_command": {
 					"command": [
-						"execute @p[x=~, y=~0.1, z=~] function BlocksFunc/StaticCharge"
+						"execute @p[x=~, y=~0.1, z=~] ^^^ function BlocksFunc/StaticCharge"
 					]
 				}
 			}
