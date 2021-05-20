@@ -57,8 +57,19 @@
 			"on_step_on": {
 				"run_command": {
 					"command": [
-						"execute @p[x=~, y=~0.1, z=~] ^^^ function BlocksFunc/StaticCharge"
+						"execute @p[x=~, y=~0.1, z=~] ^^^ function BlocksFunc/StaticCharge",
+						"setblock ~~~ air"
 					]
+				},
+				"add_mob_effect": {
+					"effect": "instant_damage",
+					"target": "other",
+					"amplifier": 1,
+					"duration": 0.1
+				},
+				"remove_mob_effect": {
+				    "effect": "instant_damage",
+				    "target": "other"
 				}
 			}
 		}
