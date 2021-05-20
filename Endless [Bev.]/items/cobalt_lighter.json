@@ -43,6 +43,7 @@
 							"amount": 1,
 							"target": "self"
 						},
+						"swing": {},
 						"run_command": {
 							"command": [
 								"playsound fire.ignite @a[r=1] ~ ~ ~ 1 1 1"
