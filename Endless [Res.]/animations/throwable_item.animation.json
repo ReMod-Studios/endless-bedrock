@@ -6,7 +6,7 @@
 			"animation_length": 1,
 			"bones": {
 				"main": {
-					"rotation": ["query.modified_distance_moved * 20", "query.modified_distance_moved * 20" , "query.modified_distance_moved * 20"]
+					"rotation": ["q.life_time * 15", "q.life_time * 15" , "q.life_time * 15"]
 				}
 			}
 		},

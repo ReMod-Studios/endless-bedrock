@@ -10,11 +10,6 @@
 			"minecraft:hand_equipped": false,
 			"minecraft:stacked_by_data": true,
 			"minecraft:foil": false,
-			// "minecraft:on_use": {
-			// 	"on_use": {
-			// 		"event": ""
-			// 	}
-			// },
 			"minecraft:throwable": {
 				"do_swing_animation": true
 			},

@@ -47,7 +47,7 @@
 			}
 		},
 		"events": {
-			"endless:after_on_ground": {
+			"endless:despawn": {
 				"add": {
 					"component_groups": [
 						"endless:despawn"

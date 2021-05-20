@@ -1,0 +1,26 @@
+{
+    "format_version": "1.16.100",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "endless:polished_rhyolite"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+            "##",
+            "##"
+		],
+		"key": {
+			"#": {
+				"item": "endless:rhyolite"
+			}
+		},
+		"result": [
+			{
+                "item": "endless:polished_rhyolite",
+			    "count": 1
+            }
+        ]
+	}
+}

@@ -31,12 +31,12 @@
 		},
 		"lunaric_end_stone_top": {
 			"textures": [
-				"textures/blocks/lunar_end_stone_top"
+				"textures/blocks/lunaric_end_stone_top"
 			]
 		},
 		"lunaric_end_stone_side": {
 			"textures": [
-				"textures/blocks/lunar_end_stone_side"
+				"textures/blocks/lunaric_end_stone_side"
 			]
 		},
 		"murky_end_stone_top": {
@@ -47,6 +47,16 @@
 		"murky_end_stone_side": {
 			"textures": [
 				"textures/blocks/murky_end_stone_side"
+			]
+		},
+		"rhyolite": {
+			"textures": [
+				"textures/blocks/rhyolite"
+			]
+		},
+		"polished_rhyolite": {
+			"textures": [
+				"textures/blocks/polished_rhyolite"
 			]
 		}
 	}

@@ -16,20 +16,7 @@
 			"minecraft:friction": 0.5,
 			"minecraft:explosion_resistance": 0,
 			"minecraft:loot": "loot_tables/empty.json",
-			"minecraft:ticking": {
-				"on_tick": {
-					"event": "on_tick"
-				},
-				"looping": true,
-				"range": [
-					0,
-					2
-				]
-			},
 			"minecraft:on_step_on": {
-				"event": "on_step_on"
-			},
-			"minecraft:on_step_off": {
 				"event": "on_step_on"
 			},
 			"minecraft:material_instances": {
@@ -59,7 +46,7 @@
 				],
 				"size": [
 					16,
-					1,
+					4,
 					16
 				]
 			},
@@ -67,11 +54,10 @@
 			"tag:cobalt": {}
 		},
 		"events": {
-			"on_tick": {
+			"on_step_on": {
 				"run_command": {
 					"command": [
-						"execute @p ~ ~1 ~ function BlocksFunc/StaticCharge",
-						"execute @p ~ ~1 ~ setblock ~~~ air"
+						"execute @p[x=~, y=~0.1, z=~] function BlocksFunc/StaticCharge"
 					]
 				}
 			}
