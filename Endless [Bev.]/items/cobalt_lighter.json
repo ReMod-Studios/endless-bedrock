@@ -51,7 +51,7 @@
 						},
 						"shoot": {
 							"projectile": "endless:lighter_block_setter",
-							"launch_power": 15
+							"launch_power": 30
 						}	
 					}
 				]

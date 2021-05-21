@@ -11,6 +11,9 @@
 			"minecraft:stacked_by_data": true,
 			"minecraft:foil": false,
 			"minecraft:allow_off_hand": true,
+			"minecraft:block_placer": {
+				"block": "endless:cobalt_repel_block"	
+			},
 			"minecraft:icon": {
 				"texture": "cobalt_repel"
 			},

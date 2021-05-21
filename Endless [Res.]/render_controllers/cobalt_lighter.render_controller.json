@@ -1,0 +1,31 @@
+{
+    "format_version": "1.10.0",
+    "render_controllers": {
+      "controller.render.cobalt_lighter": {
+        "arrays": {
+          "textures": {
+            "array.bow_texture_frames": [
+              "texture.default",
+              "texture.cobalt_lighter_0",
+              "texture.cobalt_lighter_1",
+              "texture.cobalt_lighter_2",
+              "texture.cobalt_lighter_3"
+            ]
+          },
+          "geometries": {
+            "array.bow_geo_frames": [
+              "geometry.default",
+              "geometry.cobalt_lighter_0",
+              "geometry.cobalt_lighter_1",
+              "geometry.cobalt_lighter_2",
+              "geometry.cobalt_lighter_3"
+            ]
+          }
+        },
+        "geometry": "array.bow_geo_frames[variable.anim_frame]",
+        "materials": [ { "*": "variable.is_enchanted ? material.enchanted : material.default" } ],
+        "textures": [ "array.bow_texture_frames[variable.anim_frame]", "texture.enchanted" ]
+      }
+    }
+  }
+  

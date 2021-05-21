@@ -1,0 +1,38 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:attachable": {
+      "description": {
+        "identifier": "endless:cobalt_lighter",
+        "materials": {
+          "default": "entity_alphatest",
+          "enchanted": "entity_alphatest_glint"
+        },
+        "textures": {
+          "default": "textures/items/cobalt_lighter",
+          "cobalt_lighter_0": "textures/items/cobalt_lighter_0",
+          "cobalt_lighter_1": "textures/items/cobalt_lighter_1",
+          "cobalt_lighter_2": "textures/items/cobalt_lighter_2",
+          "cobalt_lighter_3": "textures/items/cobalt_lighter_3",
+          "enchanted": "textures/misc/enchanted_item_glint"
+        },
+        "geometry": {
+          "default": "geometry.cobalt_lighter_standby",
+          "cobalt_lighter_0": "geometry.cobalt_lighter_0",
+          "cobalt_lighter_1": "geometry.cobalt_lighter_1",
+          "cobalt_lighter_2": "geometry.cobalt_lighter_2",
+          "cobalt_lighter_3": "geometry.cobalt_lighter_3"
+        },
+        "scripts": {
+          "initialize": [
+            "variable.anim_frame = 0;"
+          ],
+          "pre_animation": [
+            "variable.anim_frame = (query.item_remaining_use_duration / query.item_max_use_duration);",
+            "variable.anim_frame = math.min(((variable.anim_frame * variable.anim_frame) + variable.anim_frame * 2.0), 2.0);"
+          ]
+        },
+        "render_controllers": [ "controller.render.cobalt_lighter" ]
+      }
+    }
+  }
+  

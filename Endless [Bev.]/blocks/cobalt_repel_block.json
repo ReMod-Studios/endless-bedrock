@@ -1,0 +1,83 @@
+{
+    "format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "endless:cobalt_repel_block"
+		},
+		"components": {
+			"minecraft:destroy_time": 3,
+			"minecraft:block_light_emission": 0,
+			"minecraft:block_light_absorption": 1,
+			"minecraft:map_color": "#6D83B7",
+			"minecraft:flammable": {
+				"burn_odds": 0,
+				"flame_odds": 0
+			},
+			"minecraft:friction": 0.5,
+			"minecraft:explosion_resistance": 2.5,
+			"minecraft:loot": "loot_tables/empty.json",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "cobalt_repel_block",
+					"render_method": "opaque"
+				}
+			},
+			"minecraft:unit_cube": {},
+			"minecraft:on_player_destroyed": {
+				"event": "on_break",
+				"condition": "query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_pickaxe')"
+			},
+			"minecraft:random_ticking": {
+				"on_tick": {
+					"event": "on_tick"
+				}
+            },
+            "minecraft:pick_collision": {
+				"origin": [
+					-4,
+					0,
+					-4
+				],
+				"size": [
+					8,
+					8,
+					8
+				]
+            },
+            "minecraft:entity_collision": {
+				"origin": [
+					-4,
+					0,
+					-4
+				],
+				"size": [
+					8,
+					8,
+					8
+				]
+			},
+            "tag:cobalt_repel_block": {},
+            "tag:cobalt": {},
+            "tag:metal": {},
+            "tag:stone": {}
+		},
+		"events": {
+			"on_break": {
+				"spawn_loot": {
+					"table": "loot_tables/blocks/cobalt_repel_block.json"
+				}
+			},
+			"on_tick": {
+				"sequence": [
+					{
+						"run_command": {
+							"command": [
+								
+							]
+						}
+					}
+				]
+            }
+		}
+	}
+}
