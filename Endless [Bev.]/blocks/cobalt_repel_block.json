@@ -19,10 +19,10 @@
 			"minecraft:material_instances": {
 				"*": {
 					"texture": "cobalt_repel_block",
-					"render_method": "opaque"
+					"render_method": "blend"
 				}
 			},
-			"minecraft:unit_cube": {},
+			"minecraft:geometry": "geometry.cobalt_repel_block",
 			"minecraft:on_player_destroyed": {
 				"event": "on_break",
 				"condition": "query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_pickaxe')"

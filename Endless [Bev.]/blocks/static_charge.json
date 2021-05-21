@@ -26,7 +26,7 @@
 				}
 			},
 			"minecraft:geometry": "geometry.flat_block",
-			"minecraft:on_player_placing": {
+			"minecraft:on_placed": {
 				"event": "on_placed"
 			},
 			"minecraft:pick_collision": {

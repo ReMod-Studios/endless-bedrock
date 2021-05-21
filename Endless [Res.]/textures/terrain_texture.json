@@ -14,6 +14,11 @@
 				"textures/blocks/cobalt_block"
 			]
 		},
+		"cobalt_repel_block": {
+			"textures": [
+				"textures/blocks/cobalt_repel_block"
+			]
+		},
 		"therakium_ore": {
 			"textures": [
 				"textures/blocks/therakium_ore"
