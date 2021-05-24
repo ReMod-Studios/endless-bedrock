@@ -16,23 +16,11 @@
 			"minecraft:friction": 0.5,
 			"minecraft:explosion_resistance": 2.5,
 			"minecraft:loot": "loot_tables/empty.json",
-			"minecraft:material_instances": {
-				"*": {
-					"render_method": "opaque"
-				},
-				"up": {
-					"texture": "lunaric_end_stone_top",
-					"render_method": "opaque"
-				},
-				"side": {
-					"texture": "lunaric_end_stone_side",
-					"render_method": "opaque"
-				},
-				"down": {
-					"texture": "end_stone",
-					"render_method": "opaque"
-				}
-			},
+			// "minecraft:material_instances": {
+			// 	"*": {
+			// 		"render_method": "opaque"
+			// 	}
+			// },
 			"minecraft:unit_cube": {},
 			"minecraft:on_player_destroyed": {
 				"event": "on_break",
