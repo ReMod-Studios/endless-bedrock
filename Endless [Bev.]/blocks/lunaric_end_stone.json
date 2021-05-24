@@ -83,7 +83,8 @@
 					{
 						"run_command": {
 							"command": [
-								"function BlocksFunc/LunarEndStone"
+								"fill ~ ~1 ~ ~ ~1 ~ endless:lunaric_end_stone 0 replace end_stone 0",
+								"fill ~ ~-1 ~ ~ ~-1 ~ end_stone 0 replace endless:lunaric_end_stone 0"
 							]
 						}
 					}

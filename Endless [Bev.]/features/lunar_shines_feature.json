@@ -4,7 +4,7 @@
         "description": {
             "identifier": "endless:lunar_shines_feature"
         },
-        "places_block": "endless:lunar_end_stone",
+        "places_block": "endless:lunaric_end_stone",
         "enforce_placement_rules": false,
         "enforce_survivability_rules": false
     }
