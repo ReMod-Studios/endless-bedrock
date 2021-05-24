@@ -2,7 +2,7 @@
     "format_version": "1.10.0",
     "minecraft:attachable": {
       "description": {
-        "identifier": "endless:cobalt_lighter_thing",
+        "identifier": "endless:cobalt_lighter",
         "materials": {
           "default": "entity_alphatest",
           "enchanted": "entity_alphatest_glint"

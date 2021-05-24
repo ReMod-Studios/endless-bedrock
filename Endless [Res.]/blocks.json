@@ -15,5 +15,13 @@
 	},
 	"endless:therakium_block": {
 		"sound": "redstone_ore"
+	},
+	"endless:lunaric_end_stone": {
+		"sound": "stone",
+		"textures": {
+			"up": "lunaric_end_stone_top",
+			"side": "lunaric_end_stone_side",
+			"down": "end_stone"
+		}
 	}
 }

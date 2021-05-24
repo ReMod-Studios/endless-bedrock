@@ -1,0 +1,27 @@
+{
+    "format_version": "1.10",
+	"animation_controllers": {
+		"controller.animation.player.fog": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"on_block_detect": "q.is_alive"
+						}
+					]
+				},
+				"on_block_detect": {
+					"transitions": [
+						{
+							"default": "!q.is_alive"
+						}
+					],
+					"on_entry": [
+                        
+                    ]
+				}
+			}
+		}
+	}
+}
