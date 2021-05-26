@@ -1,0 +1,15 @@
+{
+    "format_version": "1.13.0",
+    "minecraft:ore_feature": {
+        "description": {
+            "identifier": "endless:therakium_ore_feature"
+        },
+        "count": 6,
+        "places_block": "endless:therakium_ore",
+        "may_replace": [
+            {
+                "name": "minecraft:end_stone"
+            }
+        ]
+    }
+}
