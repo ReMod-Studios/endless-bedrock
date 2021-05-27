@@ -1,23 +1,23 @@
-pack.name=Endless ยง5[Res.]
+pack.name=Endless §5[Res.]
 pack.description=Проект, направленный на расширение Края уникальным, но по-странному неприземлённым способом! Доступно для Java и Bedrock, за авторством ReMod Studios!
 
 ## Items
-item.endless:cobalt_dust.name=Кобальтовая пыль
-item.endless:cobalt_repel.name=Кобальтовый отпугиватель
-item.endless:cobalt_lighter.name=Кобальтовый дуговой генератор
-item.endless:cobalt_dynamite.name=Кобальтовый динамит
+item.endless:cobalt_dust=Кобальтовая пыль
+item.endless:cobalt_repel=Кобальтовый отпугиватель
+item.endless:cobalt_lighter=Кобальтовый дуговой генератор
+item.endless:cobalt_dynamite=Кобальтовый динамит
 
-item.endless:therakium_shard.name=Осколок теракия
-item.endless:therakium_metal.name=Теракиевый лом
-item.endless:therakium_sword.name=Теракиевый меч
-item.endless:therakium_axe.name=Теракиевый топор
-item.endless:therakium_pickaxe.name=Теракиевая кирка
-item.endless:therakium_shovel.name=Теракиевая лопата
-item.endless:therakium_hoe.name=Теракиевая мотыга
-item.endless:therakium_helmet.name=Теракиевый шлем
-item.endless:therakium_chestplate.name=Теракиевый нагрудник
-item.endless:therakium_leggings.name=Теракиевые поножи
-item.endless:therakium_boots.name=Теракиевые ботинки
+item.endless:therakium_shard=Осколок теракия
+item.endless:therakium_metal=Теракиевый лом
+item.endless:therakium_sword=Теракиевый меч
+item.endless:therakium_axe=Теракиевый топор
+item.endless:therakium_pickaxe=Теракиевая кирка
+item.endless:therakium_shovel=Теракиевая лопата
+item.endless:therakium_hoe=Теракиевая мотыга
+item.endless:therakium_helmet=Теракиевый шлем
+item.endless:therakium_chestplate=Теракиевый нагрудник
+item.endless:therakium_leggings=Теракиевые поножи
+item.endless:therakium_boots=Теракиевые ботинки
 
 ## Blocks
 tile.endless:cobalt_ore.name=Кобальтовая руда
