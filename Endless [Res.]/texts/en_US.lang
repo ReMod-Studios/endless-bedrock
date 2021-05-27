@@ -2,22 +2,22 @@ pack.name=Endless §5[Res.]
 pack.description=A Project aiming to expand the end in an unique yet wacky alienated way! Available for both Java and Bedrock, created by ReMod Studios!
 
 ## Items
-item.endless:cobalt_dust.name=Cobalt Dust
-item.endless:cobalt_repel.name=Cobalt Repel
-item.endless:cobalt_lighter.name=Cobalt Lighter
-item.endless:cobalt_dynamite.name=Cobalt Dynamite
+item.endless:cobalt_dust=Cobalt Dust
+item.endless:cobalt_repel=Cobalt Repel
+item.endless:cobalt_lighter=Cobalt Lighter
+item.endless:cobalt_dynamite=Cobalt Dynamite
 
-item.endless:therakium_shard.name=Therakium Shard
-item.endless:therakium_metal.name=Therakium Metal
-item.endless:therakium_sword.name=Therakium Sword
-item.endless:therakium_axe.name=Therakium Axe
-item.endless:therakium_pickaxe.name=Therakium Pickaxe
-item.endless:therakium_shovel.name=Therakium Shovel
-item.endless:therakium_hoe.name=Therakium Hoe
-item.endless:therakium_helmet.name=Therakium Helmet
-item.endless:therakium_chestplate.name=Therakium Chestplate
-item.endless:therakium_leggings.name=Therakium Leggings
-item.endless:therakium_boots.name=Therakium Boots
+item.endless:therakium_shard=Therakium Shard
+item.endless:therakium_metal=Therakium Metal
+item.endless:therakium_sword=Therakium Sword
+item.endless:therakium_axe=Therakium Axe
+item.endless:therakium_pickaxe=Therakium Pickaxe
+item.endless:therakium_shovel=Therakium Shovel
+item.endless:therakium_hoe=Therakium Hoe
+item.endless:therakium_helmet=Therakium Helmet
+item.endless:therakium_chestplate=Therakium Chestplate
+item.endless:therakium_leggings=Therakium Leggings
+item.endless:therakium_boots=Therakium Boots
 
 ## Blocks
 tile.endless:cobalt_ore.name=Cobalt Ore
