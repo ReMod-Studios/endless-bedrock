@@ -1,0 +1,27 @@
+pack.name=Endless ยง5[Res.]
+pack.description=Проект, направленный на расширение Краю унікальним, але по-дивному непріземленним чином! Доступно для Java і Bedrock, за авторства ReMod Studios!
+
+## Items
+item.endless:cobalt_dust.name=Кобальтовий пил
+item.endless:cobalt_repel.name=Кобальтовий відлякувач
+item.endless:cobalt_lighter.name=Кобальтовий дуговий генератор
+item.endless:cobalt_dynamite.name=Кобальтовий динаміт
+
+item.endless:therakium_shard.name=Уламок теракію
+item.endless:therakium_metal.name=Теракієвий лом
+item.endless:therakium_sword.name=Теракієвий меч
+item.endless:therakium_axe.name=Теракієва сокира
+item.endless:therakium_pickaxe.name=Теракієва кирка
+item.endless:therakium_shovel.name=Теракієва лопата
+item.endless:therakium_hoe.name=Теракієва мотика
+item.endless:therakium_helmet.name=Теракієвий шолом
+item.endless:therakium_chestplate.name=Теракієвий нагрудник
+item.endless:therakium_leggings.name=Теракієві наголінники
+item.endless:therakium_boots.name=Теракієві чоботи
+
+## Blocks
+tile.endless:cobalt_ore.name=Кобальтова руда
+tile.endless:cobalt_block.name=Кобальтовий блок
+
+tile.endless:therakium_ore.name=Теракієва руда
+tile.endless:therakium_block.name=Теракієвий блок
