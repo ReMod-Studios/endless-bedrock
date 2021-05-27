@@ -7,17 +7,19 @@
         },
         "conditions": {
             "placement_pass": "underground_pass",
-            "minecraft:biome_filter": [
-                {
-                    "any_of": [
-                        {
-                            "test": "has_biome_tag",
-                            "operator": "==",
-                            "value": "tne_end"
-                        }
-                    ]
-                }
-            ]
+            "minecraft:biome_filter": {
+                "all_of": [
+                    {
+                        "any_of": [
+                            {
+                                "test": "has_biome_tag",
+                                "operator": "==",
+                                "value": "the_end"
+                            }
+                        ]
+                    }
+                ]
+            }
         },
         "distribution": {
             "iterations": 12,
