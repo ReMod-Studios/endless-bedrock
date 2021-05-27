@@ -26,6 +26,36 @@
 			"textures": [
 				"textures/items/therakium_shard"
 			]
+		},
+		"therakium_metal": {
+			"textures": [
+				"textures/items/therakium_metal"
+			]
+		},
+		"therakium_sword": {
+			"textures": [
+				"textures/items/therakium_sword"
+			]
+		},
+		"therakium_axe": {
+			"textures": [
+				"textures/items/therakium_axe"
+			]
+		},
+		"therakium_pickaxe": {
+			"textures": [
+				"textures/items/therakium_pickaxe"
+			]
+		},
+		"therakium_shovel": {
+			"textures": [
+				"textures/items/therakium_shovel"
+			]
+		},
+		"therakium_hoe": {
+			"textures": [
+				"textures/items/therakium_hoe"
+			]
 		}
 	}
 }

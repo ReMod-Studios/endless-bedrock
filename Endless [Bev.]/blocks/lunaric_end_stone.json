@@ -16,11 +16,6 @@
 			"minecraft:friction": 0.5,
 			"minecraft:explosion_resistance": 2.5,
 			"minecraft:loot": "loot_tables/empty.json",
-			// "minecraft:material_instances": {
-			// 	"*": {
-			// 		"render_method": "opaque"
-			// 	}
-			// },
 			"minecraft:unit_cube": {},
 			"minecraft:on_player_destroyed": {
 				"event": "on_break",
@@ -40,6 +35,11 @@
 			"on_break": {
 				"spawn_loot": {
 					"table": "loot_tables/blocks/lunaric_end_stone.json"
+				},
+				"run_command": {
+					"command": [
+						"function BlocksFunc/AntiSilkTouch"
+					]
 				}
 			},
 			"on_tick": {

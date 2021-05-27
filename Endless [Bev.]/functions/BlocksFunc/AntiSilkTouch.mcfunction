@@ -1,0 +1,1 @@
+execute @e[type=item, r=1, name="Lunaric End Stone"] ^^^ kill @e[type=item, r=1, name="End Stone"]

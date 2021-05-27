@@ -10,6 +10,20 @@
 			"minecraft:hand_equipped": false,
 			"minecraft:stacked_by_data": true,
 			"minecraft:foil": false,
+			"minecraft:enchantable": {
+				"slot": "flintsteel",
+				"value": 15
+			},
+			"minecraft:repairable": {
+				"repair_items": [
+					{
+						"items": [
+							"endless:cobalt_lighter"
+						],
+						"repair_amount": "query.max_durability - query.remaining_durability / 2.5"
+					}
+				]
+			},
 			"minecraft:on_use_on": {
 				"on_use_on": {
 					"event": "on_use"
