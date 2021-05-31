@@ -2,8 +2,8 @@
 	"format_version": "1.16.100",
 	"minecraft:item": {
 		"description": {
-            "identifier": "endless:therakium_shovel",
-            "category": "equipment"
+			"identifier": "endless:therakium_shovel",
+			"category": "equipment"
 		},
 		"components": {
 			"minecraft:max_stack_size": 1,
@@ -33,8 +33,8 @@
 						"repair_amount": "query.max_durability - query.remaining_durability / 2.5"
 					}
 				]
-            },
-            "minecraft:on_use_on": {
+			},
+			"minecraft:on_use_on": {
 				"on_use_on": {
 					"event": "on_use_on"
 				}
@@ -68,22 +68,20 @@
 			"minecraft:creative_category": {
 				"parent": "itemGroup.name.shovel"
 			},
-			"minecraft:display_name": {
-				"value": "Therakium Shovel"
-			},
 			"minecraft:hover_text_color": "aqua",
 			"tag:minecraft:is_shovel": {},
 			"tag:therakium": {}
 		},
 		"events": {
-            "on_use_on": {
+			"on_use_on": {
 				"sequence": [
 					{
 						"damage": {
 							"type": "durability",
 							"amount": 1,
 							"target": "item"
-						}
+						},
+						"condition": "q.any_tag('grass')"
 					},
 					{
 						"run_command": {
@@ -91,7 +89,8 @@
 								"function ItemFunc/TherakiumShovel"
 							],
 							"target": "block"
-						}
+						},
+						"condition": "q.any_tag('grass')"
 					}
 				]
 			},

@@ -11,7 +11,7 @@
 			"minecraft:stacked_by_data": true,
 			"minecraft:foil": false,
 			"minecraft:mining_speed": 1,
-			"minecraft:damage": 7,
+			"minecraft:damage": 8,
 			"minecraft:enchantable": {
 				"slot": "sword",
 				"value": 15
@@ -67,9 +67,6 @@
 			"minecraft:render_offsets": "tools",
 			"minecraft:creative_category": {
 				"parent": "itemGroup.name.sword"
-			},
-			"minecraft:display_name": {
-				"value": "Therakium Sword"
 			},
 			"minecraft:hover_text_color": "aqua",
 			"tag:minecraft:is_sword": {},

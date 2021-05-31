@@ -40,9 +40,6 @@
 				"texture": "cobalt_lighter"
 			},
 			"minecraft:render_offsets": "ingots",
-			"minecraft:display_name": {
-				"value": "Cobalt Lighter"
-			},
 			"minecraft:creative_category": {
 				"parent": "items"
 			},

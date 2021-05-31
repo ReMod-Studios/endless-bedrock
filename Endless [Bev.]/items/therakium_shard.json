@@ -14,9 +14,6 @@
 				"texture": "therakium_shard"
 			},
 			"minecraft:render_offsets": "ingots",
-			"minecraft:display_name": {
-				"value": "Therakium Shard"
-			},
 			"minecraft:creative_category": {
 				"parent": "items"
 			},

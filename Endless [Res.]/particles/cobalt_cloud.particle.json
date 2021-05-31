@@ -15,7 +15,7 @@
 			"minecraft:emitter_lifetime_expression": {
 				"activation_expression": 1
 			},
-			"minecraft:emitter_shape_sphere": {
+			"minecraft:emitter_shape_disc": {
 				"offset": ["math.random(-0, 1)", "math.random(0, 1)", "math.random(-0, 1)"],
 				"radius": 5,
 				"direction": "outwards"

@@ -14,9 +14,6 @@
 				"texture": "therakium_metal"
 			},
 			"minecraft:render_offsets": "ingots",
-			"minecraft:display_name": {
-				"value": "Therakium Metal"
-			},
 			"minecraft:creative_category": {
 				"parent": "items"
 			},

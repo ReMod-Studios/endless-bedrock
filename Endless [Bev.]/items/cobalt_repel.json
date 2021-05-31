@@ -18,9 +18,6 @@
 				"texture": "cobalt_repel"
 			},
 			"minecraft:render_offsets": "ingots",
-			"minecraft:display_name": {
-				"value": "Cobalt Repel"
-			},
 			"minecraft:creative_category": {
 				"parent": "items"
 			},

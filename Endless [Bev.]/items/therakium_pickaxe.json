@@ -46,28 +46,28 @@
 						"block": {
 							"tags": "q.any_tag('stone', 'metal', 'diamond_pick_diggable')"
 						},
-						"speed": 16,
+						"speed": 9,
 						"on_dig": {
 							"event": "on_dig"
 						}
 					},
 					{
 						"block": "minecraft:ice",
-						"speed": 16,
+						"speed": 9,
 						"on_dig": {
 							"event": "on_dig"
 						}
 					},
 					{
 						"block": "minecraft:sandstone",
-						"speed": 16,
+						"speed": 9,
 						"on_dig": {
 							"event": "on_dig"
 						}
 					},
 					{
 						"block": "minecraft:end_stone",
-						"speed": 16,
+						"speed": 9,
 						"on_dig": {
 							"event": "on_dig"
 						}
@@ -83,9 +83,6 @@
 			"minecraft:render_offsets": "tools",
 			"minecraft:creative_category": {
 				"parent": "itemGroup.name.pickaxe"
-			},
-			"minecraft:display_name": {
-				"value": "Therakium Pickaxe"
 			},
 			"minecraft:hover_text_color": "aqua",
 			"tag:minecraft:is_pickaxe": {},

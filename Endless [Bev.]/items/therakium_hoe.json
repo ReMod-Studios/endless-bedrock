@@ -50,9 +50,6 @@
 			"minecraft:creative_category": {
 				"parent": "itemGroup.name.hoe"
 			},
-			"minecraft:display_name": {
-				"value": "Therakium Hoe"
-			},
 			"minecraft:hover_text_color": "aqua",
 			"tag:minecraft:is_hoe": {},
 			"tag:therakium": {}
@@ -65,7 +62,8 @@
 							"type": "durability",
 							"amount": 1,
 							"target": "item"
-						}
+						},
+						"condition": "q.any_tag('grass')"
 					},
 					{
 						"run_command": {
@@ -73,7 +71,8 @@
 								"function ItemFunc/TherakiumHoe"
 							],
 							"target": "block"
-						}
+						},
+						"condition": "q.any_tag('grass')"
 					}
 				]
 			},

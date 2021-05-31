@@ -24,9 +24,6 @@
 				"texture": "cobalt_dynamite"
 			},
 			"minecraft:render_offsets": "ingots",
-			"minecraft:display_name": {
-				"value": "Cobalt Dynamite"
-			},
 			"minecraft:creative_category": {
 				"parent": "items"
 			},

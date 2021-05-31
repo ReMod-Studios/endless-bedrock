@@ -35,11 +35,6 @@
 			"on_break": {
 				"spawn_loot": {
 					"table": "loot_tables/blocks/lunaric_end_stone.json"
-				},
-				"run_command": {
-					"command": [
-						"function BlocksFunc/AntiSilkTouch"
-					]
 				}
 			},
 			"on_tick": {

@@ -1,0 +1,34 @@
+pack.name=Endless §5[Res.]
+pack.description=Un projet visant à étendre l'End d'une manière unique, farfelue et aliénée! Disponible pour les version Java et Bedrock, créé par ReMod Studios!
+
+## Items
+item.endless:cobalt_dust=Poudre de cobalt
+item.endless:cobalt_repel=Répulsif au cobalt
+item.endless:cobalt_lighter=Briquet de cobalt
+item.endless:cobalt_dynamite=Dynamite de cobalt
+
+item.endless:therakium_shard=Tesson de therakium
+item.endless:therakium_metal=Métal de therakium
+item.endless:therakium_sword=Épée en therakium
+item.endless:therakium_axe=Hache en therakium
+item.endless:therakium_pickaxe=Pioche en therakium
+item.endless:therakium_shovel=Pelle en therakium
+item.endless:therakium_hoe=Houe en therakium
+item.endless:therakium_helmet=Casque en therakium
+item.endless:therakium_chestplate=Plastron en therakium
+item.endless:therakium_leggings=Jambières en therakium
+item.endless:therakium_boots=Bottes en therakium
+
+## Blocks
+tile.endless:cobalt_ore.name=Minerai de cobalt
+tile.endless:cobalt_block.name=Bloc de cobalt
+tile.endless:static_charge.name=Bloc de charge statique
+
+tile.endless:therakium_ore.name=Minerai de therakium
+tile.endless:therakium_block.name=Bloc de therakium
+
+tile.endless:lunaric_end_stone.name=Pièrre de l'End lunaire
+tile.endless:murky_end_stone.name=Pièrre de l'End sombre
+
+tile.endless:rhyolite.name=Rhyolite
+tile.endless:polished_rhyolite.name=Rhyolite polie
