@@ -24,8 +24,7 @@
 			},
 			"minecraft:geometry": "geometry.cobalt_repel_block",
 			"minecraft:on_player_destroyed": {
-				"event": "on_break",
-				"condition": "query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_pickaxe')"
+				"event": "on_break"
 			},
 			"minecraft:random_ticking": {
 				"on_tick": {
@@ -63,8 +62,11 @@
 		},
 		"events": {
 			"on_break": {
-				"spawn_loot": {
-					"table": "loot_tables/blocks/cobalt_repel_block.json"
+				"run_command": {
+					"command": [
+						"setblock ~~~ endless:item_deleter",
+						"give @p endless:cobalt_repel"
+					]
 				}
 			},
 			"on_tick": {

@@ -1,0 +1,49 @@
+{
+    "format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "endless:lunaric_end_stone"
+		},
+		"components": {
+			"minecraft:destroy_time": 15,
+			"minecraft:block_light_emission": 0,
+			"minecraft:block_light_absorption": 1,
+			"minecraft:map_color": "#e6e8e2",
+			"minecraft:flammable": {
+				"burn_odds": 0,
+				"flame_odds": 0
+			},
+			"minecraft:friction": 0.5,
+			"minecraft:explosion_resistance": 2.5,
+			"minecraft:loot": "loot_tables/blocks/lunaric_end_stone.json",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "lunaric_end_stone_side",
+					"render_method": "opaque"
+				},
+				"up": {
+                    "texture": "lunaric_end_stone_up_top"
+                },
+                "down": {
+                    "texture": "lunaric_end_stone_up_top"
+                }
+			},
+			"minecraft:unit_cube": {},
+			"minecraft:on_player_destroyed": {
+				"event": "on_break",
+				"condition": "!query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_pickaxe')"
+            },
+            "tag:endless": {},
+			"tag:stone": {}
+		},
+		"events": {
+			"on_break": {
+				"run_command": {
+                    "command": [
+                        "setblock ~~~ endless:item_deleter"
+                    ]
+                }
+			}
+		}
+	}
+}

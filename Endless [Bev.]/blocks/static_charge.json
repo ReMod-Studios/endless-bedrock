@@ -26,6 +26,9 @@
 				}
 			},
 			"minecraft:geometry": "geometry.flat_block",
+			"minecraft:on_player_destroyed": {
+				"event": "on_break"
+			},
 			"minecraft:on_placed": {
 				"event": "on_placed"
 			},
@@ -79,6 +82,14 @@
 				"run_command": {
 					"command": [
 						"particle endless:static_spark_small ~ ~ ~"
+					]
+				}
+			},
+			"on_break": {
+				"run_command": {
+					"command": [
+						"setblock ~~~ endless:item_deleter",
+						"give @p endless:cobalt_repel"
 					]
 				}
 			}

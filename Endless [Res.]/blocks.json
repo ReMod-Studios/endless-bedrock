@@ -10,18 +10,22 @@
 	"endless:cobalt_block": {
 		"sound": "metal"
 	},
+	"endless:cobalt_repel_block": {
+		"sound": "glass"
+	},
+	"endless:lunaric_end_stone": {
+		"sound": "stone"
+	},
+	"endless:rhyolite": {
+		"sound": "nether_brick"
+	},
+	"endless:polished_rhyolite": {
+		"sound": "nether_brick"
+	},
 	"endless:therakium_ore": {
 		"sound": "stone"
 	},
 	"endless:therakium_block": {
 		"sound": "redstone_ore"
-	},
-	"endless:lunaric_end_stone": {
-		"sound": "stone",
-		"textures": {
-			"up": "lunaric_end_stone_top",
-			"side": "lunaric_end_stone_side",
-			"down": "end_stone"
-		}
 	}
 }
