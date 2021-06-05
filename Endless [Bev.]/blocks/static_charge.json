@@ -26,6 +26,17 @@
 				}
 			},
 			"minecraft:geometry": "geometry.flat_block",
+			"minecraft:ticking": {
+                "range": [
+                    0,
+                    0
+                ],
+                "looping": true,
+                "on_tick": {
+					"event": "on_tick",
+					"condition": "query.get_relative_block_state(0, -1, 0, 'air')"
+                }
+            },
 			"minecraft:on_player_destroyed": {
 				"event": "on_break"
 			},
@@ -92,6 +103,13 @@
 						"give @p endless:cobalt_repel"
 					]
 				}
+			},
+			"on_tick": {
+				"run_command": {
+                    "command": [
+                        "setblock ~~~ air"
+                    ]
+                }
 			}
 		}
 	}

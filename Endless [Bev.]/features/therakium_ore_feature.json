@@ -4,11 +4,13 @@
         "description": {
             "identifier": "endless:therakium_ore_feature"
         },
-        "count": 6,
-        "places_block": "endless:therakium_ore",
-        "may_replace": [
+        "count": 12,
+        "replace_rules": [
             {
-                "name": "minecraft:end_stone"
+                "places_block": "endless:therakium_ore",
+                "may_replace": [
+                    "minecraft:end_stone"
+                ]
             }
         ]
     }

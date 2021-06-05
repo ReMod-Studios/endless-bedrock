@@ -32,7 +32,12 @@
 			"minecraft:on_player_destroyed": {
 				"event": "on_break",
 				"condition": "!query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_pickaxe')"
-            },
+			},
+			"minecraft:random_ticking": {
+				"on_tick": {
+					"event": "on_tick"
+				}
+			},
             "tag:endless": {},
 			"tag:stone": {}
 		},
@@ -43,6 +48,46 @@
                         "setblock ~~~ endless:item_deleter"
                     ]
                 }
+			},
+			"on_tick": {
+				"sequence": [
+					{
+						"randomize": [
+							{
+								"weight": 1,
+								"run_command": {
+									"command": [
+										"fill ~~~ ~1 ~ ~ endless:lunaric_end_stone 0 replace end_stone"
+									]
+								}
+							},
+							{
+								"weight": 1,
+								"run_command": {
+									"command": [
+										"fill ~~~ ~-1 ~ ~ endless:lunaric_end_stone 0 replace end_stone"
+									]
+								}
+							},
+							{
+								"weight": 1,
+								"run_command": {
+									"command": [
+										"fill ~~~ ~ ~ ~1 endless:lunaric_end_stone 0 replace end_stone"
+									]
+								}
+							},
+							{
+								"weight": 1,
+								"run_command": {
+									"command": [
+										"fill ~~~ ~ ~ ~-1 endless:lunaric_end_stone 0 replace end_stone"
+									]
+								}
+							}
+						]
+					}
+				]
 			}
 		}
 	}
