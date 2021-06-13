@@ -1,0 +1,76 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "endless:fog_setter_entity",
+			"is_summonable": true,
+			"is_spawnable": true
+		},
+		"components": {
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"deals_damage": false
+					}
+				]
+			},
+			"minecraft:physics": {
+				"has_gravity": false
+			},
+			"minecraft:health": {
+				"value": 1,
+                "max": 1,
+                "min": 1
+			},
+			"minecraft:environment_sensor": {
+				"triggers": {
+					"filters": {
+						"test": "has_tag",
+						"subject": "self",
+						"operator": "equals",
+						"value": "despawn"
+					},
+					"event": "endless:do_despawn"
+				}
+			},
+			"minecraft:collision_box": {
+				"width": 1,
+				"height": 1
+			},
+			"minecraft:timer": {
+				"looping": true,
+				"time": [
+					0,
+					1
+				],
+				"time_down_event": {
+					"event": "endless:fog_event"
+				}
+			}
+		},
+		"events": {
+			"endless:do_despawn": {
+				"add": {
+					"component_groups": [
+						"endless:despawn"
+					]
+				}
+            },
+            "endless:fog_event": {
+                "run_command": {
+                    "command": [
+                        "execute @s[tag=FogLS] ~~~ function MiscFunc/Fog/LunarShines",
+                        "execute @s[tag=FogMV] ~~~ function MiscFunc/Fog/MurkyVoids",
+                        "execute @s[tag=FogRD] ~~~ function MiscFunc/Fog/RhyoliteDistortions",
+                        "execute @s[tag=FogMR] ~~~ function MiscFunc/Fog/MagneticRunes"
+                    ]
+                }
+            }
+		},
+		"component_groups": {
+			"endless:despawn": {
+				"minecraft:instant_despawn": {}
+			}
+		}
+	}
+}

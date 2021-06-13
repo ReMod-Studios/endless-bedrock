@@ -1,0 +1,20 @@
+{
+    "format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "endless:fog_setter_entity",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/items/transparent"
+			},
+			"geometry": {
+				"default": "geometry.throwable_item"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			]
+		}
+	}
+}

@@ -1,0 +1,22 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:fog_settings": {
+        "description": {
+            "identifier": "endless:magnetic_runes"
+        },
+        "distance": {
+            "air": {
+                "fog_start": 0,
+                "fog_end": 30,
+                "fog_color": "#62867d",
+                "render_distance_type": "fixed"
+            },
+            "weather": {
+                "fog_start": 0,
+                "fog_end": 60,
+                "fog_color": "#17612d",
+                "render_distance_type": "fixed"
+            }
+        }
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "format_version": "1.13.0",
+    "minecraft:single_block_feature": {
+        "description": {
+            "identifier": "endless:fsb_slate_feature"
+        },
+        "places_block": "endless:magnetic_runes_fs",
+        "enforce_placement_rules": false,
+        "enforce_survivability_rules": false,
+        "may_attach_to": {
+            "all": [
+                "endless:slate"
+            ]
+        }
+    }
+}

@@ -1,0 +1,94 @@
+{
+    "format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "endless:murky_end_stone"
+		},
+		"components": {
+			"minecraft:destroy_time": 15,
+			"minecraft:block_light_emission": 0,
+			"minecraft:block_light_absorption": 1,
+			"minecraft:map_color": "#2e2e2e",
+			"minecraft:flammable": {
+				"burn_odds": 0,
+				"flame_odds": 0
+			},
+			"minecraft:friction": 0.5,
+			"minecraft:explosion_resistance": 2.5,
+			"minecraft:loot": "loot_tables/blocks/murky_end_stone.json",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "murky_end_stone_side",
+					"render_method": "opaque"
+				},
+				"up": {
+                    "texture": "murky_end_stone_up_top"
+                },
+                "down": {
+                    "texture": "murky_end_stone_up_top"
+                }
+			},
+			"minecraft:unit_cube": {},
+			"minecraft:on_player_destroyed": {
+				"event": "on_break",
+				"condition": "!query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_pickaxe')"
+			},
+			"minecraft:random_ticking": {
+				"on_tick": {
+					"event": "on_tick"
+				}
+			},
+            "tag:endless": {},
+			"tag:stone": {}
+		},
+		"events": {
+			"on_break": {
+				"run_command": {
+                    "command": [
+                        "setblock ~~~ endless:item_deleter"
+                    ]
+                }
+			},
+			"on_tick": {
+				"sequence": [
+					{
+						"randomize": [
+							{
+								"weight": 1,
+								"run_command": {
+									"command": [
+										"fill ~~~ ~1 ~ ~ endless:murky_end_stone 0 replace end_stone"
+									]
+								}
+							},
+							{
+								"weight": 1,
+								"run_command": {
+									"command": [
+										"fill ~~~ ~-1 ~ ~ endless:murky_end_stone 0 replace end_stone"
+									]
+								}
+							},
+							{
+								"weight": 1,
+								"run_command": {
+									"command": [
+										"fill ~~~ ~ ~ ~1 endless:murky_end_stone 0 replace end_stone"
+									]
+								}
+							},
+							{
+								"weight": 1,
+								"run_command": {
+									"command": [
+										"fill ~~~ ~ ~ ~-1 endless:murky_end_stone 0 replace end_stone"
+									]
+								}
+							}
+						]
+					}
+				]
+			}
+		}
+	}
+}

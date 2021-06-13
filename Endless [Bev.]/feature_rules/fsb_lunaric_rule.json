@@ -1,0 +1,49 @@
+{
+    "format_version": "1.13.0",
+    "minecraft:feature_rules": {
+        "description": {
+            "identifier": "endless:fsb_lunaric_rule",
+            "places_feature": "endless:fsb_lunaric_feature"
+        },
+        "conditions": {
+            "placement_pass": "underground_pass",
+            "minecraft:biome_filter": {
+                "all_of": [
+                    {
+                        "any_of": [
+                            {
+                                "test": "has_biome_tag",
+                                "operator": "==",
+                                "value": "the_end"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        "distribution": {
+            "iterations": "math.mod(math.floor(v.originx / 16), 4) == 0 && math.mod(math.floor(v.originz / 16), 4) == 0",
+            "x": {
+                "distribution": "fixed_grid",
+                "extent": [
+                    0,
+                    15
+                ]
+            },
+            "z": {
+                "distribution": "fixed_grid",
+                "extent": [
+                    0,
+                    15
+                ]
+            },
+            "y": {
+                "distribution": "fixed_grid",
+                "extent": [
+                    0,
+                    15
+                ]
+            }
+        }
+    }
+}
