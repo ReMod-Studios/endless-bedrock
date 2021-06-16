@@ -3,7 +3,7 @@
     "minecraft:feature_rules": {
         "description": {
             "identifier": "endless:fsb_lunaric_rule",
-            "places_feature": "endless:fsb_lunaric_feature"
+            "places_feature": "endless:fsb_lunaric_scatter_feature"
         },
         "conditions": {
             "placement_pass": "underground_pass",
@@ -23,27 +23,9 @@
         },
         "distribution": {
             "iterations": "math.mod(math.floor(v.originx / 16), 4) == 0 && math.mod(math.floor(v.originz / 16), 4) == 0",
-            "x": {
-                "distribution": "fixed_grid",
-                "extent": [
-                    0,
-                    15
-                ]
-            },
-            "z": {
-                "distribution": "fixed_grid",
-                "extent": [
-                    0,
-                    15
-                ]
-            },
-            "y": {
-                "distribution": "fixed_grid",
-                "extent": [
-                    0,
-                    15
-                ]
-            }
+            "x": 0,
+            "z": 0,
+            "y": 16
         }
     }
 }
