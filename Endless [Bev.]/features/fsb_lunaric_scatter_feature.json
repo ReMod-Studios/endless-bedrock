@@ -1,0 +1,35 @@
+{
+    "format_version": "1.13.0",
+
+    "minecraft:scatter_feature": {
+        "description": {
+            "identifier": "endless:fsb_lunaric_scatter_feature"
+        },
+
+        "places_feature": "endless:fsb_lunaric_feature",
+
+        "iterations": 1,
+
+        "x": {
+            "distribution": "uniform",
+            "extent": [
+                0,
+                15
+            ]
+        },
+        "z": {
+            "distribution": "uniform",
+            "extent": [
+                0,
+                15
+            ]
+        },
+        "y": {
+            "distribution": "uniform",
+            "extent": [
+                0,
+                47
+            ]
+        }
+    }
+}
