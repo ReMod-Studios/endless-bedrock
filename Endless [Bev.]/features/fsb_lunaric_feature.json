@@ -9,7 +9,8 @@
         "enforce_survivability_rules": false,
         "may_attach_to": {
             "all": [
-                "endless:lunaric_end_stone"
+                "endless:lunaric_end_stone",
+                "minecraft:end_stone"
             ]
         }
     }
